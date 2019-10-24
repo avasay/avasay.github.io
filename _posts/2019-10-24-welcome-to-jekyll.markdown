@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to my Github Page!"
 date:   2019-10-24 08:18:37 -0500
 categories: jekyll update
 ---
