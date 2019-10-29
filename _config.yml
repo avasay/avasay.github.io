@@ -21,13 +21,14 @@
 title: avasay | github.io
 email: rio.vasay@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My site is about sharing - sharing how I solved problems related to 
-  coding, so that other people will not have to go through what I 
-  had gone through. I am mostly a .NET programmer, but will also share stuff that are not .NET related. 
+  Sharing is caring... I share code about .NET stuff and other stuff...  
+  Interesting stuff... Stuff that gave me hell and how I solved them. 
+    
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: AlejandrioVasay
 github_username:  avasay
+linkedin_username: alejandrio-vasay-0088b279
 
 # Build settings
 theme: minima
