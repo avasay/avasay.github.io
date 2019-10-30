@@ -4,6 +4,7 @@ title:  "Image Randomizer using C# Caching"
 date:   2019-10-29 08:10:00 -0500
 categories: Razor csharp dotnet
 tags: caching [image rotator]
+published: false
 ---
 
 This is a simple image randomizer/rotator demo implemented in C# and using generic handler. Basically, the application works by reading all the filenames contained in a user-given directory and then caching the filenames. Whenever the browser is refreshed, application simply picks a random filename from the cache instead of going to the file system. 
