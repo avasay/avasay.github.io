@@ -6,8 +6,6 @@ categories: csharp dotnet
 tags: List Random
 ---
 
-# Get random element from a C# List
-
 This demo briefly and quickly explains how to get random element from a C# list. This example is a ASP.NET console program.
 
 Let's say that we have a list of strings initialized with 3 strings.
