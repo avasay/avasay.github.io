@@ -12,8 +12,7 @@ Let's say that we have a list of strings initialized with 3 strings.
 ```
 List<string> mylist = new List<string>(new string[] { "biology-1", "biology-2", "biology-3" });
 ```
-
-Lists, like arrays, have elements whose position starts at 0 and ends at *mylist.Count() - 1*.
+Like arrays, Lists have elements whose position starts at 0 and ends at *mylist.Count() - 1*.
 So, to get a random element, what we want to do is 
 ```
 mylist.ElementAt(someRandomNumber)
