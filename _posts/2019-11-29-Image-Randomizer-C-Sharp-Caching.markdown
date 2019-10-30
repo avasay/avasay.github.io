@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Image Randomizer using C# Caching"
-date:   2019-10-29 08:10:00 -0500
-categories: Razor Caching csharp
-tags: [image rotator]
+date:   2019-11-29 08:10:00 -0500
+categories: Razor csharp dotnet
+tags: caching [image rotator]
 ---
 
-This is a simple image randomizer/rotator demo implemented in C# and using generic handler. Basically, the application works by reading all the filenames contained in a user-given directory and caching the filenames. Whenever the browser is refreshed, application simply picks a random filename from the cache instead of going to the file system. 
+This is a simple image randomizer/rotator demo implemented in C# and using generic handler. Basically, the application works by reading all the filenames contained in a user-given directory and then caching the filenames. Whenever the browser is refreshed, application simply picks a random filename from the cache instead of going to the file system. 
 
-This application is very similar to websites that rotate their hero banner on their homepage. Imagine a college website that offers courses in Biology, Math, and Physics. The Biology homepage, for example, will have a rotating banners in which the banners are Biology-related only. Math has its own homepage and its own rotating banner images are Mathc-related only. And so on.
+This application is very similar to websites that rotate their hero banner on their homepage on refresh. Imagine a college website that offers courses in Biology, Math, and Physics. The Biology homepage, for example, will have a rotating banners in which the banners are Biology-related only. Math has its own homepage and its own rotating banner images are Mathc-related only. So on and so forth. Check out [Tarrant County College][tccd-site] website that does the same thing.
 
 The application is a C# generic handler that the user calls within Razor page. The handler  returns the image as bytearray. Also, the handler is called within the background style, which in turn setts the background to that image.   
 
@@ -232,3 +232,8 @@ public class DirInfoCacher
         }
     }
 ```
+
+
+
+
+[tccd-site]: https://www.tccd.edu/
