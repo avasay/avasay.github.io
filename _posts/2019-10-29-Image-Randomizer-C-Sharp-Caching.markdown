@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Image Randomizer using C# Caching"
-date:   2019-11-29 08:10:00 -0500
+date:   2019-10-29 08:10:00 -0500
 categories: Razor csharp dotnet
 tags: caching [image rotator]
 ---
