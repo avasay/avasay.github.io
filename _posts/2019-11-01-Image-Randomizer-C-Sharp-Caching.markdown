@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Image Randomizer using C# Caching"
+title:  "Image Randomizer Using C# Caching"
 date:   2019-11-01 07:10:00 -0500
 categories: dotnet csharp
 tags: caching rotator
-published: false
 ---
 
 This is a simple image **randomizer**/**rotator** application implemented in C# and using generic handler. This application continues from and builds on my the two applications from my previous posts: 
@@ -17,6 +16,12 @@ Except, this time I'm not using JQuery to display images inside the ```<img>``` 
 <div style="background: url('GetImageHandler.ashx?subject=biology');"></div>
 ```
 Basically, the application works by reading all the filenames from a local directory and then caching the filenames. Application picks a random filename, reads it into memory as bytearray, and sends its way to the browser for display. On browser refresh, application picks another random file from the cache, and so on and so forth. 
+
+I divided this post into Part 1 and Part 2. Part 2 is on this same post at the bottom page. I'm doing this to emphasize the sequence of caching in the application. 
+1. **Part 1**. Demonstrates caching of the directory "info". This means that I am caching a list of filenames. This is important as the first step because it minimizes the file system access. After you finished Part 1, the application should be up and running regardless of Part 2. You will be able to display random images on the browser.
+2. **Part 2**. Demonstrates caching of the images referred to by those filenames. The image is cached as a bytearray as soon as we randomly picked its name from the list; then we sent it to the browser for display. Here, I created a class to represent an image object; and then, I added a routine to cache this object.
+
+**The important lesson is this**: if you're caching your images for browser display, you don't want to cache everything at once. You only cache what you display; otherwise, you will run out of space. 
 
 ___
 ## Application Demo
@@ -33,6 +38,8 @@ On another refresh, another image.
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/48995211353/in/dateposted-public/" title="randomizer-1"><img src="https://live.staticflickr.com/65535/48995211353_9da87c5dc1_n.jpg" width="640" height="auto" alt="randomizer-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
+___
+## Part 1
 ### Project Setup
 
 The application is a C# generic handler that the user calls within Razor page. 
@@ -325,10 +332,103 @@ imagePath = collection.ElementAt(randomNumber);
 ```
 
 ___
-## And That's It!
-Again, this application is commonly used for image processing where images are cached. This, of course, is just a simplified version of that because, obviously, I'm not caching the image itself but only its filename for later reference. In the next post, I will extend this application to demonstrate how to cache the image itself as a bytearray. That is, we build the directory info cache(as we're doing now), **AND** we cache the actual images that we randomly picked.
+## Part 2
+Part 1 app should run correctly and display random images even without doing Part 2; except of course, the images are always read from the file system. In Part 2, I will extend this application to demonstrate how to cache the image itself as a bytearray as soon as they are picked for display.
 
-I hope this helps you somehow in y'alls projects! 
+#### ImageCacher Class
+The ImageCacher class is responsible for creating and caching an image object. Very simple responsibility really. In fact, all it does is take the filename from our handler, and return a bytearray of the image back to the handler. Of course it stores the image in the cache if it's not already in it. 
+
+In your Visual Studio project, add a class called *ImageCacher.cs*. The ImageCacher class looks like this:
+```
+public class ImageCacher
+{
+    private string m_pickedImagePath = string.Empty;
+    private ImageObject m_imageObject = null;
+
+    public ImageCacher(string pickedImage)
+    {
+        m_pickedImagePath = pickedImage;
+        m_imageObject = HttpRuntime.Cache.Get(m_pickedImagePath) as ImageObject;
+    }
+
+    public byte[] GetImage()
+    {
+        if (m_imageObject == null)
+        {              
+            DateTime ourFileDate = File.GetLastWriteTime(m_pickedImagePath);
+            ourFileDate = ourFileDate.AddMilliseconds(-ourFileDate.Millisecond);
+
+            byte[] byteArray = File.ReadAllBytes(m_pickedImagePath);
+            m_imageObject = new ImageObject(m_pickedImagePath, "image/jpeg", byteArray, ourFileDate);
+            HttpRuntime.Cache.Insert(m_pickedImagePath, m_imageObject, null, System.Web.Caching.Cache.NoAbsoluteExpiration, System.Web.Caching.Cache.NoSlidingExpiration);
+            return m_imageObject.Content;
+
+        }
+        else
+        {
+            return m_imageObject.Content;
+        }
+    }
+
+}
+```
+
+#### The ImageObject Class
+In the same file, add the ImageObject class.
+```
+public class ImageObject
+{
+    public string FileName { get; set; }
+    public string ContentType { get; set; }
+    public byte[] Content { get; set; }
+    public DateTime SubmitDate { get; set; }
+
+    public ImageObject(string fn, string tp, byte[] ct, DateTime dt)
+    {
+        FileName = fn;
+        ContentType = tp;
+        Content = ct;
+        SubmitDate = new DateTime(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, 0, DateTimeKind.Utc);
+    }
+}
+```
+You may need to add ```using System.IO``` for using ```File``` object.
+
+#### How to use the Image Cacher
+We call the image cacher in our handler, as I have mentioned. We will need to replace what's inside our else block in code.
+```
+if (pickedImage == "")
+{
+    context.Response.ContentType = "text/plain";
+    context.Response.Write("");
+}
+else
+{
+    byte[] byteArray = File.ReadAllBytes(pickedImage);
+    context.Response.BinaryWrite(byteArray);
+}
+```
+So, instead of reading the bytes ourselves, we call the ImageCacher to do it for us. So, that the else block changes to this.
+```
+if (pickedImage == "")
+{
+    context.Response.ContentType = "text/plain";
+    context.Response.Write("");
+}
+else
+{
+    ImageCacher imageCacher = new ImageCacher(pickedImage);
+
+    byte[] byteArray = imageCacher.GetImage();
+    context.Response.BinaryWrite(byteArray);
+}
+```
+
+### And That's It!
+You can now run the application and it will now cache the image itself, not just the filenames.
+
+
+
 
 
 [tccd-site]: https://www.tccd.edu/
