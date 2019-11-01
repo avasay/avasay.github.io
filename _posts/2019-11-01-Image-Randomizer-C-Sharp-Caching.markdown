@@ -424,9 +424,81 @@ else
 }
 ```
 
-### And That's It!
+## And That's It!
 You can now run the application and it will now cache the image itself, not just the filenames.
 
+### But First, Brief Explanation
+The ImageCache class is really no different than any other cacher that I have done previously. That is, check if cache exists, if it doesn't then build it. If it does then just use what's in the cache, as in,
+```
+if (m_imageObject == null)
+{              
+    // Build cache
+}
+else
+{
+    return m_imageObject.Content;
+}
+```
+
+So, first I will explain the ImageObject class. Again, here it is,
+```
+public class ImageObject
+{
+    public string FileName { get; set; }
+    public string ContentType { get; set; }
+    public byte[] Content { get; set; }
+    public DateTime SubmitDate { get; set; }
+
+    public ImageObject(string fn, string tp, byte[] ct, DateTime dt)
+    {
+        FileName = fn;
+        ContentType = tp;
+        Content = ct;
+        SubmitDate = new DateTime(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, 0, DateTimeKind.Utc);
+    }
+
+}
+```
+The class members are, pretty much self-explanatory. It has to have a **Filename**, which is the image path. For the **ContentType** and for this demo, I'm just hard-coding the content type to "image/jpeg". The **Content** is the actual image stored as array of bytes, and this is what we pass back to the browser. The **SubmitDate** is the last modification of the file. Finally, you need to pass all these info to the constructor. 
+
+You can see below how the ImageCacher figured out all these information. The date was from the ```GetLastWriteTime``` method of the ```File``` object. And, the content is from ```ReadAllBytes``` method of the ```File``` object.
+
+Now, going back to the ImageCacher, let's take a look again at the GetImage() method.
+```
+public byte[] GetImage()
+{
+    if (m_imageObject == null)
+    {              
+        DateTime ourFileDate = File.GetLastWriteTime(m_pickedImagePath);
+        ourFileDate = ourFileDate.AddMilliseconds(-ourFileDate.Millisecond);
+
+        byte[] byteArray = File.ReadAllBytes(m_pickedImagePath);
+        m_imageObject = new ImageObject(m_pickedImagePath, "image/jpeg", byteArray, ourFileDate);
+        HttpRuntime.Cache.Insert(m_pickedImagePath, m_imageObject, null, System.Web.Caching.Cache.NoAbsoluteExpiration, System.Web.Caching.Cache.NoSlidingExpiration);
+        return m_imageObject.Content;
+
+    }
+    else
+    {
+        return m_imageObject.Content;
+    }
+}
+```
+You can see that as soon as we read the bytes array,
+```
+byte[] byteArray = File.ReadAllBytes(m_pickedImagePath);
+```
+we, then, pass this byteArray to the constructor of our ImageObject, together with the file path, content type, and its date,
+```
+m_imageObject = new ImageObject(m_pickedImagePath, "image/jpeg", byteArray, ourFileDate);
+```
+Then, we immediately cache it! The cache name or identifier is the path of the filename. If the cache already exists, then just return the cache. 
+
+**Finally**, notice that I have this line twice,
+```
+return m_imageObject.Content;
+```
+inside the if block and another in the else block. I could have put this outside and removed the else block. **BUT** I'm leaving it as it is, because I needed it this way for debugging purposes. So there.
 
 
 
