@@ -4,6 +4,7 @@ title:  "Image Randomizer using C# Caching"
 date:   2019-11-01 07:10:00 -0500
 categories: dotnet csharp
 tags: caching rotator
+published: false
 ---
 
 This is a simple image **randomizer**/**rotator** application implemented in C# and using generic handler. This application continues from and builds on my the two applications from my previous posts: 
