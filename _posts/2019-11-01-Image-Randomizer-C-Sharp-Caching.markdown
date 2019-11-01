@@ -331,9 +331,13 @@ int randomNumber = R.Next(0, collection.Count());
 imagePath = collection.ElementAt(randomNumber);
 ```
 
+## That's It!
+
+You can run the program as it is. It will display random images on your browser even without doing Part 2; except of course, the images are always read from the file system. 
+
 ___
 ## Part 2
-Part 1 app should run correctly and display random images even without doing Part 2; except of course, the images are always read from the file system. In Part 2, I will extend this application to demonstrate how to cache the image itself as a bytearray as soon as they are picked for display.
+Here, in Part 2, I will extend this application to demonstrate how to cache the image itself as a bytearray as soon as they are picked for display.
 
 #### ImageCacher Class
 The ImageCacher class is responsible for creating and caching an image object. Very simple responsibility really. In fact, all it does is take the filename from our handler, and return a bytearray of the image back to the handler. Of course it stores the image in the cache if it's not already in it. 
