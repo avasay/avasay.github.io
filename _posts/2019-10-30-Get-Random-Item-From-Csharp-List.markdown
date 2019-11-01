@@ -10,7 +10,7 @@ tags: List Random
 #### Main Topic: List, Random
 This demo briefly explains how to get random element from a C# ```List<T>```. This example is a ASP.NET console program.
 
-## Application Output
+## Application Demo
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/48992235091/in/album-72157711535844827/" title="random-console-1"><img src="https://live.staticflickr.com/65535/48992235091_4c68ac302e_n.jpg" width="480" height="auto" alt="random-console-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Basically, the console simply displays a random string one line at a time. The random part will be either of these three strings: *biology-1, biology-2,* and *biology-3*.

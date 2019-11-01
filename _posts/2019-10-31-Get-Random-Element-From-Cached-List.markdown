@@ -14,7 +14,7 @@ This is an extension of the previous post [Get Random Element From C# List][get-
 
 Caching a generic collection in .NET is vcommonly mostly used for image processing. For this simple demo though, I will simply cache a hardcoded list, just to show how I do it using ```System.Web.HttpRuntime.Cache``` (In my future post, I will show how to use this list to store info from the file system, cache the list, and use this cache to display random images to the browser). 
 
-## Application Output
+## Application Demo
 When I run my program, I call Handler.ashx directly in my browser. And, this is what I get.
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/48991802768/in/dateposted-public/" title="random-cache-1"><img src="https://live.staticflickr.com/65535/48991802768_f1a31dc5c5_n.jpg" width="640" height="auto" alt="random-cache-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

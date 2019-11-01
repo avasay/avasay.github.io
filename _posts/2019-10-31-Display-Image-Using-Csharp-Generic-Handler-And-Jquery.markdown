@@ -13,7 +13,7 @@ tags: Files Image JQuery Handler
 This is a quick and simple demo of image processing using C# generic handler and JQuery. This can be used to dynamically update images on your page. 
 
 ___
-## The Application Output
+## Application Demo
 Basically, the application displays a *Submit* button. After you click it, it simply displays an image below it.
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/48991670222/in/dateposted-public/" title="jquery-2"><img src="https://live.staticflickr.com/65535/48991670222_1acb608cf0_n.jpg" width="640" height="auto" alt="jquery-2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
