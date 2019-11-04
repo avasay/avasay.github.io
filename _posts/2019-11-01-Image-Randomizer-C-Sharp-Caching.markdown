@@ -331,7 +331,7 @@ int randomNumber = R.Next(0, collection.Count());
 imagePath = collection.ElementAt(randomNumber);
 ```
 
-## That's It!
+### That's It!
 
 You can run the program as it is. It will display random images on your browser even without doing Part 2; except of course, the images are always read from the file system. 
 
@@ -339,7 +339,7 @@ ___
 ## Part 2
 Here, in Part 2, I will extend this application to demonstrate how to cache the image itself as a bytearray as soon as they are picked for display.
 
-#### ImageCacher Class
+### ImageCacher Class
 The ImageCacher class is responsible for creating and caching an image object. Very simple responsibility really. In fact, all it does is take the filename from our handler, and return a bytearray of the image back to the handler. Of course it stores the image in the cache if it's not already in it. 
 
 In your Visual Studio project, add a class called *ImageCacher.cs*. The ImageCacher class looks like this:
@@ -364,20 +364,16 @@ public class ImageCacher
 
             byte[] byteArray = File.ReadAllBytes(m_pickedImagePath);
             m_imageObject = new ImageObject(m_pickedImagePath, "image/jpeg", byteArray, ourFileDate);
-            HttpRuntime.Cache.Insert(m_pickedImagePath, m_imageObject, null, System.Web.Caching.Cache.NoAbsoluteExpiration, System.Web.Caching.Cache.NoSlidingExpiration);
-            return m_imageObject.Content;
-
+            HttpRuntime.Cache.Insert(m_pickedImagePath, m_imageObject, null, System.Web.Caching.Cache.NoAbsoluteExpiration, System.Web.Caching.Cache.NoSlidingExpiration);               
         }
-        else
-        {
-            return m_imageObject.Content;
-        }
+                    
+        return m_imageObject.Content;          
     }
 
 }
 ```
 
-#### The ImageObject Class
+### The ImageObject Class
 In the same file, add the ImageObject class.
 ```
 public class ImageObject
@@ -398,8 +394,8 @@ public class ImageObject
 ```
 You may need to add ```using System.IO``` for using ```File``` object.
 
-#### How to use the Image Cacher
-We call the image cacher in our handler, as I have mentioned. We will need to replace what's inside our else block in code.
+### How to use the Image Cacher
+We call the image cacher inside **GetImageHandler.ashx.cs**, as I have mentioned. We will need to replace what's inside our else block in code.
 ```
 if (pickedImage == "")
 {
@@ -428,22 +424,19 @@ else
 }
 ```
 
-## And That's It!
-You can now run the application and it will now cache the image itself, not just the filenames.
+And that's It! You can now run the application and it will now cache the image itself, not just the filenames.
 
-### But First, Brief Explanation
-The ImageCache class is really no different than any other cacher that I have done previously. That is, check if cache exists, if it doesn't then build it. If it does then just use what's in the cache, as in,
+### Brief Explanation
+The ImageCacher class is really no different than any other cacher that I have done previously. That is, check if cache exists, if it doesn't then build it. If it does then just use what's in the cache, as in,
 ```
 if (m_imageObject == null)
 {              
     // Build cache
 }
-else
-{
-    return m_imageObject.Content;
-}
+return m_imageObject.Content;
 ```
 
+#### About ImageObject
 So, first I will explain the ImageObject class. Again, here it is,
 ```
 public class ImageObject
@@ -467,6 +460,7 @@ The class members are, pretty much self-explanatory. It has to have a **Filename
 
 You can see below how the ImageCacher figured out all these information. The date was from the ```GetLastWriteTime``` method of the ```File``` object. And, the content is from ```ReadAllBytes``` method of the ```File``` object.
 
+#### About ImageCacher
 Now, going back to the ImageCacher, let's take a look again at the GetImage() method.
 ```
 public byte[] GetImage()
@@ -478,14 +472,10 @@ public byte[] GetImage()
 
         byte[] byteArray = File.ReadAllBytes(m_pickedImagePath);
         m_imageObject = new ImageObject(m_pickedImagePath, "image/jpeg", byteArray, ourFileDate);
-        HttpRuntime.Cache.Insert(m_pickedImagePath, m_imageObject, null, System.Web.Caching.Cache.NoAbsoluteExpiration, System.Web.Caching.Cache.NoSlidingExpiration);
-        return m_imageObject.Content;
-
+        HttpRuntime.Cache.Insert(m_pickedImagePath, m_imageObject, null, System.Web.Caching.Cache.NoAbsoluteExpiration, System.Web.Caching.Cache.NoSlidingExpiration);               
     }
-    else
-    {
-        return m_imageObject.Content;
-    }
+                
+    return m_imageObject.Content;
 }
 ```
 You can see that as soon as we read the bytes array,
@@ -498,13 +488,8 @@ m_imageObject = new ImageObject(m_pickedImagePath, "image/jpeg", byteArray, ourF
 ```
 Then, we immediately cache it! The cache name or identifier is the path of the filename. If the cache already exists, then just return the cache. 
 
-**Finally**, notice that I have this line twice,
-```
-return m_imageObject.Content;
-```
-inside the if block and another in the else block. I could have put this outside and removed the else block. **BUT** I'm leaving it as it is, because I needed it this way for debugging purposes. So there.
-
-
+### And That's It!
+I hope it helps a little with your projects!
 
 
 [tccd-site]: https://www.tccd.edu/

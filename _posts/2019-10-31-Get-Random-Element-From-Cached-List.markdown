@@ -20,12 +20,12 @@ When I run my program, I call Handler.ashx directly in my browser. And, this is 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/48991802768/in/dateposted-public/" title="random-cache-1"><img src="https://live.staticflickr.com/65535/48991802768_f1a31dc5c5_n.jpg" width="640" height="auto" alt="random-cache-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 
-On Refresh, I may get the same image again. Or I may get a different one. This is because I only have three things to choose from. For a list with thousands or even hundreds of elements, I may get a different one everytime.
+On Refresh, I may get the same string again. Or I may get a different one. This is because I only have three things to choose from. For a list with thousands or even hundreds of elements, I may get a different one everytime.
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/48991802748/in/dateposted-public/" title="random-cache-2"><img src="https://live.staticflickr.com/65535/48991802748_416cd811b7_n.jpg" width="640" height="auto" alt="random-cache-2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 
-#### Program Setup
+### Program Setup
 In Visual Studio, create the following: 
 1. **A web application**, *ASP.NET Web Application (.NET Framework)*. I called my application, *GetRandomCaching*.
 2. **A generic handler**, and simply call it *Handler.ashx*. 
@@ -180,8 +180,8 @@ returnedString = objectCache.ElementAt(someRandomNumber);
 return returnedString;
 ```
 
-### And that's it!
-I hope it helps you somehow in your projects.
+### And That's It!
+I hope it helps you a little in your projects.
 
 
 [get-random-element]: /dotnet/csharp/2019/10/30/Get-Random-Item-From-Csharp-List.html
