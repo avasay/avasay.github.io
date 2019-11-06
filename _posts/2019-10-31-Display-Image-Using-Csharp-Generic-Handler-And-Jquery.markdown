@@ -4,13 +4,10 @@ title:  "Display Image as ByteArray Using C# Generic Handler and JQuery"
 date:   2019-10-31 09:10:00 -0500
 categories: dotnet csharp
 tags: Files Image JQuery Handler
+comments: true
 ---
 
-#### Project Type: Visual Studio, Web Application, Generic Handler
-#### Main Topic: HttpRuntime Cache, JQuery
-#### Possible application: Image Caching and Processing
-
-This is a quick and simple demo of image processing using C# generic handler and JQuery. This can be used to dynamically update images on your page. 
+This is a quick and simple demo of image processing using C# generic handler and JQuery. This can be used to dynamically update images on your page. <!--more-->
 
 ___
 ## Application Demo

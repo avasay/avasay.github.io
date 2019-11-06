@@ -4,8 +4,9 @@ title:  "Caching in C# Using CacheItemRemoved Callback"
 date:   2019-11-04 08:10:00 -0500
 categories: dotnet csharp
 tags: caching rss httphandler
+comments: true
 ---
-This demo is an example of RSS Caching similar to an application that I did for our organization. Basically, our *News* server lives on a different server separate from our main site. My RSS cacher application caches the RSS data, and re-caches it on a regular basis, dictated by the caching policy.
+This demo is an example of RSS Caching similar to an application that I did for our organization. Basically, our *News* server lives on a different server separate from our main site. My RSS cacher application caches the RSS data, and re-caches it on a regular basis, dictated by the caching policy.<!--more-->
 
 At some point, the data cannot stay in the cache forever, and needs to be reloaded from the RSS site. So, we specified an expiration policy in the application. For this demo though, I specified a cache exipration of 60 seconds. The re-loading and re-caching of the RSS data is a sort of an eternal loop that is a necessity to keep the feed up to date. To make this all possible, I'm using a callback function when the item is removed from cache. This is accomplished using ```System.Web.Caching.CacheItemRemovedCallback``` method.
 
@@ -26,14 +27,14 @@ After you click the button, the feed will load in the iframe using JQuery.
 
 1. button is clicked
 2. application reads the RSS feed from the specified website 
-3. application caches the RSS data in the server, **countdown begins!**. 
-4. application **returns the feed to the browser to be displayed in iframe**
+3. application caches the RSS data in the server, expiration **countdown** begins!. 
+4. application displays XML feed in iframe
 5. cache expires in the server after a specified time and RSS data is removed from the cache
 6. application re-reads and re-caches RSS data again --- this ensures feed is updated
 
 #### **What happens when you click "Get Feed" again?**
 
-You can click "Get Feed" over and over and it will return to you what's already in the cache, provided cache has not expired. Otherwise, when the countdown ends (my 60 seconds is finished), the program goes back to #5 steps above, RSS data is re-loaded and re-cached --- and countdown begins again.
+You can click "Get Feed" over and over and it will return to you what's already in the cache, provided cache has not expired. Otherwise, when the countdown ends (my 60 seconds finishes), the program goes back to step #5 above, RSS data is re-loaded and re-cached --- and countdown begins again.
     
 
 
