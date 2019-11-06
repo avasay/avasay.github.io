@@ -19,7 +19,7 @@ So, when you load the application in the browser, a **Get Feed** button is displ
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49018554803/in/dateposted-public/" title="rss-1"><img src="https://live.staticflickr.com/65535/49018554803_5f212dc50e_n.jpg" width="640" height="auto" alt="rss-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-After you click the button, the feed will load in the iframe using JQuery.
+After you click the button, you'll see the XML file displayed (I'm using a simple JQuery script to load the feed into the iframe).
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49018554778/in/dateposted-public/" title="rss-2"><img src="https://live.staticflickr.com/65535/49018554778_a87fb12f64_n.jpg" width="640" height="auto" alt="rss-2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
@@ -229,7 +229,63 @@ public class Handler : IHttpHandler
     }
 }
 ```
-It creates an RSSCacher objects, and then call its GetFeed method, passing along the RSS website.
+It creates an RSSCacher objects, and then call its GetFeed method, passing along the RSS website. First, though, we set the ContentType,
+```
+context.Response.ContentType = "text/xml";
+```
+This effectively sends our data as well-formatted XML to the browser. Then, we instantiate the RSSCacher like this,
+```
+RSSCacher rssCacher = new RSSCacher();
+```
+Next, we call its ```GetFeed``` method, which is the meat of the RSSCacher object. 
+```
+string feed = rssCacher.GetFeed(@"https://seekingalpha.com/market_currents.xml");
+```
+As you can see, we pass the URL of the RSS site to it. Then, what we get back is the XML feed as string. Finally, we return this string to the index page (index.cshtml) with
+```
+context.Response.Write(feed);
+```
+
+___
+## The Index Page
+The index.cshtml calls the handler within a JQuery, and it looks like this:
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RSS Caching</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("#submit").on('click', function (e) {         
+            $("#myiFrame").attr("src", "https://localhost:44306/Handler.ashx"); 
+        });
+    });
+    </script>
+</head>
+<body>
+    <h2>Seeking Alpha Feed</h2>
+
+    <button id="submit">Get Feed</button>
+    <p></p>
+    <iframe id="myiFrame" src="about:blank" width="720" height="480">
+    </iframe>
+
+</body>
+</html>
+```
+As you can see inside the ```<body>``` tag, I have two objects --- the ```<button>``` and the ```<iframe```> tag. The JQuery script that populates the iframe is
+```
+$("#submit").on('click', function (e) {         
+    $("#myiFrame").attr("src", "https://localhost:44306/Handler.ashx"); 
+});
+```
+I simply use the ```src``` attribute and set it to the RSS URL, in turn, loading the data into the iframe window.
+
+
+### And, that is pretty much it. 
+I hope it helps you a little with what you're trying to do.
+
 
 
 
