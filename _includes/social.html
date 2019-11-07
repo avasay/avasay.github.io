@@ -3,7 +3,7 @@
 <ul class="social-media-list">
 
   {%- if social.gmail -%}
-    <a href="mailto:{{ social.gmail }}"><img src="/assets/images/gmail.jpg"  class="gmail-icon" /></a>
+    <a href="mailto:{{ social.gmail }}"><img src="/assets/images/gmail.jpg"  class="custom-gmail-icon" /></a>
   {%- endif -%}
 
   {%- if social.dribbble -%}<li><a href="https://dribbble.com/{{ social.dribbble | cgi_escape | escape }}" title="{{ social.dribbble | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg></a></li>{%- endif -%}

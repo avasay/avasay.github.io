@@ -2,11 +2,26 @@ ul.social-media-list li {
     float: left;
 }
 
-.gmail-icon {
+.custom-gmail-icon {
     width: 25px;
     height: 25x;
     display: inline-block;
     fill: currentColor;
     padding: 5px 3px 2px 5px;
     vertical-align: text-bottom;
+}
+
+.custom-footer-author-name {
+    font-size: 100%;
+}
+
+.custom-footer-job-title {
+    font-size: 95%;
+    color: #2a7ae2;
+}
+
+.custom-profile-image {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
 }
