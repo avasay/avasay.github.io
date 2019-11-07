@@ -7,10 +7,10 @@ tags: caching rotator
 comments: true
 ---
 
-This is a simple image **randomizer**/**rotator** application implemented in C# and using generic handler. This application continues from and builds on my the two applications from my previous posts: 
+This is a simple image **randomizer**/**rotator** application implemented in C# and using generic handler. This application continues from and builds on my the two applications from my previous posts<!--more-->: 
 
 1. Caching a list from my [Get Random Element From Cached List][get-random-element] post; and 
-2. Displaying a bytearray image from my [Display Image Using CSharp Generic Handler and JQuery][display-image] post. <!--more-->
+2. Displaying a bytearray image from my [Display Image Using CSharp Generic Handler and JQuery][display-image] post. 
 
 Except, this time I'm not using JQuery to display images inside the ```<img>``` tag. This time, I simply display them as a background, like so, 
 ```

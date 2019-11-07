@@ -57,5 +57,24 @@ plugins:
 
 show_excerpts: true
 excerpt_separator: <!--more-->
+author: Alejandrio Vasay
 
-
+# generate social links in footer
+social_links:
+    twitter: AlejandrioVasay
+    github:  avasay
+    rss: rss
+    gmail: rio.vasay@gmail.com
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    linkedin: alejandrio-vasay-0088b279
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
