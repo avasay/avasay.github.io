@@ -21,7 +21,11 @@
 title: avasay | github.io
 email: rio.vasay@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a .NET programmer with a focus on C# and Microsoft SQL Server. I have a Master of Computer Science degree from Texas A&M University and currently working for Tarrant County College in Fort Worth Texas. I also love Django, and I hope to publish a stock market app for Android soon.
+  I'm a full-stack developer on Microsoft .NET platform, with 10+ years experience in servers, 
+  relational databases, APIs and user interface. 
+  I have a Master of Computer Science degree from Texas A&M University and currently 
+  working for Tarrant County College in Fort Worth Texas. I also love Django, 
+  and I hope to publish a stock market app for Android soon.
     
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "avasay.github.io/" # the base hostname & protocol for your site, e.g. http://example.com

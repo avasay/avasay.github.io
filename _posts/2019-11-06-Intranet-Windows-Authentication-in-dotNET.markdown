@@ -5,17 +5,56 @@ date:   2019-11-06 08:10:00 -0500
 categories: dotnet csharp
 tags: windows authentication MVC
 comments: true
-published: false
+published: true
 ---
 
-This is a demo of Windows Authentication implemented in .NET MVC and is similar to what I did for an internal site in our organization. <!--more--> 
+This is a demo of Windows Authentication implemented in .NET MVC and is similar to what I did for an internal site in our organization.  <!--more--> 
 
-Implementing Windows authentication can be tricky depending on your situation or what you're trying to do. To me, it was difficult at first. First off, I needed to re-implement a legacy application developed by a colleague who left the company. Secondly, the most important reason I had to re-implement is because authorized users were hard-coded in the application. Thirdly, the legacy application did not have a source code or documentation; all I had to go by was the application's DLL, and of course, talking to the users themselves. 
+I needed to re-implement a legacy application that *hard-coded* authorized users in the ```Authorize``` attribute of the controller. Secondly, there was no source code or documentation to go by, except the binary DLL. 
 
-Oh, it was also using Forms Authentication, and we needed to move to Windows Authentication. To top it all off, online tutorials, and forums like stackexchange and stackoverflow gave me more questions than answers. 
+Our internal site has one caveat --- it has a public-facing page, where the public can download information. There is a secure portal that only internal (authorized) users can access. Let's call the public page **Home**, and the secure page **Manage**. Because this is an MVC application, I have a Home controller and a Manage controller.
 
-I decided to re-implement the application from scratch, and used the de-compiled source code for guidance.
+To get straight to the point, the following things are the only things I needed to do to get the authentication to work.
+* Added the following to web.config:
 
- Like I have said, your situation might be a little different than mine and you might have a more complex application than mine, but our application's requirements are fairly straightforward --- use an existing Active Directory for authentication. 
-1. 
-2. sds
+```
+<connectionStrings>
+    <add name="ADService" connectionString="LDAP://ldapServer" />
+</connectionStrings>
+
+<authentication mode="Windows" />
+
+<system.web>
+    <membership defaultProvider="AspNetActiveDirectoryMembershipProvider">
+        <providers>
+        <add name="AspNetActiveDirectoryMembershipProvider" 
+            type="System.Web.Security.ActiveDirectoryMembershipProvider, System.Web, Version=4.0.0.0 Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 
+            attributeMapUsername="sAMAccountName"
+            connectionStringName="ADService" 
+            passwordAttemptWindow="10" applicationName="/" 
+            connectionUsername="xxxxxxxx" 
+            connectionPassword="xxxxxxxxxx" />
+        </providers>
+    </membership>
+</system.web>
+```
+
+* Added the ```Authorize``` attribute to my ManageController.
+
+```
+[Authorize(Users = "ALEJANDRIO.VASAY")]
+public class ManageController : Controller
+{
+    // GET: Manage
+    public ActionResult Index()
+    {
+        return View();
+    }
+}
+```
+
+* In IIS, I enabled both Windows Authentication and Anonymous Authentication.
+
+
+
+
