@@ -12,7 +12,7 @@ This is a demo of Windows Authentication implemented in .NET MVC, similar to wha
 
 I needed to re-implement a legacy application to use Role-based instead of User-based authentication. The legacy application had *hard-coded* individual users in the ```Authorize``` attribute of the controller (which was perfectly fine). Unfortunately, because it was deployed as a binary DLL, and the original source code was nowhere to be found, adding new users is impossible. Luckily, our application was a simple Windows Authentication that uses the already existing Active Directory (AD), no SQL membership nor any custom role provider.
 
-In a nutshell, the way our site works, authenticated users --- members of manager role --- need to log in to manage school programs and to manage enrollees to these programs. This application has one important aspect --- a public-facing page --- where the public can register(or log in) and enroll to a program. For the purpose of this demonstration, I'm only showing how I got the Windows Authentication to work.
+The way our site works, authenticated users --- members of manager role --- need to log in to manage school programs and to manage enrollees to these programs. This application has one important aspect --- a public-facing page --- where the public can register(or log in) and enroll to a program. For the purpose of this demonstration, I'm only showing how I got the Windows Authentication to work.
 
 ### Application Output
 When you run the application, you will be shown by the default .NET MVC application. One of the menu options was *Manage* which only authenticated users can access.
@@ -180,7 +180,7 @@ ___
     * Your web server and the AD service provider must be a member of the the same domain. For example, both my webserver and the AD service provider are in AVASAY domain. If you're testing localhost, you need to be logged in as AVASAY\username, where username is your network login. I have never been able to test successfully across domains , even when the two domains have a *Trust* relationship. But, let me know if you've been able to test across domains.
 
 ### That's it!
-This project was a little challenging at first, to say the least, because of the different ways of doing it. Different applications have different levels of complexity when it comes to authentication. But, if your application only requires Windows Authentication by roles in ASP.NET MVC, then this little tutorial is for you, and I do hope it helps you a little in your projects. 
+This project was a little challenging at first, to say the least, because of the different ways people are doing it. Different applications have different levels of complexity when it comes to authentication. But, if your application only requires Windows Authentication by roles in ASP.NET MVC, then this little tutorial is for you, and I do hope it helps you a little in your projects. 
 
 
 
