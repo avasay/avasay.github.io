@@ -365,6 +365,9 @@ imagePath = collection.ElementAt(randomNumber);
 
 You can run the program as it is. It will display random images on your browser even without doing Part 2; except of course, the images are always read from the file system. 
 
+### Source Code
+Download source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
+
 ___
 ## Part 2
 Here, in Part 2, I will extend this application to demonstrate how to cache the image itself as a bytearray as soon as they are picked for display.
