@@ -139,3 +139,8 @@ This is an easier way to display an image. **As a background!** This also saves 
 </body>
 ```
 This technique can be used to display banners on your homepage, that is, banners that change on refresh.  In my next couple of posts, I will demo such application, which dynamically changes the image on a page using cached images.
+
+### Source Code
+Download source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
+
+[project-download]: https://github.com/avasay/GetImageHandler

@@ -7,6 +7,8 @@ tags: caching rotator
 comments: true
 ---
 
+
+
 This is a simple image **randomizer**/**rotator** application implemented in C# and using generic handler. This application continues from and builds on my the two applications from my previous posts<!--more-->: 
 
 1. Caching a list from my [Get Random Element From Cached List][get-random-element] post; and 
@@ -23,6 +25,7 @@ I divided this post into Part 1 and Part 2. Part 2 is on this same post at the b
 2. **Part 2**. Demonstrates caching of the images referred to by those filenames. The image is cached as a bytearray as soon as we randomly picked its name from the list; then we sent it to the browser for display. Here, I created a class to represent an image object; and then, I added a routine to cache this object.
 
 **The important lesson is this**: if you're caching your images for browser display, you don't want to cache everything at once. You only cache what you display; otherwise, you will run out of space. 
+
 
 ___
 ## Application Demo
@@ -41,6 +44,8 @@ On another refresh, another image.
 
 ___
 ## Part 1
+
+
 ### Project Setup
 
 The application is a C# generic handler that the user calls within Razor page. 
@@ -53,7 +58,7 @@ In Visual Studio, create the following:
 
 My project is organized like this:
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/48996279432/in/dateposted-public/" title="randomizer-6"><img src="https://live.staticflickr.com/65535/48996279432_0f1e77c099_n.jpg" width="400" height="auto" alt="randomizer-6"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49084986833/in/dateposted-public/" title="randomizer-8"><img src="https://live.staticflickr.com/65535/49084986833_6a217d0ff1_o.jpg" width="337" height="348" alt="randomizer-8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Note that I also created an **images\banners** folders, with 4 subfolders under it, namely, **biology, default, math,** and **physics**. I also put 3 images in the biology folder. For this demo, I am only going to process the images inside the biology folder. 
 
@@ -102,48 +107,63 @@ ___
 
 The code listing for the code-behind, *GetImageHandler.ashx.cs*, is shown below:
 ```
-public class GetImageHandler : IHttpHandler
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Web;
+
+namespace ImageRandomizer
 {
-
-    public void ProcessRequest(HttpContext context)
+    /// <summary>
+    /// Summary description for Handler
+    /// </summary>
+    public class Handler : IHttpHandler
     {
-        context.Response.Cache.SetCacheability(HttpCacheability.Public);
-        context.Response.ContentType = "image/jpeg";
-        string rootDir = System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath;
 
-        string userFolder = string.Empty;
-
-        if (context.Request.QueryString["subject"] != null)
+        public void ProcessRequest(HttpContext context)
         {
-            userFolder = Path.Combine(@"images\banners", context.Request.QueryString["subject"]);
+            context.Response.Cache.SetCacheability(HttpCacheability.Public);
+            context.Response.ContentType = "image/jpeg";
+            string rootDir = System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath;
+
+            string userFolder = string.Empty;
+
+            if (context.Request.QueryString["subject"] != null)
+            {
+                userFolder = Path.Combine(@"images\banners", context.Request.QueryString["subject"]);
+            }
+            else
+            {
+                userFolder = @"images\banners\default";
+            }
+
+
+            DirInfoCacher dirInfoCacher = new DirInfoCacher(Path.Combine(rootDir, userFolder));
+
+            string pickedImage = dirInfoCacher.pickedImagePath;
+
+            if (pickedImage == "")
+            {
+                context.Response.ContentType = "text/plain";
+                context.Response.Write("");
+            }
+            else
+            {
+                ImageCacher imageCacher = new ImageCacher(pickedImage);
+
+                byte[] byteArray = imageCacher.GetImage();
+                context.Response.BinaryWrite(byteArray);
+            }
+
         }
-        else
-        {
-            userFolder = @"images\banners\default";
-        }
-        
-        DirInfoCacher dirInfoCacher = new DirInfoCacher(Path.Combine(rootDir, userFolder));
-        string pickedImage = dirInfoCacher.pickedImagePath;
 
-        if (pickedImage == "")
+        public bool IsReusable
         {
-            context.Response.ContentType = "text/plain";
-            context.Response.Write("");
-        }
-        else
-        {
-            byte[] byteArray = File.ReadAllBytes(pickedImage);
-            context.Response.BinaryWrite(byteArray);
-        }
-
-
-    }
-
-    public bool IsReusable
-    {
-        get
-        {
-            return false;
+            get
+            {
+                return false;
+            }
         }
     }
 }
@@ -195,73 +215,82 @@ ___
 
 The directory cacher class, *DirInfoCacher*, looks like this.
 ```
-public class DirInfoCacher
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Web;
+
+namespace ImageRandomizer
 {
-    public string pickedImagePath { get; set; }
-
-    public DirInfoCacher(string path)
+    public class DirInfoCacher
     {
-        pickedImagePath = PickImage(path);
-    }
+        public string pickedImagePath { get; set; }
 
-    private string PickImage(string path)
-    {
-        string pickedImage = string.Empty;
-        object cacheList = HttpRuntime.Cache.Get(path) as List<string>;
-
-        if (cacheList == null)
+        public DirInfoCacher(string path)
         {
-            pickedImage = BuildCache(path);
-        }
-        else
-        {
-            pickedImage = PickFromCache(cacheList);
-        }
-        return pickedImage;
-    }
-
-    private string BuildCache(string path)
-    {
-        // Get a list of files from the given path
-        var extensions = new string[] { ".png", ".jpg", ".gif" };
-        var dirInfo = new DirectoryInfo(path);
-
-        if (!dirInfo.Exists)
-        {
-            return "";
+            pickedImagePath = PickImage(path);
         }
 
-        List<System.IO.FileInfo> fileInfoList = dirInfo.GetFiles("*.*").Where(f => extensions.Contains(f.Extension.ToLower())).ToList();
-
-        if (fileInfoList.Count() != 0)
+        private string PickImage(string path)
         {
+            string pickedImage = string.Empty;
+            object cacheList = HttpRuntime.Cache.Get(path) as List<string>;
+
+            if (cacheList == null)
+            {
+                pickedImage = BuildCache(path);
+            }
+            else
+            {
+                pickedImage = PickFromCache(cacheList);
+            }
+            return pickedImage;
+        }
+
+        private string BuildCache(string path)
+        {
+            // Get a list of files from the given path
+            var extensions = new string[] { ".png", ".jpg", ".gif" };
+            var dirInfo = new DirectoryInfo(path);
+
+            if (!dirInfo.Exists)
+            {
+                return "";
+            }
+
+            List<System.IO.FileInfo> fileInfoList = dirInfo.GetFiles("*.*").Where(f => extensions.Contains(f.Extension.ToLower())).ToList();
+
+            if (fileInfoList.Count() != 0)
+            {
+                // Pick random file
+                Random R = new Random();
+                string imagePath = string.Empty;
+                int randomNumber = R.Next(0, fileInfoList.Count());
+                imagePath = fileInfoList.ElementAt(randomNumber).FullName;
+
+                // Now, put all files in the Dictionary
+                List<string> fileInfo2string = fileInfoList.Select(f => f.FullName.ToString()).ToList();
+                HttpRuntime.Cache.Insert(path, fileInfo2string, null, DateTime.Now.AddMinutes(60d), System.Web.Caching.Cache.NoSlidingExpiration);
+                return imagePath;
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        private string PickFromCache(object cacheList)
+        {
+            IList<string> collection = (IList<string>)cacheList;
+
             // Pick random file
             Random R = new Random();
             string imagePath = string.Empty;
-            int randomNumber = R.Next(0, fileInfoList.Count());
-            imagePath = fileInfoList.ElementAt(randomNumber).FullName;
-
-            // Now, put all files in the Dictionary
-            List<string> fileInfo2string = fileInfoList.Select(f => f.FullName.ToString()).ToList();
-            HttpRuntime.Cache.Insert(path, fileInfo2string, null, DateTime.Now.AddMinutes(60d), System.Web.Caching.Cache.NoSlidingExpiration);
+            int randomNumber = R.Next(0, collection.Count());
+            imagePath = collection.ElementAt(randomNumber);
             return imagePath;
         }
-        else
-        {
-            return "";
-        }
-    }
-
-    private string PickFromCache(object cacheList)
-    {
-        IList<string> collection = (IList<string>)cacheList;
-
-        // Pick random file
-        Random R = new Random();
-        string imagePath = string.Empty;
-        int randomNumber = R.Next(0, collection.Count());
-        imagePath = collection.ElementAt(randomNumber);
-        return imagePath;
     }
 }
 ```
@@ -492,6 +521,11 @@ Then, we immediately cache it! The cache name or identifier is the path of the f
 ### And That's It!
 I hope it helps a little with your projects!
 
+### Source Code
+Download source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
+
+
+[project-download]: https://github.com/avasay/ImageRandomizer
 
 [tccd-site]: https://www.tccd.edu/
 

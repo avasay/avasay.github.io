@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Get Random Element From Cached C# List<T>"
+title:  "Get Random Element From Cached List<T>"
 date:   2019-10-31 10:10:00 -0500
 categories: dotnet csharp
 tags: List Random Files Image Caching
@@ -10,6 +10,7 @@ comments: true
 This is an extension of the previous post [Get Random Element From C# List][get-random-element] in which I retrieve a random element from ```List<T>```. This time, though, I will cache the list, and retrieve a random element from the cache, and made sure that on browser refresh the element is retrieved from the cache and not from the list.<!--more--> And this time, instead of a Console project, I will use a Web Application project and a Generic Handler(.ashx file), similar to what I did in my previous post [Display Image as ByteArray Using C# Generic Handler and JQuery][display-image-jquery]. Check out that post to see how to set up ASP.NET Web Application project and Generic Handler.
 
 Caching a generic collection in .NET is commonly used for image processing. For this simple demo though, I will simply cache a hardcoded list, just to show how I do it using ```System.Web.HttpRuntime.Cache``` (In my future post, I will show how to use this list to store info from the file system, cache the list, and use this cache to display random images to the browser). 
+
 
 ## Application Demo
 When I run my program, I call Handler.ashx directly in my browser. And, this is what I get.
@@ -180,6 +181,10 @@ return returnedString;
 ### And That's It!
 I hope it helps you a little in your projects.
 
+### Source Code
+Download source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
+
+[project-download]: https://github.com/avasay/GetRandomCaching
 
 [get-random-element]: /dotnet/csharp/2019/10/30/Get-Random-Item-From-Csharp-List.html
 
