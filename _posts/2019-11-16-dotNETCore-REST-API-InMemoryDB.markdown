@@ -10,7 +10,7 @@ published: true
 
 This demo shows how to build a simple REST API in ASP.NET Core 2.0 using an InMemory database. Don't you sometimes just want to use a dummy database? That is, without actually going through the hassle of building one in your local drive? In a sense, this is also a demo of how to create a REST API in ASP.NET Core. <!--more--> 
 
-In my work, we use a lot of thrid-party API services that we need to get our website working, and I always find myself needing to simulate these services first in my local machine. And I always rely on quick in-memory database that goes away after I'm done using it.
+In my work, we use a lot of third-party API services that we need to get our website working, and I always find myself needing to simulate these services first in my local machine. And I always rely on quick in-memory database that goes away after I'm done using it.
 
 For this demo, I will create a simple *Employee* database. I will create an ASP.NET Core Web API project in Visual Studio Community(2019). And I will test three services: GET, GET{by id}, and POST. The first GET/ service gets all employees, GET/{id} get an employee by Id, and POST/ creates an employee.
 
@@ -130,73 +130,29 @@ As you can see, it is very simple. First we declare a collection of Employees to
 Secondly, we pass a ```DbContextOptions``` object to our DBContext base. This is important. The options, as you will see later, is set as **UseInMemoryDatabase**, so that we can use the memory for our database.
 
 
-### Startup
-Open Startup.cs in the root folder. To use inmemory database, we call ```services.AddDbContext``` inside ```ConfigureServices```. Your final Startup class will look like this:
+### Configure to Use InMemory Database on Startup
+The next thing that we need to do is add a DBContext service in our Startup.cs file. Look for the following method:
 
 ```
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using WebAPIInMemoryDB.Models;
-
-namespace WebAPIInMemoryDB
+public void ConfigureServices(IServiceCollection services)
 {
-    public class Startup
-    {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddDbContext<EmployeeDBContext>(options => options.UseInMemoryDatabase("Employees"));
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-        }
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseHsts();
-            }
-
-            app.UseHttpsRedirection();
-            app.UseMvc();
-        }
-    }
+    services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 }
+```
+And change it to:
+```
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddDbContext<EmployeeDBContext>(options => options.UseInMemoryDatabase("Employees"));
 
+    services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+}
 ```
-
-As you can see, simply adding this
-```
-services.AddDbContext<EmployeeDBContext>(options => options.UseInMemoryDatabase("Employees"));
-```
-tells the application to use memory to create our database. I choose to name my database ```"Employees"``` but you can call it anything. Also, make sure you have this namespace:
+As you can see, we added ```services.AddDBContext``` with the option to use InMemory database. The name of the database is trivial. I choose to name my database ```"Employees"``` but you can call it anything. Also, make sure you have this namespace:
 ```
 using Microsoft.EntityFrameworkCore;
 ```
-to use ```AddDbContext```. And **that's it!** This is all you need to configure your application to use InMemory database. Next, we talk about the controller and how we implement our GETs and POST methods.
+This is all you need to configure your application to use InMemory database! Next, we talk about the controller and how we implement our GETs and POST methods.
 
 ### EmployeesController
 
@@ -208,136 +164,10 @@ Then, we choose our Employee and EmployeeDBContext classes in the next window, a
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49075177891/in/dateposted-public/" title="webapi-1"><img src="https://live.staticflickr.com/65535/49075177891_9e642128fa_o.jpg" width="586" height="210" alt="webapi-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-Type **EmployeesController** for our Controller name. Your EmployeesController class should look like this:
+After you click the **Add** button, it will create EmployeesController class for you. 
 
-```
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using WebAPIInMemoryDB.Models;
-
-namespace WebAPIInMemoryDB.Controllers
-{
-    [Route("api/v1/[controller]")]
-    [ApiController]
-    public class EmployeesController : ControllerBase
-    {
-        private readonly EmployeeDBContext _context;
-
-        public EmployeesController(EmployeeDBContext context)
-        {
-            _context = context;
-        }
-
-        // GET: api/Employees
-        [HttpGet]
-        public IEnumerable<Employee> GetEmployees()
-        {
-            return _context.Employees;
-        }
-
-        // GET: api/Employees/5
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetEmployee([FromRoute] int id)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var employee = await _context.Employees.FindAsync(id);
-
-            if (employee == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(employee);
-        }
-
-        // PUT: api/Employees/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutEmployee([FromRoute] int id, [FromBody] Employee employee)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != employee.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(employee).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!EmployeeExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Employees
-        [HttpPost]
-        public async Task<IActionResult> PostEmployee([FromBody] Employee employee)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            _context.Employees.Add(employee);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetEmployee", new { id = employee.Id }, employee);
-        }
-
-        // DELETE: api/Employees/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEmployee([FromRoute] int id)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var employee = await _context.Employees.FindAsync(id);
-            if (employee == null)
-            {
-                return NotFound();
-            }
-
-            _context.Employees.Remove(employee);
-            await _context.SaveChangesAsync();
-
-            return Ok(employee);
-        }
-
-        private bool EmployeeExists(int id)
-        {
-            return _context.Employees.Any(e => e.Id == id);
-        }
-    }
-}
-```
-**That's it!** Honestly, I didn't have to change anything in this controller. Visual Studio did a perfect job creating this scaffolding. The only thing I needed to change was my *routing*. Note the ```[Route]``` annotation above the class,
+### Optional: Change Route in Controller
+Honestly, I didn't have to change anything in EmployeesController after it was created. Visual Studio did a perfect job creating this scaffolding. The only thing I needed to change was my *routing*. Note the ```[Route]``` annotation above the class,
 
 ```
 [Route("api/[controller]")]
@@ -346,16 +176,64 @@ I changed it to
 ```
 [Route("api/v1/[controller]")]
 ```
-just because most API applications implement routing that way, in case a newer version comes along.
+in case you anticipate a newer version of your API in the future. Otherwise, don't change the routing if you don't care.
 
-### One Final Note
+### Optional: Change Default Launch URL
 To make your project run the Employees URL by default instead of Values, change your **launchSettings.json** (in Properties folder). You only need to change the ```"launchUrl"``` value. So, look for that key and change it to
 
 ```
-
-      "launchUrl": "api/v1/Employees",
-
+"launchUrl": "api/v1/Employees",
 ```
+
+### Run Your Program
+Run the program. Open your REST client (e.g., Boomerang), and enter your URL, as illustrated below (obviously, your localhost URL will have a different port than mine). Choose **GET** in the dropdown, and hit **Send**.
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49090614256/in/dateposted-public/" title="webapi-16"><img src="https://live.staticflickr.com/65535/49090614256_eb85cced0c_o.jpg" width="100%" height="auto" alt="webapi-16"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+ If everything went well, you should get a **SUCCESS 200** response. Experiment with a POST request using any of the following JSON data. And doing a **GET** request afterwards. Good Luck!
+
+ ```
+{
+    "id": 1,
+    "fName": "David",
+    "lName": "Bowie",
+    "age": 81,
+    "address": "123 Main St",
+    "city": "Hollywood",
+    "state": "CA",
+    "zipcode": "33019"
+},
+{
+    "id": 2,
+    "fName": "Madonna",
+    "lName": "Ciccone",
+    "age": 61,
+    "address": "332 Market St",
+    "city": "Detroit",
+    "state": "MI",
+    "zipcode": "48201"
+},
+{
+    "id": 3,
+    "fName": "Cyndi",
+    "lName": "Lauper",
+    "age": 67,
+    "address": "111 George St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zipcode": "11207"
+},
+{
+    "id": 4,
+    "fName": "Justin",
+    "lName": "Bieber",
+    "age": 21,
+    "address": "345 Cleveland St",
+    "city": "Miami",
+    "state": "FL",
+    "zipcode": "33101"
+}
+ ```
 
 ___
 ## That's it, Folks!
