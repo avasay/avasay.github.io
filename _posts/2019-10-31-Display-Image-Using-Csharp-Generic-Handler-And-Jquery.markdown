@@ -7,7 +7,7 @@ tags: Files Image JQuery Handler
 comments: true
 ---
 
-This is a quick and simple demo of image processing using C# generic handler and JQuery. This can be used to dynamically update images on your page. <!--more-->
+This is a quick and simple demo of **image processing** in C# using **Generic Handler** and **JQuery**. This can be used to dynamically update images on your page. <!--more-->
 
 ___
 ## Application Demo

@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 
-This is a quick guide on how to seed or initialize your database in ASP.NET Core 2.0. <!--more--> 
+This is a quick guide on how to **seed** or **initialize** a **database** in ASP.NET Core 2.0. <!--more--> 
 
 ### Project Setup
 I'm assuming you're working inside Visual Studio, and you have a **ASP.NET** project where you have at least **Controllers** and **Models** folders. Refer to my [previous post][web-api-post] for my *Employees Web API* as a a good example of an application that uses a database, but one that is not initialized on start up. In fact, this demo is building on top of that application.
@@ -130,9 +130,12 @@ CreateWebHostBuilder(args).Build().Run();
 I split it into two --- create **host** object in the beginning and execute **host.Run()** at the end.
 
 Next, we do three things in this order:
-1.  Get our service layer --- ```host.Services.CreateScope().ServiceProvider```
-2. Get a database context instance from the dependency injection container --- ```GetRequiredService<EmployeeDBContext>``` 
-3. Call the Seed method --- ```EmployeeDBInitializer.Seed()```
+1.  Get our service layer by calling 
+    * ```host.Services.CreateScope().ServiceProvider```
+2. Get a database context instance from the dependency injection container by calling
+    * ```GetRequiredService<EmployeeDBContext>()```.
+3. Call the Seed method by calling 
+    * ```EmployeeDBInitializer.Seed()```
 
 #### And that's it! 
 That's all you have to do to seed your database in ASP.NET Core. 

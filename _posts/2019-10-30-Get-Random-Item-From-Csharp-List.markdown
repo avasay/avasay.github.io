@@ -7,7 +7,7 @@ tags: List Random
 comments: true
 ---
 
-This demo briefly explains how to get random element from a C# ```List<T>```. This example is a ASP.NET console program.<!--more-->
+This demo briefly explains how to **get random element** from a ```List<T>``` in C#. This example is a ASP.NET **console** program.<!--more-->
 
 
 ## Application Demo

@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 
-This is a demo of Windows Authentication implemented in .NET MVC, similar to what I did for an internal site in our organization. <!--more--> 
+This is a demo of **Windows Authentication** implemented in .NET MVC, similar to what I did for an internal site in our organization. <!--more--> 
 
 I needed to re-implement a legacy application to use Role-based instead of User-based authentication. The legacy application had *hard-coded* individual users in the ```Authorize``` attribute of the controller (which was perfectly fine). Unfortunately, because it was deployed as a binary DLL, and the original source code was nowhere to be found, adding new users is impossible. Luckily, our application was a simple Windows Authentication that uses the already existing Active Directory (AD), no SQL membership nor any custom role provider.
 

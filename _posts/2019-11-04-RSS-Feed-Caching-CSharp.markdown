@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Caching in C# Using CacheItemRemoved Callback"
+title:  "Caching in C# Using Cache Item Removed Callback"
 date:   2019-11-04 08:10:00 -0500
 categories: dotnet csharp
 tags: caching rss httphandler
 comments: true
 ---
-This demo is an example of RSS Caching similar to an application that I did for our organization. Basically, our *News* server lives on a different server separate from our main site. My RSS cacher application caches the RSS data, and re-caches it on a regular basis, dictated by the caching policy.<!--more-->
+This demo is an example of **RSS Caching** with an implementation of **RemovedCallback** function --- trigered when an item is removed from cache. This is very similar to an application that I did for our organization. Basically, our *News* server lives on a different server separate from our main site. My RSS cacher application caches the RSS data, and re-caches it on a regular basis, dictated by the caching policy.<!--more-->
 
 At some point, the data cannot stay in the cache forever, and needs to be reloaded from the RSS site. So, we specified an expiration policy in the application. For this demo though, I specified a cache exipration of 60 seconds. The re-loading and re-caching of the RSS data is a sort of an eternal loop that is a necessity to keep the feed up to date. To make this all possible, I'm using a callback function when the item is removed from cache. This is accomplished using ```System.Web.Caching.CacheItemRemovedCallback``` method.
 
