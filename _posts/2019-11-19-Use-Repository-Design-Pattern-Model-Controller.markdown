@@ -79,11 +79,13 @@ public async Task<IActionResult> PostEmployee([FromBody] Employee employee)
 }
 
 ```
-Well, these methods were scaffolded by Visual Studio for me. Anyway, I picked those three methods on purpose --- my demo will show how I will refactor those three controller actions to use the Repository design pattern.
+These were the de-facto methods that were scaffolded by Visual Studio for me. 
+
+I picked those three methods on purpose --- my demo will show how I will refactor those three controller actions to use the Repository design pattern.
 
 ### DBContext
 
-My **EmployeeDBContext** looked like this:
+My old **EmployeeDBContext** looked like this:
 
 ```
 

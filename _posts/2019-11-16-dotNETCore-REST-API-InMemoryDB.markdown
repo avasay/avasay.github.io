@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 
-This demo shows how to build a simple **REST API** in ASP.NET Core 2.0 using an **InMemory Database**. Don't you sometimes just want to use a dummy database? That is, without actually going through the hassle of building one in your local drive? In a sense, this is also a demo of how to create a REST API in ASP.NET Core. <!--more--> 
+Don't you sometimes just want to use a dummy database? That is, without actually going through the hassle of building one in your local drive? In this post, I show you how to build a simple **REST API** in ASP.NET Core 2.0 **plus** how to use an **InMemory Database** to store your data.  <!--more--> 
 
 In my work, we use a lot of third-party API services that we need to get our website working, and I always find myself needing to simulate these services first in my local machine. And I always rely on quick in-memory database that goes away after I'm done using it.
 
