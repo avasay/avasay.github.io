@@ -41,13 +41,13 @@ Commits all the changes. After commit, you are ready to push to Github.
 Associates your directory with a remote git server and repo. The URL of your repo is that URL that you see when you click the **Clone or download** button. You can execute **git remote -v** to verify that your directory has been associated with your remote repo.
 
 #### git pull --rebase
-This step is somewhat controversial. I only use this because I am pushing directly to a master, so I need to pull from the remote first before pushing. In fact, if I don't use this, it won't let me push. Some people have a way of pushing to their repo without rebasing.
+This step is somewhat controversial. I only use this because I am pushing directly to a master, so I need to pull from the remote first before pushing. In fact, if I don't use this, it won't let me push! Some people have a way of pushing to their repo without rebasing. According to Atlassian, it’s like saying, *"I want to put my changes on top of what everybody else has done."* So, this is perfectly fine for my situation.
 
 #### git push -f origin master
 Because I did a **pull --rebase**, I need to force or use the -f directive.
 
 ### That's it
-Let me know what you think!
+Let me know what you think! 
 
 
 [git-scm]: https://git-scm.com/
