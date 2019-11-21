@@ -5,7 +5,7 @@ date:   2019-11-19 08:10:00 -0500
 categories: dotnet core csharp
 tags: rest api repository dependency injection desgin pattern
 comments: true
-published: true
+published: false
 ---
 
 When I attended the **Microsoft VSLive!&#xae;** conference in Redmond, WA in October of this year, one of the most memorable classes was one in which our instructor asked us, *"Where do people usually put the data access stuff in an MVC application?"*. And everyone says, "in the **controller**!" <!--more--> Now, whether he was asking us personally or just in general, that question stuck with me, and it made me question the past applications that I developed for my work, not just for my MVC applications but for other type of applications as well, and if I made the effort of separating the business logic from the data access layer.
@@ -188,7 +188,7 @@ public async Task<Employee> GetEmployeeAsync(int id)
     return employee;
 }
 ```
-is from the ```GetEmployee([FromRoute] int id)``` method of the existing controller.  Later on, we will remove this database stuff completely out of the controller. 
+is from the ```GetEmployee([FromRoute] int id)``` method of the existing controller.  Later on, we will remove this db context stuff completely out of the controller. 
 
 Next, we talk about how we are going to use this new service in our application.
 
@@ -219,7 +219,7 @@ services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 > Singleton objects are the same for every object and every request (regardless of whether an instance is provided in ConfigureServices)
 
 
-I chose to use ```AddScoped``` because it seems a compromise between the other two. Transient constantly create services (albeit safer because it minimizes affecting others). I read that Singletons are not commonly-used. Let me know what you think!
+I chose to use ```AddScoped``` because it seems a compromise between the other two. Transient constantly create services (albeit safer because it minimizes affecting other instances of the service). I read that Singletons are not commonly-used. Let me know what you think!
 
 I recommend reading more about dependency injection at **[Dependency injection in ASP.NET Core][dependency-doc]** to understand it a little bit better. 
 
@@ -311,26 +311,30 @@ public async Task<IActionResult> PostEmployee([FromBody] Employee employee)
 #### Brief Explanation
 The changes were very simple really.
 
-For the first **GET** method, instead of directly accessing our Employees model, we now call our interface implementation,
+For the first **GET** method, I commented out the line that access the DBContext directly, and I  now call our interface implementation,
 
 ```
+
  return _service.GetEmployee();
-
 //return _context.Employees;
+
 ```
-For the **GET{by id}** method, we also do the same thing,
+For the **GET{by id}** method, I also do the same thing,
 ```
+
 var employee = await _service.GetEmployeeAsync(id);
-
 // var employee = await _context.Employees.FindAsync(id);
-```
-For the **POST** method, we also do the same thing,
-```
-await _service.AddEmployeeAsync(employee);
 
+```
+Smiliarly, for the **POST** method,
+```
+
+await _service.AddEmployeeAsync(employee);
 //_context.Employees.Add(employee);
 //await _context.SaveChangesAsync();
+
 ```
+
 
 ### That's it!
 That's all you need to change in your controller and model to refactor it into using the Repository design. Hope this helps you a bit with your projects!
