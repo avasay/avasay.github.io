@@ -132,7 +132,7 @@ public interface IEmployeeRepository
 This is a very simple interface, really. The ```GetEmployee()``` interface will be used to GET all employees. The ```GetEmployee(int id)``` will be used to GET an employee based on employee id. And ```AddEmployee(Employee emp)``` will be used to create an employee in the database.
 
 #### **Asynchronous Methods** 
-Some methods like **```GetEmployeeAsync()``` and ```AddEmployeeAsync()```** are implemented asynchronously because the EmployeesController was scaffolded that way for us. For example, the **POST** method in the controller calls ```SaveChangesAsync()```, and we need to re-implement them into our interface so that they remain asynchronous. 
+Interface signatures that return ```Task<Employee>``` or just ```Task```, as shown above, are going to be implemented asynchronously to reflect those of the existing EmployeesController, whose GetEmployee(int id) and PostEmployee() methods are also asynchronous. 
 
 ### EmployeeRepository Service
 
@@ -173,12 +173,13 @@ public class EmployeeRepository : IEmployeeRepository
 ```
 
 #### Brief Explanation
-As you can see (or might have guessed), this is where we declare our EmployeeDBContext with, 
+As you can see we declare our DBContext at the top, 
 
 ```
 private readonly EmployeeDBContext _context;
 ```
-What goes in to this methods are, pretty much, a copy-and-paste from the EmployeesController! We even copied the async await operators in the method signature. For example, 
+
+And as you glance over the implementation of the methods, you will notice that they are, pretty much, copy-and-paste from the EmployeesController. For example, the ```FindAsync(id)``` below
 ```
 public async Task<Employee> GetEmployeeAsync(int id)
 {
@@ -187,30 +188,12 @@ public async Task<Employee> GetEmployeeAsync(int id)
     return employee;
 }
 ```
-is a copycat of our controller from earlier which was,
-```
-public async Task<IActionResult> GetEmployee([FromRoute] int id)
-{
-    if (!ModelState.IsValid)
-    {
-        return BadRequest(ModelState);
-    }
+is from the ```GetEmployee([FromRoute] int id)``` method of the existing controller.  Later on, we will remove this database stuff completely out of the controller. 
 
-    var employee = await _context.Employees.FindAsync(id);
-
-    if (employee == null)
-    {
-        return NotFound();
-    }
-
-    return Ok(employee);
-}
-```
-except, of course, those ```if()``` statements. Next, we talk about our new implmentation of **EmployeesController**.
-
+Next, we talk about how we are going to use this new service in our application.
 
 ### Dependency Injection
-Actually, before we change our controller, we need to change our Startup program first! We need to add our **EmployeeRepository** service at start up. Open Startup.cs and look for ```ConfigureServices``` method. It will now change to this,
+Before we change our controller, we need to change our Startup program first! We need to add our **EmployeeRepository** service at start up. Open Startup.cs and look for ```ConfigureServices``` method. It will now change to this,
 ```
 public void ConfigureServices(IServiceCollection services)
 {
@@ -221,22 +204,24 @@ public void ConfigureServices(IServiceCollection services)
     services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 }
 ```
-The call to ```AddScoped``` basically registers your new service. In addition, there is also ```AddSingleton``` and ```AddTransient```. According to Microsoft documentation,
-```
-Scoped lifetime services (AddScoped) are created once per client request (connection).
-``` 
-and
-```
-Transient objects are always different; a new instance is provided to every controller and every service.
 
-Scoped objects are the same within a request, but different across different requests
-
-Singleton objects are the same for every object and every request (regardless of whether an instance is provided in ConfigureServices)
+Basically, we just added this one line,
+```
+services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 ```
 
-I chose to use **Scoped** because my rationale is that for my REST API application that I based this demo on, I only need **the same EmployeeRepository object** within a request, but different across different requests. Let me know what you think!
+```AddScoped``` registers the new service. There are actually 3 ways to *inject* your service --- ```AddScoped```, ```AddSingleton``` and ```AddTransient```.  Honestly, I'm still trying to wrap my head around these different methods. According to some documentations about these methods, documentation,
 
-I recommend reading more about dependency injection at **[Dependency injection in ASP.NET Core][dependency-doc]** to understand it a little bit better. Honestly, I'm still trying to wrap my head around this design in ASP.NET Core.
+> Transient objects are always different; a new instance is provided to every controller and every service.
+
+> Scoped lifetime services (AddScoped) are created once per client request (connection)... Scoped objects are the same within a request, but different across different requests
+
+> Singleton objects are the same for every object and every request (regardless of whether an instance is provided in ConfigureServices)
+
+
+I chose to use ```AddScoped``` because it seems a compromise between the other two. Transient constantly create services (albeit safer because it minimizes affecting others). I read that Singletons are not commonly-used. Let me know what you think!
+
+I recommend reading more about dependency injection at **[Dependency injection in ASP.NET Core][dependency-doc]** to understand it a little bit better. 
 
 Now, let's move on to our EmployeesContoller.
 

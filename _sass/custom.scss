@@ -22,8 +22,10 @@ ul.social-media-list li {
 
 .custom-profile-image {
     border-radius: 50%;
-    width: 100px;
-    height: 129px;
+    width: 150px;
+    height: 145px;
+    //-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    //filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 
 .custom-site-description {

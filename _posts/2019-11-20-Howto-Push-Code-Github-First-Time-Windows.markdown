@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Six Git Commands I Use to Push Code For the First Time To Github on Windows"
+title:  "6 Git Commands I Use to Push First Time Code to Github"
 date:   2019-11-20 10:10:00 -0500
 categories: git
 tags: git github
