@@ -5,6 +5,8 @@ date:   2019-10-24 08:18:37 -0500
 categories: welcome
 comments: true
 published: false
+sitemap:
+  exclude: 'yes'
 ---
 
 # Hello World!

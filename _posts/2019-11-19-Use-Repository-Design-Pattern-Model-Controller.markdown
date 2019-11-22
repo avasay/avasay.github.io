@@ -5,7 +5,7 @@ date:   2019-11-19 08:10:00 -0500
 categories: dotnet core csharp
 tags: rest api repository dependency injection desgin pattern
 comments: true
-published: false
+published: true
 ---
 
 When I attended the **Microsoft VSLive!&#xae;** conference in Redmond, WA in October of this year, one of the most memorable classes was one in which our instructor asked us, *"Where do people usually put the data access stuff in an MVC application?"*. And everyone says, "in the **controller**!" <!--more--> Now, whether he was asking us personally or just in general, that question stuck with me, and it made me question the past applications that I developed for my work, not just for my MVC applications but for other type of applications as well, and if I made the effort of separating the business logic from the data access layer.

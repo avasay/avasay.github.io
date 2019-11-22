@@ -5,6 +5,8 @@ date:   2019-10-30 11:10:00 -0500
 categories: dotnet csharp
 tags: List Random DirectoryInfo Files Caching
 published: false
+sitemap:
+  exclude: 'yes'
 ---
 
 #### Project Type: Web Application, Generic Handler
