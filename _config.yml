@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   I'm a full-stack .NET developer, with 10+ years 
   experience in software, server, 
   database, API and web applications development. 
-  I have a Master of Computer Science degree from Texas A&M University and currently 
-  working for Tarrant County College in Fort Worth Texas. I also love Django, 
+  I earned my Master of Computer Science degree from Texas A&M University. I currently 
+  work as a Web Developer for Tarrant County College in Fort Worth Texas. I love Django, 
   and I hope to publish a stock market app for Android soon.
     
 baseurl: "" # the subpath of your site, e.g. /blog
