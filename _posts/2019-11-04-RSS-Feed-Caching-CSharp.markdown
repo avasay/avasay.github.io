@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Caching in C# Using Cache Item Removed Callback"
+title:  "Caching Using RemovedCallback in C#"
 date:   2019-11-04 08:10:00 -0500
 categories: dotnet csharp
 tags: caching rss httphandler

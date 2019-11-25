@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Use Repository Design Pattern in ASP.NET Core"
+title:  "REST API Using Repository Design Pattern in ASP.NET Core"
 date:   2019-11-19 08:10:00 -0500
 categories: dotnet core csharp
 tags: rest api repository dependency injection desgin pattern

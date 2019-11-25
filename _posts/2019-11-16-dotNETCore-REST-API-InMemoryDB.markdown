@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ASP.NET Core REST API using InMemory Database"
+title:  "REST API using InMemory Database in ASP.NET Core"
 date:   2019-11-16 08:10:00 -0500
 categories: dotnet core csharp
 tags: rest api

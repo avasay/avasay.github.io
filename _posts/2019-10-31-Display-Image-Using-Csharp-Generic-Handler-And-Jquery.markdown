@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Display Image as ByteArray Using C# Generic Handler and JQuery"
+title:  "Display Image as ByteArray in C# and JQuery"
 date:   2019-10-31 09:10:00 -0500
 categories: dotnet csharp
 tags: Files Image JQuery Handler
