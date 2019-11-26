@@ -10,6 +10,9 @@ This demo is an example of **RSS Caching** with an implementation of **RemovedCa
 
 At some point, the data cannot stay in the cache forever, and needs to be reloaded from the RSS site. So, we specified an expiration policy in the application. For this demo though, I specified a cache exipration of 60 seconds. The re-loading and re-caching of the RSS data is a sort of an eternal loop that is a necessity to keep the feed up to date. To make this all possible, I'm using a callback function when the item is removed from cache. This is accomplished using ```System.Web.Caching.CacheItemRemovedCallback``` method.
 
+### Source Code
+Download source code **[here][project-download]**. This project was created using Visual Studio Comminity 2019.
+
 ___
 ## Application Demo
 
@@ -286,8 +289,6 @@ I simply use the ```src``` attribute and set it to the RSS URL, in turn, loading
 ### And, that is pretty much it. 
 I hope it helps you a little with what you're trying to do.
 
-### Source Code
-Download source code **[here][project-download]**. This project was created using Visual Studio Comminity 2019.
 
 [project-download]: https://github.com/avasay/RSSCaching
 

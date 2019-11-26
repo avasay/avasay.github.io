@@ -10,7 +10,10 @@ published: true
 
 This is a quick guide on how to **seed** or **initialize** a **database** in ASP.NET Core 2.0. <!--more--> 
 
-### Project Setup
+### Source Code
+Download source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
+
+## Project Setup
 I'm assuming you're working inside Visual Studio, and you have a **ASP.NET** project where you have at least **Controllers** and **Models** folders. Refer to my [previous post][web-api-post] for my *Employees Web API* as a a good example of an application that uses a database, but one that is not initialized on start up. In fact, this demo is building on top of that application.
 
 ### The Initializer class
@@ -186,8 +189,7 @@ I really don't see anything significantly different in passing the ServiceProvid
 ### And That's it Folks!
 In my next post I will talk about using Repository pattern in our service layer so that there is a separation of business and data logic in our controllers.
 
-### Source Code
-Download source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
+
 
 [project-download]: https://github.com/avasay/WebAPIDepInjectIRepository
 

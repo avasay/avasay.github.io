@@ -9,6 +9,9 @@ comments: true
 
 This is a quick and simple demo of **image processing** in C# using **Generic Handler** and **JQuery**. This can be used to dynamically update images on your page. <!--more-->
 
+### Source Code
+Download source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
+
 ___
 ## Application Demo
 Basically, the application displays a *Submit* button. After you click it, it simply displays an image below it.
@@ -140,7 +143,6 @@ This is an easier way to display an image. **As a background!** This also saves 
 ```
 This technique can be used to display banners on your homepage, that is, banners that change on refresh.  In my next couple of posts, I will demo such application, which dynamically changes the image on a page using cached images.
 
-### Source Code
-Download source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
+
 
 [project-download]: https://github.com/avasay/GetImageHandler

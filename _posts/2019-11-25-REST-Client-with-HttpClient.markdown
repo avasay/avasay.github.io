@@ -12,6 +12,9 @@ Today I will talk about how to build a simple REST client using ```System.Net.Ht
 
 To be able to develop and test a REST **client**, we need a REST **service**! So, for the REST service, I will use my Web API application from my **[previous post][rest-api]**.  During testing, I will have both applications opened in two different Visual Studio instances, basically, two localhosts running side by side.
 
+### Source Code
+Download the source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
+
 ## Project Setup
 
 I created my application in Visual Studio Community 2019. To create the project, I added a new project and selected **ASP.NET Core Web Application**.
@@ -382,8 +385,7 @@ Basically, I added **ExceptionMessage** property. Then, I changed the **OnGet()*
 ### And That's it!
 And that's my simple REST client. Below is a pictorial demo of the application. 
 
-### Source Code
-Download the source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
+
 
 ___
 ## Application Demo

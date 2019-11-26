@@ -16,9 +16,10 @@ For this demo, I will create a simple *Employee* database. I will create an ASP.
 
 I'm using a browser-based REST client plugin for Chrome to test my API --- called **Boomerang**. There are dozens of REST client plugins for various browsers, but this is the best plugin to me and the easiest. You also use your own client to test this. 
 
+### Source Code
+Download source code **[here][project-download]**. This project was created using Visual Studio Community 2019.
 
-
-### Project Setup
+## Project Setup
 
 In Visual Studio (mine was Community 2019), create an ASP.NET Core Web Application project, as illustrated below:
 
@@ -212,8 +213,7 @@ ___
 I hope it works on your side, and I hope it helps you a little. In my next demo, I will talk about how to initialize or seed our InMemory database instead of doing POST request to create the initial data.
 
 
-### Source Code
-Download source code **[here][project-download]**. This project was created using Visual Studio Community 2019.
+
 
 
 ___

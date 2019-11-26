@@ -26,6 +26,8 @@ I divided this post into Part 1 and Part 2. Part 2 is on this same post at the b
 
 **The important lesson is this**: if you're caching your images for browser display, you don't want to cache everything at once. You only cache what you display; otherwise, you will run out of space. 
 
+### Source Code
+Download source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
 
 ___
 ## Application Demo
@@ -524,8 +526,6 @@ Then, we immediately cache it! The cache name or identifier is the path of the f
 ### And That's It!
 I hope it helps a little with your projects!
 
-### Source Code
-Download source code **[here][project-download]**. This project was created in Visual Studio Community 2019.
 
 
 [project-download]: https://github.com/avasay/ImageRandomizer

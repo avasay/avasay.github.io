@@ -12,6 +12,9 @@ When I attended the **Microsoft VSLive!&#xae;** conference in Redmond, WA in Oct
 
 Today, I am showing a demo of how to use the Repository design pattern in your application. This demo is actually a refactor of my Web API application from my **[previous post][web-api-post]**. 
 
+### Source Code
+Download the source code **[here][project-download]**. I also used this source code for my two previous posts, specifically, my demo on [how to use in-memory database][inmemory] and [how to seed your database][seed]. 
+
 ## Common Practice
 That old application of mine had a **Model**-**Controller** relationship, in which I passed **DBContext** directly to the Controller, as illustrated below.
 
@@ -339,8 +342,7 @@ await _service.AddEmployeeAsync(employee);
 ### That's it!
 That's all you need to change in your controller and model to refactor it into using the Repository design. Hope this helps you a bit with your projects!
 
-### Source Code
-Download the source code **[here][project-download]**. I also used this source code for my previous demo, specifically, my demo on **[how to use in-memory database][inmemory]** and **[how to seed your database][seed]**. 
+
 
 
 [project-download]: https://github.com/avasay/WebAPIDepInjectIRepository
