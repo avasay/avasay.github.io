@@ -16,34 +16,6 @@ For this demo, I will create a simple *Employee* database. I will create an ASP.
 
 I'm using a browser-based REST client plugin for Chrome to test my API --- called **Boomerang**. There are dozens of REST client plugins for various browsers, but this is the best plugin to me and the easiest. You also use your own client to test this. 
 
-___
-## Demo
-
-The REST client looks like this in Chrome. You enter the URL in the URL box of the client. And you use the dropdown box to choose what you want to do. 
-
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49075015572/in/dateposted-public/" title="webapi-5"><img src="https://live.staticflickr.com/65535/49075015572_cfd79e0dda_n.jpg" width="100%" height="auto" alt="webapi-5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-In the above example, if we want to **GET** all employees, we enter *https://localhost:44391/api/v1/Employees* in the URL box, and choose GET from the dropdown box. Because we have an empty database first, we'll get an empty response. 
-
-To create an employee, we select **POST** in the dropdown box, and enter a json data in the body, like this:
-
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49074808391/in/dateposted-public/" title="webapi-6"><img src="https://live.staticflickr.com/65535/49074808391_b82964da83_n.jpg" width="100%" height="auto" alt="webapi-6"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-After we hit Send, we get a **Success 201** response from the service, like this:
-
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49074277918/in/dateposted-public/" title="webapi-7"><img src="https://live.staticflickr.com/65535/49074277918_812250f6fb_n.jpg" width="100%" height="auto" alt="webapi-7"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-*201* response means the request has was successfully executed, and a new resource has been created. Notice that included the json data as part of the response.
-
-Let's post another employee. And after we hit send, we get another *Success 201* message, as illustrated below.
-
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49074277853/in/dateposted-public/" title="webapi-10"><img src="https://live.staticflickr.com/65535/49074277853_d79aa7cd54_n.jpg" width="100%" height="auto" alt="webapi-10"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-To test the Get{by id} method, we just select GET in the dropdown box, and append the employee number at the end of the URL, as illustrated below:
-
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49075015422/in/dateposted-public/" title="webapi-12"><img src="https://live.staticflickr.com/65535/49075015422_923b33cab7_n.jpg" width="100%" height="auto" alt="webapi-12"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-For the above example, I wanted to get employee with an Id of **2**. After we hit Send, we get **Success 200**. 
 
 
 ### Project Setup
@@ -242,6 +214,37 @@ I hope it works on your side, and I hope it helps you a little. In my next demo,
 
 ### Source Code
 Download source code **[here][project-download]**. This project was created using Visual Studio Community 2019.
+
+
+___
+## Demo
+
+The REST client looks like this in Chrome. You enter the URL in the URL box of the client. And you use the dropdown box to choose what you want to do. 
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49075015572/in/dateposted-public/" title="webapi-5"><img src="https://live.staticflickr.com/65535/49075015572_cfd79e0dda_n.jpg" width="100%" height="auto" alt="webapi-5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+In the above example, if we want to **GET** all employees, we enter *https://localhost:44391/api/v1/Employees* in the URL box, and choose GET from the dropdown box. Because we have an empty database first, we'll get an empty response. 
+
+To create an employee, we select **POST** in the dropdown box, and enter a json data in the body, like this:
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49074808391/in/dateposted-public/" title="webapi-6"><img src="https://live.staticflickr.com/65535/49074808391_b82964da83_n.jpg" width="100%" height="auto" alt="webapi-6"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+After we hit Send, we get a **Success 201** response from the service, like this:
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49074277918/in/dateposted-public/" title="webapi-7"><img src="https://live.staticflickr.com/65535/49074277918_812250f6fb_n.jpg" width="100%" height="auto" alt="webapi-7"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*201* response means the request has was successfully executed, and a new resource has been created. Notice that included the json data as part of the response.
+
+Let's post another employee. And after we hit send, we get another *Success 201* message, as illustrated below.
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49074277853/in/dateposted-public/" title="webapi-10"><img src="https://live.staticflickr.com/65535/49074277853_d79aa7cd54_n.jpg" width="100%" height="auto" alt="webapi-10"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+To test the Get{by id} method, we just select GET in the dropdown box, and append the employee number at the end of the URL, as illustrated below:
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49075015422/in/dateposted-public/" title="webapi-12"><img src="https://live.staticflickr.com/65535/49075015422_923b33cab7_n.jpg" width="100%" height="auto" alt="webapi-12"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+For the above example, I wanted to get employee with an Id of **2**. After we hit Send, we get **Success 200**. 
+
 
 [project-download]: https://github.com/avasay/WebAPI.git
 
