@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 
-Today I will talk about how to build a simple REST client using ```System.Net.Http.HttpClient``` using Razor Pages in ASP.NET Core. ```HttpClient``` is an alternative to using the ```RestSharp``` library that people use in the *ASP.NET Standard Framework*. This application acts and behaves like a browser-based REST client plugins, such as Boomerang, Advanced Rest Client, Talend API Tester, etc., but not as sophisticated. <!--more-->  
+Today I will talk about how to build a simple **REST client** using ```System.Net.Http.HttpClient``` using **Razor Pages** in **ASP.NET Core**. ```HttpClient``` is an alternative to using the ```RestSharp``` library that people use in the *ASP.NET Standard Framework*. This application acts and behaves like a browser-based REST client plugins, such as Boomerang, Advanced Rest Client, Talend API Tester, etc., but not as sophisticated. <!--more-->  
 
 To be able to develop and test a REST **client**, we need a REST **service**! So, for the REST service, I will use my Web API application from my **[previous post][rest-api]**.  During testing, I will have both applications opened in two different Visual Studio instances, basically, two localhosts running side by side.
 
@@ -21,13 +21,13 @@ I created my application in Visual Studio Community 2019. To create the project,
 
 ___
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857033/in/dateposted-public/" title="client-1"><img src="https://live.staticflickr.com/65535/49123857033_2e727dd8c3_o.jpg" width="1024" height="710" alt="client-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857033/in/dateposted-public/" title="client-1"><img src="https://live.staticflickr.com/65535/49123857033_2e727dd8c3_o.jpg" width="100%" height="auto" alt="client-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 ___
 
 Then you choose **Choose Web Application** on the next page, as shown below, because we're not really creating an API or MVC project. Although, you can extend this project to any projects really.
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857108/in/dateposted-public/" title="client-2"><img src="https://live.staticflickr.com/65535/49123857108_87924c0f4a_o.jpg" width="1024" height="710" alt="client-2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857108/in/dateposted-public/" title="client-2"><img src="https://live.staticflickr.com/65535/49123857108_87924c0f4a_o.jpg" width="100%" height="auto" alt="client-2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 
 Below is the project files created for you by Visual Studio. 
@@ -38,22 +38,22 @@ ___
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857123/in/dateposted-public/" title="client-3"><img src="https://live.staticflickr.com/65535/49123857123_f002218cbc_o.jpg" width="232" height="419" alt="client-3"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 To quickly summarize, this is what I'm going to do:
-1. Modify **Index** page/model
-2. Create **Response** page/model
-3. Modify **Error** page/model
+1. Modify **Index** page/model --- calls the web service 
+2. Modify **Error** page/model --- displays error messages
+3. Create **Response** page/model --- displays response from web service
 
 
 You can immediately run the program, as shown below. As you can see, this is the Index page with Boostrap styling.
 
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124538837/in/dateposted-public/" title="client-4"><img src="https://live.staticflickr.com/65535/49124538837_47ca9ba011_o.jpg" width="835" height="550" alt="client-4"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124538837/in/dateposted-public/" title="client-4"><img src="https://live.staticflickr.com/65535/49124538837_47ca9ba011_o.jpg" width="100%" height="auto" alt="client-4"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 ___
 
  I will change this Index page so that the user can enter a URL of the web service, choose a method from a dropdown box, and enter a json data in a text box, as illustrated below.
 
  
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857178/in/dateposted-public/" title="client-5"><img src="https://live.staticflickr.com/65535/49123857178_290e49263f_o.jpg" width="541" height="534" alt="client-5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857178/in/dateposted-public/" title="client-5"><img src="https://live.staticflickr.com/65535/49123857178_290e49263f_o.jpg" width="541" height="auto" alt="client-5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 ___
 ## Index Page
@@ -121,7 +121,7 @@ ___
 Our default IndexModel is very simple, it's got one method called **OnGet()**. We're going to add some public variables to get the model binding to work, as shown below:
 
 ```
-sing System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
