@@ -391,11 +391,11 @@ ___
 ## Application Demo
 When we run our client application, this is what we get.  
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857178/in/dateposted-public/" title="client-5"><img src="https://live.staticflickr.com/65535/49123857178_290e49263f_o.jpg" width="541" height="534" alt="client-5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857178/in/dateposted-public/" title="client-5"><img src="https://live.staticflickr.com/65535/49123857178_290e49263f_o.jpg" width="541" height="auto" alt="client-5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 As you can see, there are 3 boxes --- a textbox for URL, a dropdown to select either GET, POST, PUT, or DELETE, and a textarea for the Json data. 
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124352836/in/dateposted-public/" title="client-6"><img src="https://live.staticflickr.com/65535/49124352836_dd1ef9ceb1_o.jpg" width="541" height="534" alt="client-6"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124352836/in/dateposted-public/" title="client-6"><img src="https://live.staticflickr.com/65535/49124352836_dd1ef9ceb1_o.jpg" width="541" height="auto" alt="client-6"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 As illustrated above, I entered the URL of my web service (running off of another open Visual Studio). Let's disect that URL for a moment,
 
@@ -407,23 +407,23 @@ Because I want to get all employees, I simply say, ```/api/v1/Employees```. If I
 
 Below, I show the result of that request after clicking **Submit**.
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124538907/in/dateposted-public/" title="client-7"><img src="https://live.staticflickr.com/65535/49124538907_0392d325df_o.jpg" width="541" height="534" alt="client-7"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124538907/in/dateposted-public/" title="client-7"><img src="https://live.staticflickr.com/65535/49124538907_0392d325df_o.jpg" width="541" height="auto" alt="client-7"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Employee with id 2
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124538942/in/dateposted-public/" title="client-8"><img src="https://live.staticflickr.com/65535/49124538942_cf221513e4_o.jpg" width="541" height="534" alt="client-8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124538942/in/dateposted-public/" title="client-8"><img src="https://live.staticflickr.com/65535/49124538942_cf221513e4_o.jpg" width="541" height="auto" alt="client-8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 result
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124538982/in/dateposted-public/" title="client-9"><img src="https://live.staticflickr.com/65535/49124538982_91e631e7e4_o.jpg" width="541" height="534" alt="client-9"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124538982/in/dateposted-public/" title="client-9"><img src="https://live.staticflickr.com/65535/49124538982_91e631e7e4_o.jpg" width="541" height="auto" alt="client-9"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 creating employee
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124352981/in/dateposted-public/" title="client-10"><img src="https://live.staticflickr.com/65535/49124352981_a424254bf0_o.jpg" width="541" height="534" alt="client-10"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49124352981/in/dateposted-public/" title="client-10"><img src="https://live.staticflickr.com/65535/49124352981_a424254bf0_o.jpg" width="541" height="auto" alt="client-10"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 result
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857418/in/dateposted-public/" title="client-11"><img src="https://live.staticflickr.com/65535/49123857418_065ba008bd_o.jpg" width="541" height="507" alt="client-11"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/135765356@N07/49123857418/in/dateposted-public/" title="client-11"><img src="https://live.staticflickr.com/65535/49123857418_065ba008bd_o.jpg" width="541" height="auto" alt="client-11"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 
 
