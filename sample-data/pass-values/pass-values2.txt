@@ -1,0 +1,13 @@
+﻿@page "/"
+@inject NavigationManager navigationManager
+<h2>Employee Management System</h2>
+<button @onclick="() => ButtonHandler()">Submit</button>
+@code {
+    private int employeeId = 12345;
+    private string lastName = "vasay";
+    private void ButtonHandler()
+    {
+        navigationManager
+             .NavigateTo($"/updateemployee/{employeeId}");
+    }
+}

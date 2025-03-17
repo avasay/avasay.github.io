@@ -1,0 +1,7 @@
+﻿@page "/updateemployee/{Id:int?}/{LName?}"
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+    [Parameter]
+    public string? LName { get; set; }
+}

@@ -1,0 +1,23 @@
+﻿@page "/"
+@inject NavigationManager navigationManager
+@inject MyStateContainer myStateContainer
+@implements IDisposable
+<PageTitle> Employee Management System</PageTitle>
+<h1> Employee Management System</h1>
+<button @onclick="() => HandleButton()">Display Employee</button>
+@code {
+    private Employee employee = new Employee { Id = 700, Department = 3, LName = "Johnson", FName = "Dwayne" };
+    protected override void OnInitialized()
+    {
+        myStateContainer.OnStateChange += StateHasChanged;
+    }
+    private void HandleButton()
+    {
+        myStateContainer.SetValue(employee);
+        navigationManager.NavigateTo("/displayemployee");
+    }
+    public void Dispose()
+    {
+        myStateContainer.OnStateChange -= StateHasChanged;
+    }
+}

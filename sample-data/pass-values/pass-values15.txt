@@ -1,0 +1,7 @@
+﻿public class Employee
+{
+	public int Id { get; set; } = 1;
+	public int Department { get; set; } = 0;
+	public string LName { get; set; } = string.Empty;
+	public string FName { get; set; } = string.Empty;
+}
