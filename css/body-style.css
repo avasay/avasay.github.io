@@ -1,4 +1,7 @@
-﻿
+﻿html {
+    scroll-behavior: smooth;
+}
+
 #site-logo {
     display: flex;
     align-items: center;

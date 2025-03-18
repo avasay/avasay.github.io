@@ -5,11 +5,11 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-Nkxagmoqju8oRJC\/whJ3cUch4oV4aQa7B9u3fGO5WGM=",
+      "hash": "sha256-t0+hNDJJyNMr0b\/DG0R7oS05x+z3JTA4QamgzxiSqqA=",
       "url": "css\/body-style.css"
     },
     {
-      "hash": "sha256-68kxOW8fy5nc3gD62CsKLQ6X4ItFJkmLsNI2o8ogHd0=",
+      "hash": "sha256-7FwtH5QXSIfeEqOALKhfflFkcirhqXxK3Gu1vKWPbjg=",
       "url": "css\/card-styles.css"
     },
     {
@@ -165,6 +165,18 @@
       "url": "img\/InMemory9.jpg"
     },
     {
+      "hash": "sha256-n57z0ukTnR2QDeJXHjnNGMU4ZwwVu+\/xB3wyywbECaY=",
+      "url": "img\/news\/AI-enhanced-gaming_50.jpg"
+    },
+    {
+      "hash": "sha256-gZKZXsH6KIzCoLg\/DHQToAw07ElycuhlbP6bQvI9jtg=",
+      "url": "img\/news\/AI-enhanced-gaming_60pct.jpg"
+    },
+    {
+      "hash": "sha256-4kdtxB8Wf+YhhC03OTRqEqDB3y52QGDYa6cUoAbJs9g=",
+      "url": "img\/news\/NvidiaGtc_60.jpg"
+    },
+    {
       "hash": "sha256-Q6TYrxbX3JWKpl7B99i4IEMcwduiIF70x+fNJamIJis=",
       "url": "img\/Nuget-1.jpg"
     },
@@ -317,7 +329,7 @@
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
     },
     {
-      "hash": "sha256-A+O5x5bN8+iiL4uyxUZEJoHKZicS6ds6puFoPZI\/nHw=",
+      "hash": "sha256-r4qalWg2MRFrI8oVrpnLRhvFjjfTNYJz8L5jDDHwtWc=",
       "url": "index.html"
     },
     {
@@ -893,7 +905,7 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-qwdfqdlJtfHe5DLHdjNExI8QH4V+ro9EKc0UG00+Nyw=",
+      "hash": "sha256-37nGc6G3j2ZcAulloOGLhnXgqlRAEC+gQD3fqWSVkUY=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -901,7 +913,7 @@
       "url": "_framework\/Brism.wasm.br"
     },
     {
-      "hash": "sha256-dNL5wzdDH3bUa0BseIGMCECI68dAxmEz2iurlOLMikg=",
+      "hash": "sha256-tFxRc3GXlE6LNQCxiR0OSRInreWe8dWBrVjQTS7ysrA=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -1005,7 +1017,7 @@
       "url": "_framework\/System.Private.CoreLib.wasm.br"
     },
     {
-      "hash": "sha256-X33XVgMCCbfWJxm5i\/oZlRt+HDtYUjAheWAx1MwxnRE=",
+      "hash": "sha256-371ZStBx4Xz0XxFN3yxawQSNOabfC7YLIHPIO6KqNDE=",
       "url": "_framework\/System.Private.Uri.wasm.br"
     },
     {
@@ -1201,5 +1213,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "FcCFi9\/C"
+  "version": "B6uVUTsQ"
 };
