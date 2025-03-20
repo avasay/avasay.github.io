@@ -59,7 +59,7 @@
 
 .home-apps-card {
     flex: 1 1 calc(25% - 2rem); /* 4 cards per row */
-    min-width: 250px;
+    /*min-width: 250px;*/
     background: white;
     border-radius: 8px;
     overflow: hidden;
@@ -73,7 +73,7 @@
 
     .home-apps-card img {
         width: 100%;
-        height: 180px;
+        /*height: 180px;*/
         object-fit: cover;
         border-bottom: 1px solid #eee;
     }
@@ -111,7 +111,12 @@
 
 @media (max-width: 480px) {
     .home-apps-card {
-        flex-basis: 100%; /* 1 card */
+        /* 2 cards */
+        /*flex-basis: calc(50% - 2rem);*/
+        flex-basis: 35%;
+
+        /* 1 card */
+        /*flex-basis: 100%; */
     }
 }
 
@@ -119,7 +124,7 @@
 /* ================================
      Homepage News/Blog Section 
    ================================ */
-.home-card-container {
+        .home-card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;

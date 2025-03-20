@@ -122,7 +122,19 @@
     margin-top: 50px;
 }
 
-        
+    .post .featured-image {
+        width: 75%;
+        height: 350px;
+        object-fit: cover;
+    }        
+
+    .post a {
+        color: blue;
+    }
+
+    .post a:visited {
+        color: orangered;
+    }
 /* Mobile Styles */
 
 @media (min-width: 577px) and (max-width: 991px) 
@@ -202,13 +214,23 @@
     margin-top: 50px;
 }
 
+    .blog-page-container a {
+        color: blue;
+    }
+    .blog-page-container a:hover {
+        color: orangered;
+        text-decoration: underline;
+    }
 
-.tags-container {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-}
+    .blog-page-container a:visited {
+        color: orangered;
+    }
+    .tags-container {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
 
 .tag {
     background-color: #e0e0e0;
@@ -217,13 +239,36 @@
     font-size: 0.8rem;
     color: #333;
     transition: background-color 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
 }
 
     .tag:hover {
-        background-color: #d0d0d0;
-        cursor: default;
+        background-color: #007bff;
+        color: white;
+        transform: translateY(-1px);
     }
+/* Search results page */
+.search-results {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
 
+.tag-highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.no-results {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
 
 .pagination {
     margin-top: 2rem;
@@ -232,3 +277,33 @@
     justify-content: center;
 }
 
+
+
+.breadcrumb {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+    .breadcrumb a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+        .breadcrumb a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+.separator {
+    margin: 0 0.25rem;
+}
+
+.current-page {
+    color: #333;
+    font-weight: 500;
+}
