@@ -1,3 +1,56 @@
+
+/* Code block container */
+.code-block {
+    position: relative;
+    background: #282a36; /* Dark background */
+    color: #f8f8f2; /* Light text */
+    border-radius: 6px;
+    padding: 1rem 1rem 1rem 3.5rem; /* Left padding for line numbers */
+    margin: 1rem 0;
+    overflow-x: auto;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.875em;
+    line-height: 1.6;
+    tab-size: 4;
+}
+
+    /* Line numbers */
+    .code-block::before {
+        content: attr(data-line-numbers);
+        position: absolute;
+        left: 0;
+        top: 1rem;
+        width: 2.5rem;
+        padding-right: 1rem;
+        text-align: right;
+        color: #6272a4; /* Muted color for line numbers */
+        border-right: 1px solid #44475a; /* Separator */
+        user-select: none;
+        line-height: 1.4; /* Match code line height */
+        white-space: pre; /* Preserve line breaks */
+    }
+
+/* Inline code */
+code:not(.code-block code) {
+    font-size: 87.5%;
+    color: #e83e8c;
+    background: #f8f9fa;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: inherit;
+}
+
+/* Code block content */
+.code-block code {
+    color: inherit;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+    white-space: pre;
+}
+
+
 /*
         @media (min-width: 576px) {
   .container, .container-sm {
