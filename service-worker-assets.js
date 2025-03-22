@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-Y0JS1OVLn77em5b7DQV8dkekn7heokYZwRmRUNBypa0=",
+      "hash": "sha256-1V7QnqfLh39JjkE4L3PKBcoBT6Y4RGTa403eTOevrko=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
-      "hash": "sha256-h1atyaz0HI1j8H\/J3kIoafEPBZQtLOkMrNi5A2FFoVw=",
+      "hash": "sha256-1n5Guug1lPMB4X4xs\/VPIkii2Lxh67AbuloIiPLcuCQ=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -173,7 +173,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-fb7zkf39riKQJRhkdqtpa0n28rx2f2jGKMiVJb1Ybdk=",
+      "hash": "sha256-st9o26md4vf8spTfr6mBs4LVDnyWEJ20NFTJjv6hOBM=",
       "url": "css\/body-style.css"
     },
     {
@@ -211,6 +211,14 @@
     {
       "hash": "sha256-4fOCcOlSil2LWjkwBWN1Z\/ZFs+RjxJDumv9UA7lWtH4=",
       "url": "img\/apps\/todo-app_60.jpg"
+    },
+    {
+      "hash": "sha256-yU+pQhUSHbwvcuX81d19N3DV7fucrSvsnRgdyIs4jYo=",
+      "url": "img\/Blazor-AI_80.jpg"
+    },
+    {
+      "hash": "sha256-3a3noxWm9cJvX322aA5GbaLLqTJJxRQqxbRTDLdYnSI=",
+      "url": "img\/Blazor-AI_NoBG.png"
     },
     {
       "hash": "sha256-EoTigUy228h3sLr2aF6Oulf4ZdR3O0a9FGXQPF02td8=",
@@ -423,6 +431,10 @@
     {
       "hash": "sha256-I2Qen1p7GQfm4ESxPT5IrxINLmn6uajk2hiCh+ZM6eA=",
       "url": "img\/REST-API-Application-1.jpg"
+    },
+    {
+      "hash": "sha256-IKU3Bfmwnyo1nqyweYzX5hzdbKfDhG07CaKHwWh0Jio=",
+      "url": "img\/sailboat_80.jpg"
     },
     {
       "hash": "sha256-knGQQfhwsVTdsVwlSvfSnny2Xr2dz54T2NunqZSfvrk=",
@@ -1061,5 +1073,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "y4G3HgYT"
+  "version": "aVNlX7zk"
 };
