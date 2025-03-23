@@ -178,6 +178,13 @@ html, body {
     .post a:visited {
         color: orangered;
     }
+
+    .post img {
+        width: 100%;
+        height: auto;
+    }
+
+
 /* Mobile Styles */
 
 

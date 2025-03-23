@@ -4024,7 +4024,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0rem 1rem;
+  padding: 0.7rem 1rem;
 }
 
 .navbar .container,
@@ -4179,11 +4179,6 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
-
-    .navbar {
-
-        padding: 0.7rem 1rem;
-    }
 }
 
 @media (min-width: 992px) {
