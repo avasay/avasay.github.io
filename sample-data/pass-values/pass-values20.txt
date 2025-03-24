@@ -1,0 +1,14 @@
+﻿@page "/"
+<PageTitle>Employee Management System</PageTitle>
+<h1>Employee Management System</h1>
+<p></p>
+<CascadingValue Value="@id" Name="Department">
+    <CascadingValue Value="@minSal" Name="MinSalary">
+        <DisplayDepartment></DisplayDepartment>
+    </CascadingValue>
+</CascadingValue>
+@code 
+{
+    private int id = 3;
+    private int minSal = 60000;
+}

@@ -1,0 +1,4 @@
+﻿int employeeId = 12345;
+string lastName = "Smith"
+:
+navigationManager.NavigateTo($"/updateemployee/{employeeId}/{lastName}");
