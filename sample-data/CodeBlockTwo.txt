@@ -1,5 +1,0 @@
-﻿@{
- mycode = @"
-//
-";}
-<CodeBlockTwo Code="@mycode" LineCount="15" />

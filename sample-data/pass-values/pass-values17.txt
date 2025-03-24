@@ -1,5 +1,0 @@
-﻿<p>Employee Department: @Employee.Department</p>
-@code {
-    [Parameter]
-    public Employee? Employee { get; set; }
-}

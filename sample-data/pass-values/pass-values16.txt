@@ -1,4 +1,0 @@
-﻿<DisplayEmployee Employee = "@employee" />
-@code {
-    private Employee employee = new Employee { Id = 700, Department = 3, LName = "Johnson", FName = "Dwayne" };
-}
