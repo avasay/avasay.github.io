@@ -28,7 +28,7 @@ html, body {
     width: 100%;
     height: 400px;
     background-color: bisque;
-    background-image: url("/img/sailboat_80.jpg");
+    background-image: url("/img/octocat-2_80.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -47,18 +47,20 @@ html, body {
     margin-top: 50px;
     margin-left: 35px;
     width: 75%;
+    padding: 10px;
+    
 }
 
     .hero-text h1 {
         font-size: 2.5rem;
         color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
         
     }
     .hero-text p {
         font-size: 1.5rem;
         color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.9);
        
     }
 
@@ -187,8 +189,6 @@ html, body {
 
 /* Mobile Styles */
 
-
-
 @media (min-width: 577px) and (max-width: 991px) 
 {
     .home-hero {
@@ -236,19 +236,17 @@ html, body {
         margin-left: 10px;
         width: 75%;
     }
-    .hero-text h1 {
-        font-size: 1.5rem;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        
-    }
+        .hero-text h1 {
+            font-size: 1.5rem;
+            color: white;
+            text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+        }
 
-    .hero-text p {
-        font-size: 1.5rem;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        
-    }
+        .hero-text p {
+            font-size: 1.5rem;
+            color: white;
+            text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.9);
+        }
 
     .body-main-content {
         flex-direction: column;
@@ -402,4 +400,40 @@ html, body {
 }
 
 
+
+
+/* NavSearch styling */
+.nav-search {
+    position: relative;
+    margin-left: 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: none; /* Hide on desktop */
+}
+
+.search-input {
+    width: 200px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    margin-top: 18px;
+}
+
+    .search-input:focus {
+        outline: none;
+        border-color: #007bff;
+    }
 

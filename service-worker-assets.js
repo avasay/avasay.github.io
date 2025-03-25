@@ -33,15 +33,15 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-m7nFtEAuEVDfkGJOVsGAFySF08oB3LCXPRkE14eTiio=",
+      "hash": "sha256-2u26Zx3ltepDpvpHXV784UEDKBfzrzQBUwDUMtETuGw=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
-      "hash": "sha256-xwqOw9ksjIJeL\/HJNIvz5JVXV1knnT9eex9fiqGhM74=",
+      "hash": "sha256-B62ps\/\/Y6SUFdREaMt1K6BM\/faKJbLVyUr+mzcgzP1U=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
-      "hash": "sha256-Y7WGAoA44kcp692qysgJzkAfs2EbSklWirtu\/OtVJFc=",
+      "hash": "sha256-O2G1\/P7UlQ\/1u+SHn6cWPI1OeUffjWSzy45RrmkSJKo=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm.br"
     },
     {
@@ -137,7 +137,7 @@
       "url": "_framework\/System.Net.Primitives.wasm.br"
     },
     {
-      "hash": "sha256-0VpuRz3JE921L8xJ1JIbiqRfVUwj9h7UyARo0suNrAE=",
+      "hash": "sha256-\/khDIsBDw4NQnBMLxOpK0PjpSaJoXM50xgVwwz5N6nQ=",
       "url": "_framework\/System.Private.CoreLib.wasm.br"
     },
     {
@@ -149,7 +149,7 @@
       "url": "_framework\/System.Runtime.InteropServices.JavaScript.wasm.br"
     },
     {
-      "hash": "sha256-Cq+MH8s\/nAX8b3JZbY2ad0Y0QZpNiS0a5VMNYcvlLss=",
+      "hash": "sha256-b3wsHfx3AawQVp1C8Y7Zq\/AdPrcS1hHyMCensaUvJ7Q=",
       "url": "_framework\/System.Runtime.wasm.br"
     },
     {
@@ -177,7 +177,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-PAvY0rGa1M5rxxq1JkH6AwtzN5yUJ9ddD3H3Fxk8gcE=",
+      "hash": "sha256-3EqHO+WaggXhQvjj4r6U\/tvEzCD2\/n7waZJwUsuJ6Qg=",
       "url": "css\/body-style.css"
     },
     {
@@ -371,6 +371,10 @@
     {
       "hash": "sha256-Q6TYrxbX3JWKpl7B99i4IEMcwduiIF70x+fNJamIJis=",
       "url": "img\/Nuget-1.jpg"
+    },
+    {
+      "hash": "sha256-PjkRHTmkwz3luj30vXL++gEpbPPTwCRZq7LsIH0Py2Y=",
+      "url": "img\/octocat-2_80.jpg"
     },
     {
       "hash": "sha256-Obe9Ep1M6ao+OMijt\/++uh8922C0TRtSXep3hYj5rEA=",
@@ -1081,5 +1085,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "5OIa\/TTX"
+  "version": "eRHs+5E\/"
 };
