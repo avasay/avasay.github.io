@@ -181,7 +181,7 @@
       "url": "css\/body-style.css"
     },
     {
-      "hash": "sha256-Pu1Er0UZTjNXWLgrKmdWy6glmbMnOjeHLL+MajxeEKU=",
+      "hash": "sha256-CgK7POQOn+Rb6f0LhIh5+VaDl1WbJiIp8ftAhX4lVfE=",
       "url": "css\/card-styles.css"
     },
     {
@@ -1085,5 +1085,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "eRHs+5E\/"
+  "version": "LEr+BZyG"
 };

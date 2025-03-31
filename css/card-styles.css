@@ -4,22 +4,29 @@
      News/Blog Section 
    ================================ */
 .card-container {
-    column-count: 3; /* Display 3 columns on desktop */
-    column-gap: 20px; /* Space between columns */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display 3 columns on desktop */
+    gap: 20px; /* Space between cards */
     width: 100%;
 }
 
 /* Make each card break inside avoid to prevent splitting across columns */
 .card {
-    break-inside: avoid;
-    margin-bottom: 20px; /* Space between cards */
-    display: inline-block; /* Important for proper column flow */
-    width: 100%; /* Take full width of column */
+    width: 100%;
     box-sizing: border-box;
-    overflow: hidden; /* Contain any overflowing content */
-    border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: card shadow */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure interactive elements container doesn't break across columns */
+.card > div, .tags-container {
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%;
 }
 
     /* Make images responsive */
@@ -32,13 +39,13 @@
 /* Add media queries for responsive behavior */
 @media screen and (max-width: 992px) {
     .card-container {
-        column-count: 2; /* Two columns on tablets */
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
     }
 }
 
 @media screen and (max-width: 576px) {
     .card-container {
-        column-count: 1; /* Single column on mobile */
+        grid-template-columns: 1fr; /* Single column on mobile */
     }
 }
 
