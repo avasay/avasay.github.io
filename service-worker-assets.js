@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-2u26Zx3ltepDpvpHXV784UEDKBfzrzQBUwDUMtETuGw=",
+      "hash": "sha256-btQ\/dClCpsZq+LvGzrcg5qxqyZPGwy\/KUT27ZR2yUMU=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
-      "hash": "sha256-B62ps\/\/Y6SUFdREaMt1K6BM\/faKJbLVyUr+mzcgzP1U=",
+      "hash": "sha256-C9VuFoa+XWS2OsY7V8yDwwk7Og4yrBd4tAoEOssPnSg=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -181,7 +181,7 @@
       "url": "css\/body-style.css"
     },
     {
-      "hash": "sha256-CgK7POQOn+Rb6f0LhIh5+VaDl1WbJiIp8ftAhX4lVfE=",
+      "hash": "sha256-0wugFDmcu+7AtGYcJF9R\/XXtX1dHc2tGWzxsughHjng=",
       "url": "css\/card-styles.css"
     },
     {
@@ -1085,5 +1085,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "LEr+BZyG"
+  "version": "AMXYzrpV"
 };
