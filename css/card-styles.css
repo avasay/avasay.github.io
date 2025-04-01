@@ -42,11 +42,11 @@
     }
 
     .tags-container {
-        break-inside: avoid;
-        display: inline-block;
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
-
+    
 /* Add media queries for responsive behavior */
 @media screen and (max-width: 992px) {
     .card-container {
@@ -243,11 +243,7 @@
         font-size: 0.75rem;
     }
 
-    .tags-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
+
 }
 
 /* Add this to prevent content overflow */
