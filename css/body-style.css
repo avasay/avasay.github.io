@@ -6,6 +6,10 @@ html, body {
     height: 100%;
 }
 
+.site-branding {
+
+}
+
 #site-logo {
     display: flex;
     align-items: center;
@@ -15,6 +19,10 @@ html, body {
     width: 40px;
 }
 
+#site-title {
+    
+}
+
 #site-title a {
     color: white;
     text-decoration: none;
@@ -22,6 +30,12 @@ html, body {
     #site-title a:hover {
         color: #FFA500;
         text-decoration: none;
+    }
+
+    #site-slogan {
+        font-size: 0.8rem;
+        margin-top: -12px;
+        padding-left: 60px;
     }
 
 .home-hero {
