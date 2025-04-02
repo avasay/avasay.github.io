@@ -187,6 +187,16 @@ html, body {
         object-fit: cover;
     }        
 
+    .app-featured-image-container {
+
+    }
+
+    .app-featured-image-container img {
+
+        height: 250px !important;
+        object-fit: cover;
+        max-width: 100vw;
+    }  
     .post a {
         color: blue;
     }
@@ -355,6 +365,16 @@ html, body {
         color: white;
         transform: translateY(-1px);
     }
+
+.app-tag {
+    background-color: #007bff;
+    color: white !important;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
 /* Search results page */
 .search-results {
     max-width: 1200px;

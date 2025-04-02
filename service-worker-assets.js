@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-kKM2M9g8WdACTQAt+FuzSUkRWVa1HZXP2lQa+aptE64=",
+      "hash": "sha256-DK8J4crF2YeVmr6SF8cIGwsjqnQhazTJ\/aMXxyIpYNI=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
-      "hash": "sha256-8RpvfZAYvuAk9IPhA49U1P+gZhw9bahMWjihvB2CgkE=",
+      "hash": "sha256-+PTeP6ZtPEWbrMtkFkci5FhkTqGeL37ispzyt3WZMtQ=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -177,7 +177,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-oaAU6blXWcVI00bGDx9DycfqGhaQ\/gx2CyymAjGpFfk=",
+      "hash": "sha256-IrN08BB8BhkujeGBiIdkFed3aMbcid6G3jjw5oBpKyo=",
       "url": "css\/body-style.css"
     },
     {
@@ -211,6 +211,10 @@
     {
       "hash": "sha256-YAOdkf0qqHwK5sAKq5g88UUE25LtOQrxa7w3vkZwaTI=",
       "url": "img\/alejandrio-vasay-profile.jpg"
+    },
+    {
+      "hash": "sha256-x9Jdc7E37LhrPbqKM0JzKFPg+C3QN8FY7UAqepTYF9A=",
+      "url": "img\/apps\/image-compressor_60.jpg"
     },
     {
       "hash": "sha256-SfFMdobraI\/slb3oTXZLaFEzOEOxo4q+OfTCXTFZIMg=",
@@ -529,7 +533,7 @@
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
     },
     {
-      "hash": "sha256-mHiRxWuPGbg0XwiIh2K4MXC6nlxUKTZ84ENsOie5Rmc=",
+      "hash": "sha256-WU\/bo+iCCjwa18I54Pj8d1RO06zBE0zK3AGJHb0CoJ0=",
       "url": "index.html"
     },
     {
@@ -1085,5 +1089,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "xb311n2M"
+  "version": "NeQnxPgv"
 };

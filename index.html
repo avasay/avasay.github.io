@@ -31,34 +31,6 @@
     <link href="css/contact-form.css" rel="stylesheet">
     <link href="css/card-styles.css" rel="stylesheet">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2687304729911844"
-            crossorigin="anonymous"></script>
-
-    <script>
-        // Eventually, I need to remove this script, maybe after 1 year.
-        // Mapping of old URLs to new URLs
-        const urlRedirects = {
-            '/five-ways-to-pass-data-from-one-blazor-component-to-another/': '/five-ways-pass-values-blazor',
-            '/how-to-send-a-http-patch-request-in-csharp': '/send-http-patch-request',
-            '/create-a-rest-client-single-page-application-in-blazor': '/single-page-app',
-            '/create-a-simple-employee-database-rest-api': '/employee-db-rest-api',
-            '/reload-changes-in-appsetting-json-without-website-restart': '/reload-app-settings',
-            '/how-to-read-json-config-files-into-your-app-in-blazor-wasm': '/access-app-settings',
-            '/implement-http-patch-in-asp-net-using-jsonpatch': '/implement-http-patch'
-        };
-
-        // Get the current path
-        const currentPath = window.location.pathname;
-
-        // Check if the current path matches any old URL
-        for (const [oldPath, newPath] of Object.entries(urlRedirects)) {
-            if (currentPath === oldPath || currentPath === oldPath + '/') {
-                // Redirect to the new URL, preserving query parameters if any
-                window.location.replace(newPath + window.location.search);
-                break;
-            }
-        }
-    </script>
 </head>
 
 <body>
