@@ -347,6 +347,22 @@ html, body {
         margin-top: 1rem;
     }
 
+    .tags-container a {
+        color: black;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+        .tags-container a:hover {
+            background-color: #007bff;
+            color: white;
+            transform: translateY(-1px);
+            text-decoration: underline;
+        }
+        .tags-container a:visited {
+            color: orangered;
+        }
+
 .tag {
     background-color: #e0e0e0;
     padding: 0.25rem 0.75rem;
@@ -359,21 +375,43 @@ html, body {
     transition: all 0.2s ease;
 
 }
+    .tag a {
+        color: black;
+        text-decoration: none;
+    }
 
-    .tag:hover {
+    .tag a:hover {
         background-color: #007bff;
         color: white;
         transform: translateY(-1px);
+        text-decoration: underline;
+    }
+    .tag a:visited {
+        color: orangered;
     }
 
 .app-tag {
-    background-color: #007bff;
-    color: white !important;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
+    background-color: #c0f3fd;
+
+    padding: 0.15rem 0.50rem;
+    border-radius: 0.3rem;
     font-size: 0.8rem;
     text-decoration: none;
     cursor: pointer;
+}
+
+.app-tag a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.app-tag a:hover {
+    color: orangered !important;
+    text-decoration: underline;
+}
+
+.app-tag a:visited {
+    color: orangered !important;
 }
 /* Search results page */
 .search-results {
