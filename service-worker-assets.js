@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-cFpdjeOwdHOh9j25DjfiW3cLmxCrh\/ktNQG\/IXRVRR4=",
+      "hash": "sha256-oL9H4QfFd3yYYAfT8xcy4R9DuxZRU\/91u6Ux84eSYqI=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
-      "hash": "sha256-WXHv10tnFsJCnwv21c05S5JgIkqIrAqFQCQSRC21tuo=",
+      "hash": "sha256-PAad6j9GJ7OiaG6nigaDxlGtX\/qk3OkkXDyksfIs1uQ=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -165,7 +165,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-2evAlQFPHwsmOdLsFz1\/VTA7knVLqfoZ74xTCCkqNIc=",
+      "hash": "sha256-1ehtPpo\/jXHweZQ3fRH\/WCLXrY3BiAw9y3mxnlSEz0A=",
       "url": "GitHubBlogSpa.styles.css"
     },
     {
@@ -177,11 +177,11 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-TbpvHiPOrtxkKhVuljf076miY7IzIx\/w2i4gwwfhUmA=",
+      "hash": "sha256-UOJU5\/6\/SiYHe3t9drz1C8iTER6t5on2o7MtdbEelRk=",
       "url": "css\/body-style.css"
     },
     {
-      "hash": "sha256-Yy1dOPKh4jhO9tyvTCFwznsc2gZfgPS+oJRM10C90qA=",
+      "hash": "sha256-xdperAX0uoNCqAMIwSnlDwE7MkLfBNbtrEQzfku7gTI=",
       "url": "css\/card-styles.css"
     },
     {
@@ -213,6 +213,10 @@
       "url": "img\/alejandrio-vasay-profile.jpg"
     },
     {
+      "hash": "sha256-G9g0PIdFQX\/\/oao2ySmLYD3LJFmAtxMz76cDEGXbA1o=",
+      "url": "img\/apps\/cat-game_80.png"
+    },
+    {
       "hash": "sha256-x9Jdc7E37LhrPbqKM0JzKFPg+C3QN8FY7UAqepTYF9A=",
       "url": "img\/apps\/image-compressor_60.jpg"
     },
@@ -223,6 +227,10 @@
     {
       "hash": "sha256-SfFMdobraI\/slb3oTXZLaFEzOEOxo4q+OfTCXTFZIMg=",
       "url": "img\/apps\/my-calculator_60.jpg"
+    },
+    {
+      "hash": "sha256-\/LlZRHSOwIx2sKIp4dvaCYHGIlp\/jxKP6rBEre8k2Ew=",
+      "url": "img\/apps\/octocat-pink _80.png"
     },
     {
       "hash": "sha256-4fOCcOlSil2LWjkwBWN1Z\/ZFs+RjxJDumv9UA7lWtH4=",
@@ -537,7 +545,7 @@
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
     },
     {
-      "hash": "sha256-WU\/bo+iCCjwa18I54Pj8d1RO06zBE0zK3AGJHb0CoJ0=",
+      "hash": "sha256-dxB0\/XAECfZZXifRbJ6bRnBz13dhpWZldX7Jyr7nQso=",
       "url": "index.html"
     },
     {
@@ -1093,5 +1101,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "oBbi04G6"
+  "version": "+R2hTQRO"
 };

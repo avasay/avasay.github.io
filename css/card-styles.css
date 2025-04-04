@@ -41,6 +41,11 @@
         display: block;
     }
 
+    .post-card small {
+        color: #666;
+        font-size: 0.75rem;
+        background-color: #ecfefa;
+    }
     .tags-container {
         display: flex;
         flex-wrap: wrap;
@@ -96,6 +101,12 @@
         border-bottom: 1px solid #eee;
     }
 
+    .home-apps-card small {
+        color: #666;
+        font-size: 0.75rem;
+        background-color: #ecfefa;
+    }
+
 .home-apps-content {
     padding: 1.5rem;
     display: flex;
@@ -109,10 +120,7 @@
         line-height: 1.3;
     }
 
-    .home-apps-content small {
-        color: #666;
-        font-size: 0.85rem;
-    }
+    
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
@@ -199,6 +207,12 @@
         height: 80px;
         object-fit: cover;
         border-radius: 4px;
+    }
+
+    .home-recent-card small {
+        color: #666;
+        font-size: 0.75rem;
+        background-color: #ecfefa;
     }
 
     .home-recent-card .home-card-content {

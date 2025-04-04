@@ -181,6 +181,10 @@ html, body {
     margin-top: 50px;
 }
 
+.home-sections .section-title {
+    background-color: #ecfefa;
+    text-align: center;
+}
     .post .featured-image {
         width: 75%;
         height: 350px;
@@ -509,3 +513,13 @@ html, body {
         border-color: #007bff;
     }
 
+
+    .app-link, .repo-link {
+        background-color: #efefef;
+        border-radius: 50% 20% / 10% 40%;
+    }
+
+    .app-link img, .repo-link img {
+        width: 50%;
+        height: auto;
+    }
