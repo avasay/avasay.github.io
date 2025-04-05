@@ -45,26 +45,35 @@
         // Add the base paths of your other GitHub Pages projects here
         const externalProjectPaths = ['/MyCalculator', '/ToDoList', '/ImageCompressor', '/ImageUpscaler'];
         const currentPath = window.location.pathname;
+        let isExternalRedirect = false;
 
         for (const externalPath of externalProjectPaths) {
           // Check if the current path starts with one of the external project paths.
           // Using startsWith handles cases like /MyCalculator and /MyCalculator/
           // Using toLowerCase makes the check case-insensitive.
           if (currentPath.toLowerCase().startsWith(externalPath.toLowerCase())) {
-            // Force a full browser navigation to the current URL.
-            // This bypasses the Blazor router and lets GitHub Pages serve
-            // the correct index.html for the sub-project.
-            window.location.href = window.location.pathname + window.location.search + window.location.hash;
-
-            // Prevent Blazor script from loading unnecessarily after redirection starts.
-            // Throwing an error is a robust way to halt script execution.
-            throw new Error('Redirecting to external GitHub Pages project.');
+            // Set flag to prevent Blazor loading for external paths on GitHub Pages
+            isExternalRedirect = true;
+            console.log('External path detected, preventing Blazor load:', currentPath);
+            break; // No need to check further paths
           }
+        }
+
+        // Only load Blazor if it's not an external path redirect scenario
+        if (!isExternalRedirect) {
+          console.log('Loading Blazor app...');
+          const blazorScript = document.createElement('script');
+          blazorScript.src = '_framework/blazor.webassembly.js';
+          blazorScript.defer = true; // Ensure it loads correctly
+          document.body.appendChild(blazorScript);
+
+          // Also conditionally load the service worker script
+          const swScript = document.createElement('script');
+          swScript.textContent = "navigator.serviceWorker.register('service-worker.js');";
+          document.body.appendChild(swScript);
         }
       })();
     </script>
-    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
-    <script>navigator.serviceWorker.register('service-worker.js');</script>
 
 
     <!-- Back to Top -->
@@ -134,7 +143,6 @@
             }
         }
     </script>
-    <script src="brotliloader.min.js" type="module"></script>
 </body>
 
 </html>
