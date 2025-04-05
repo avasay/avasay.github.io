@@ -40,54 +40,8 @@
     </div>
 
 
-    <script>
-      (function() {
-        // Add the base paths of your other GitHub Pages projects here.
-        // IMPORTANT: Ensure these paths END WITH A SLASH '/'.
-        const externalProjectBasePaths = ['/MyCalculator/', '/ToDoList/', '/ImageCompressor/', '/ImageUpscaler/'];
-        const currentPath = window.location.pathname;
-        let isExternalRedirect = false;
-
-        for (const externalBasePath of externalProjectBasePaths) {
-          // Check if the current path starts with one of the external project base paths.
-          // Using toLowerCase makes the check case-insensitive.
-          if (currentPath.toLowerCase().startsWith(externalBasePath.toLowerCase())) {
-            console.log('External path detected:', currentPath, 'Base:', externalBasePath);
-            // If the current path is exactly the base path (or differs only by case),
-            // it means the correct index.html for the sub-app should be loading.
-            // We still prevent the *root* Blazor app from loading in this case.
-            isExternalRedirect = true;
-
-            // If the current path is *not* exactly the base path (e.g., /MyCalculator/page),
-            // redirect to the base path to ensure the correct index.html is served first.
-            // Use replace to avoid polluting browser history with redirects.
-            if (currentPath.toLowerCase() !== externalBasePath.toLowerCase()) {
-                console.log('Redirecting to base path:', externalBasePath);
-                window.location.replace(externalBasePath + window.location.search + window.location.hash);
-                // No need to break here, the redirect will take over.
-                // But setting the flag ensures root Blazor doesn't load if redirect fails.
-            }
-            break; // Found the matching external path, no need to check others.
-          }
-        }
-
-        // Only load the ROOT Blazor app if it's not an external path scenario
-        if (!isExternalRedirect) {
-          console.log('Loading root Blazor app...');
-          const blazorScript = document.createElement('script');
-          blazorScript.src = '_framework/blazor.webassembly.js';
-          blazorScript.defer = true;
-          document.body.appendChild(blazorScript);
-
-          // Also conditionally load the service worker script for the root app
-          const swScript = document.createElement('script');
-          swScript.textContent = "navigator.serviceWorker.register('service-worker.js');";
-          document.body.appendChild(swScript);
-        } else {
-            console.log('Preventing root Blazor app load due to external path detection.');
-        }
-      })();
-    </script>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
 
 
     <!-- Back to Top -->
@@ -157,6 +111,7 @@
             }
         }
     </script>
+    <script src="brotliloader.min.js" type="module"></script>
 </body>
 
 </html>
