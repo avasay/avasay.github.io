@@ -169,6 +169,10 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
+      "hash": "sha256-4ADQ1EBj+WriMu+VsiKNn\/Z99w\/0dpYCj1y9ZJ\/9u24=",
+      "url": "404.html"
+    },
+    {
       "hash": "sha256-0GsIzZqP7bZDZwGOUDLTr3Jn\/8wZjCAt28IE\/awwSnY=",
       "url": "ads.txt"
     },
@@ -545,7 +549,7 @@
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
     },
     {
-      "hash": "sha256-WU\/bo+iCCjwa18I54Pj8d1RO06zBE0zK3AGJHb0CoJ0=",
+      "hash": "sha256-DYvraJxqCXw\/DPKXeLbGwrOf43FOXrTl6ccBmqctp18=",
       "url": "index.html"
     },
     {
@@ -1101,5 +1105,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "YDEAZPLt"
+  "version": "q6M8QChn"
 };

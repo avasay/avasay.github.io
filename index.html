@@ -39,7 +39,19 @@
         <div class="loading-progress-text">Loading...</div>
     </div>
 
-
+    <script>
+      // Handle redirect from 404.html for root SPA routes
+      const params = new URLSearchParams(window.location.search);
+      const pathFrom404 = params.get('p');
+      if (pathFrom404) {
+        console.log('Path from 404:', pathFrom404);
+        // Reconstruct the intended URL and remove the '?p=' query parameter
+        const newUrl = pathFrom404 + window.location.hash;
+        // Use replaceState to change the URL without reloading, so Blazor router sees the correct path
+        window.history.replaceState(null, '', newUrl);
+        console.log('Rewrote URL to:', newUrl);
+      }
+    </script>
     <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 

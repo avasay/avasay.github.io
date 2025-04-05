@@ -1,117 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Coder Schmoder</title>
-
-    <base href="/" />
-
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon2.png" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/app.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/body-style.css" rel="stylesheet">
-    <link href="css/contact-form.css" rel="stylesheet">
-    <link href="css/card-styles.css" rel="stylesheet">
-
-</head>
-
-<body>
-    <div id="app">
-
-        <div class="loading-progress-text">Loading...</div>
-    </div>
-
-
-    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
-    <script>navigator.serviceWorker.register('service-worker.js');</script>
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
     <script>
-        // Handle anchor clicks
-        document.addEventListener('click', function (event) {
-            const link = event.target.closest('a[href^="#"]');
-            if (link && !event.ctrlKey && !event.metaKey) {
-                event.preventDefault();
-                const id = link.getAttribute('href').substring(1);
-                navigateToAnchor(id, true);
-            }
-        });
+        (function () {
+            // Define the base paths for your sub-projects hosted in subdirectories.
+            // IMPORTANT: Must end with a slash!
+            const subProjectBasePaths = [
+                '/MyCalculator/',
+                '/ToDoList/',
+                '/ImageCompressor/',
+                '/ImageUpscaler/'
+                // Add other sub-project base paths here
+            ];
 
-        // Handle browser back/forward navigation
-        window.addEventListener('popstate', function (event) {
-            if (window.location.hash) {
-                const id = window.location.hash.substring(1);
-                navigateToAnchor(id, false);
-            }
-        });
+            const path = window.location.pathname;
+            const query = window.location.search;
+            const hash = window.location.hash;
 
-        // Handle initial page load
-        window.addEventListener('load', function () {
-            if (window.location.hash) {
-                const id = window.location.hash.substring(1);
-                navigateToAnchor(id, false);
-            }
-        });
+            console.log('404 Handler - Path:', path);
 
-        function navigateToAnchor(id, addToHistory) {
-            const element = document.getElementById(id);
-            if (element) {
-                // Scroll to element with offset
-                const yOffset = -80;
-                const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-
-                window.scrollTo({
-                    top: y,
-                    behavior: 'smooth'
-                });
-
-                // Update history correctly
-                if (addToHistory) {
-                    history.pushState({}, '', '#' + id);
-                } else {
-                    history.replaceState({}, '', '#' + id);
+            let isSubProject = false;
+            for (const basePath of subProjectBasePaths) {
+                if (path.toLowerCase().startsWith(basePath.toLowerCase())) {
+                    console.log('Sub-project path detected:', path, 'Base:', basePath);
+                    // Redirect to the base path of the sub-project.
+                    // This ensures the sub-project's index.html (with correct base href) is loaded.
+                    // Use replace to avoid adding the 404 redirect to history.
+                    const redirectUrl = basePath + query + hash;
+                    console.log('Redirecting to sub-project base:', redirectUrl);
+                    window.location.replace(redirectUrl);
+                    isSubProject = true;
+                    break;
                 }
             }
-        }
-    </script>
-    <script src="brotliloader.min.js" type="module"></script>
-</body>
 
+            if (!isSubProject) {
+                // Not a known sub-project path. Assume it's intended for the root SPA.
+                // Redirect to the root, passing the original path via query param 'p'.
+                // The root index.html script will handle rewriting the URL.
+                const redirectUrl = '/?p=' + encodeURIComponent(path) + query + hash;
+                console.log('Redirecting to root with path parameter:', redirectUrl);
+                window.location.replace(redirectUrl);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, please check the URL or return to the <a href="/">homepage</a>.</p>
+</body>
 </html>
