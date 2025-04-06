@@ -33,15 +33,15 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-oL9H4QfFd3yYYAfT8xcy4R9DuxZRU\/91u6Ux84eSYqI=",
+      "hash": "sha256-znZ2TbGj8yvhS8Ubo8ZSorCZcOnC33GVCbw4rF8pjRI=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
-      "hash": "sha256-PAad6j9GJ7OiaG6nigaDxlGtX\/qk3OkkXDyksfIs1uQ=",
+      "hash": "sha256-dOIOHmAQmch3E1QYKbQi8UqDp5fX3dC8pvGa0ayRSHc=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
-      "hash": "sha256-O2G1\/P7UlQ\/1u+SHn6cWPI1OeUffjWSzy45RrmkSJKo=",
+      "hash": "sha256-QNRhVsqv4JULVpl7ufN1y0LGyqYABDic7WMBPa2ISfw=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm.br"
     },
     {
@@ -167,10 +167,6 @@
     {
       "hash": "sha256-1ehtPpo\/jXHweZQ3fRH\/WCLXrY3BiAw9y3mxnlSEz0A=",
       "url": "GitHubBlogSpa.styles.css"
-    },
-    {
-      "hash": "sha256-P861ye3dxvmvDxqIvy+LNHNeDEUiGyWB6\/Lm5QPNhgc=",
-      "url": "404.html"
     },
     {
       "hash": "sha256-0GsIzZqP7bZDZwGOUDLTr3Jn\/8wZjCAt28IE\/awwSnY=",
@@ -1105,5 +1101,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "z3q1S\/0I"
+  "version": "\/3zCfr0q"
 };

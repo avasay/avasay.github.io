@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "GitHubBlogSpa",
   "resources": {
-    "hash": "sha256-w6RBA9ynJEzL1tur6mjzwG0FpQsD/UyupT/5OnI0vzY=",
+    "hash": "sha256-jInto9u60CsEz22OnzFeVMaMHMIBkmop/fB9noZT1F0=",
     "jsModuleNative": {
       "dotnet.native.8.0.10.yatax25khq.js": "sha256-QVxMlY7ohmjgde/bZMA0dlWDAeuUP+tEfkiSdg4DFcE="
     },
@@ -17,8 +17,8 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "GitHubBlogSpa.wasm": "sha256-EPoodsWN6s2VuZ6EG4sdYodNj0yqtoC0WFJNznNu198=",
-      "Microsoft.AspNetCore.Components.wasm": "sha256-WuzquyyU8+op5TkP4HrbfRZ3UcbOM6Ke2GlUlEe5KdI=",
+      "GitHubBlogSpa.wasm": "sha256-kJFbbVkLPFrTcOgD3EcA626oqTefCoIGORvn3fOl6Xc=",
+      "Microsoft.AspNetCore.Components.wasm": "sha256-EfCFF232fQUUu0095JzRM2mbi8BY2G0JBHFW2/Jwep0=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-zHTkqN8duE5S+fZQQKVnNFumqyg6d6BMIzGYRqnL7F4=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-3eOyO4ym/P4OFyhNf/04qtnuLbZdmqrUkiR7WpF8dh0=",
       "Microsoft.Extensions.Configuration.Abstractions.wasm": "sha256-87sn2TYqgdZ95sXmavjKEzoEfMgHnYQ9LOvnMX+aZcI=",
