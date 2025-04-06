@@ -169,7 +169,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-ZjzDY+Q7T7uGZf1KnStDijmdZGiS+s3YlK4hoUe3\/7U=",
+      "hash": "sha256-P861ye3dxvmvDxqIvy+LNHNeDEUiGyWB6\/Lm5QPNhgc=",
       "url": "404.html"
     },
     {
@@ -549,7 +549,7 @@
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
     },
     {
-      "hash": "sha256-OZyYb8+NYfYroOLTQeUpySak2t1fjwb7oJjCXYfAnGQ=",
+      "hash": "sha256-aoLD8SU050ZNimfjz0rwcUJPUIyaRWD4Xvjtq3Te11s=",
       "url": "index.html"
     },
     {
@@ -1105,5 +1105,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "ngRGhktR"
+  "version": "z3q1S\/0I"
 };

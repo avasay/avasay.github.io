@@ -31,30 +31,6 @@
     <link href="css/contact-form.css" rel="stylesheet">
     <link href="css/card-styles.css" rel="stylesheet">
 
-    <!-- Suggested by Genspark -->
-    <script type="text/javascript">
-        // Single Page Apps for GitHub Pages - modified to handle subproject folders
-        (function(l) {
-          if (l.search[1] === '/' ) {
-            var decoded = l.search.slice(1).split('&').map(function(s) { 
-              return s.replace(/~and~/g, '&')
-            }).join('?');
-            window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-            );
-          }
-        }(window.location))
-        
-        // Detect if URL is for a project folder and skip Blazor initialization if so
-        var projectFolders = ["MyCalculator", "ToDoList"]; // Add all your GitHub Pages project names here
-        var path = window.location.pathname.slice(1).split('/')[0];
-        
-        if (projectFolders.includes(path)) {
-          // Don't initialize Blazor for project folder URLs
-          console.log("Detected project folder URL: " + path + " - skipping Blazor initialization");
-          window.location.href = window.location.href; // Force standard HTTP navigation
-        }
-      </script>
 </head>
 
 <body>
@@ -63,19 +39,7 @@
         <div class="loading-progress-text">Loading...</div>
     </div>
 
-    <script>
-      // Handle redirect from 404.html for root SPA routes
-      const params = new URLSearchParams(window.location.search);
-      const pathFrom404 = params.get('p');
-      if (pathFrom404) {
-        console.log('Path from 404:', pathFrom404);
-        // Reconstruct the intended URL and remove the '?p=' query parameter
-        const newUrl = pathFrom404 + window.location.hash;
-        // Use replaceState to change the URL without reloading, so Blazor router sees the correct path
-        window.history.replaceState(null, '', newUrl);
-        console.log('Rewrote URL to:', newUrl);
-      }
-    </script>
+
     <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 
@@ -151,3 +115,4 @@
 </body>
 
 </html>
+
