@@ -31,6 +31,30 @@
     <link href="css/contact-form.css" rel="stylesheet">
     <link href="css/card-styles.css" rel="stylesheet">
 
+    <!-- Suggested by Genspark -->
+    <script type="text/javascript">
+        // Single Page Apps for GitHub Pages - modified to handle subproject folders
+        (function(l) {
+          if (l.search[1] === '/' ) {
+            var decoded = l.search.slice(1).split('&').map(function(s) { 
+              return s.replace(/~and~/g, '&')
+            }).join('?');
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+            );
+          }
+        }(window.location))
+        
+        // Detect if URL is for a project folder and skip Blazor initialization if so
+        var projectFolders = ["MyCalculator", "ToDoList"]; // Add all your GitHub Pages project names here
+        var path = window.location.pathname.slice(1).split('/')[0];
+        
+        if (projectFolders.includes(path)) {
+          // Don't initialize Blazor for project folder URLs
+          console.log("Detected project folder URL: " + path + " - skipping Blazor initialization");
+          window.location.href = window.location.href; // Force standard HTTP navigation
+        }
+      </script>
 </head>
 
 <body>

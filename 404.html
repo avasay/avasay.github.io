@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8">
     <title>Redirecting...</title>
-    <script>
-        (function () {
-            // Define the base paths for your sub-projects hosted in subdirectories.
-            // IMPORTANT: Must end with a slash!
-            const subProjectBasePaths = [
-                '/MyCalculator/',
-                '/ToDoList/',
-                '/ImageCompressor/',
-                '/ImageUpscaler/'
-                // Add other sub-project base paths here
-            ];
-
-            const path = window.location.pathname;
-            const query = window.location.search;
-            const hash = window.location.hash;
-
-            console.log('404 Handler - Path:', path);
-
-            let isSubProject = false;
-            for (const basePath of subProjectBasePaths) {
-                if (path.toLowerCase().startsWith(basePath.toLowerCase())) {
-                    console.log('Sub-project path detected:', path, 'Base:', basePath);
-                    // Redirect to the base path of the sub-project.
-                    // This ensures the sub-project's index.html (with correct base href) is loaded.
-                    // Use replace to avoid adding the 404 redirect to history.
-                    const redirectUrl = basePath + query + hash;
-                    console.log('Redirecting to sub-project base:', redirectUrl);
-                    window.location.replace(redirectUrl);
-                    isSubProject = true;
-                    break;
-                }
-            }
-
-            if (!isSubProject) {
-                // Not a known sub-project path. Assume it's intended for the root SPA.
-                // Redirect to the root, passing the original path via query param 'p'.
-                // The root index.html script will handle rewriting the URL.
-                const redirectUrl = '/?p=' + encodeURIComponent(path) + query + hash;
-                console.log('Redirecting to root with path parameter:', redirectUrl);
-                window.location.replace(redirectUrl);
-            }
-        })();
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      
+      // This script detects if the URL is for a subfolder project like MyCalculator or ToDoList
+      // and passes through the request without trying to handle it as a route
+      
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      var projectFolders = ["MyCalculator", "ToDoList"]; // Add all your GitHub Pages project names here
+      
+      var path = l.pathname.slice(1).split('/')[0];
+      
+      // Check if the first path segment matches one of your project folders
+      if (projectFolders.includes(path)) {
+        // Do nothing - let GitHub Pages handle this as a separate site
+        console.log("Detected project folder: " + path + " - letting GitHub Pages handle it directly");
+      } else {
+        // Handle as usual Blazor route - transform URL to query params for SPA routing
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      }
     </script>
-</head>
-<body>
-    <p>If you are not redirected automatically, please check the URL or return to the <a href="/">homepage</a>.</p>
-</body>
+  </head>
+  <body>
+    If you are not redirected automatically, please <a href="/">click here</a>.
+  </body>
 </html>
