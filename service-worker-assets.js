@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-znZ2TbGj8yvhS8Ubo8ZSorCZcOnC33GVCbw4rF8pjRI=",
+      "hash": "sha256-MlqNw44xeK4LcL9qD75rs3Nb8Cydp\/UkcTNO1bDU10w=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
-      "hash": "sha256-dOIOHmAQmch3E1QYKbQi8UqDp5fX3dC8pvGa0ayRSHc=",
+      "hash": "sha256-UubP7UzCfJj7X5fgGbTq5OOVKOF7uxLcaHo9QYdc65M=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -545,7 +545,7 @@
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
     },
     {
-      "hash": "sha256-aoLD8SU050ZNimfjz0rwcUJPUIyaRWD4Xvjtq3Te11s=",
+      "hash": "sha256-kjS\/kKkhzuuR7Qt4D0rK5IgAM8SDA7o1oZqOt5TAS84=",
       "url": "index.html"
     },
     {
@@ -1101,5 +1101,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "\/3zCfr0q"
+  "version": "DU246Hfg"
 };
