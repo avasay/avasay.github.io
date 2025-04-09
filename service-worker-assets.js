@@ -169,6 +169,10 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
+      "hash": "sha256-tX8rR0r3e0dn1CV6VvkVg0sUm3katfsAcNeSoFsLV1Q=",
+      "url": "_redirects"
+    },
+    {
       "hash": "sha256-0GsIzZqP7bZDZwGOUDLTr3Jn\/8wZjCAt28IE\/awwSnY=",
       "url": "ads.txt"
     },
@@ -1101,5 +1105,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "DU246Hfg"
+  "version": "kHcz6gAy"
 };
