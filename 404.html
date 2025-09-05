@@ -100,11 +100,12 @@
                     behavior: 'smooth'
                 });
 
-                // Update history correctly
+                // Update history correctly - preserve current path
+                const currentPath = window.location.pathname;
                 if (addToHistory) {
-                    history.pushState({}, '', '#' + id);
+                    history.pushState({}, '', currentPath + '#' + id);
                 } else {
-                    history.replaceState({}, '', '#' + id);
+                    history.replaceState({}, '', currentPath + '#' + id);
                 }
             }
         }
