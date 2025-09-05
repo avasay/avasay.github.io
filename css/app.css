@@ -50,6 +50,21 @@ code:not(.code-block code) {
     white-space: pre;
 }
 
+/* AdSense styles */
+.adsbygoogle-container {
+    min-width: 300px;
+    min-height: 250px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Ensure ads don't push content */
+.adsbygoogle-container > div {
+    display: block !important;
+}
+
 
 /*
         @media (min-width: 576px) {

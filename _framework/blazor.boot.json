@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "GitHubBlogSpa",
   "resources": {
-    "hash": "sha256-VUrGLLR7MUZ7p9BExvkvpR3BmwhTuxYLHSJTKPvaqjE=",
+    "hash": "sha256-nHi6n7bD1wzcBIgx2k5h004ctqEoDmV2FpGGz0ozays=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -18,7 +18,7 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "GitHubBlogSpa.wasm": "sha256-rLJi3lPVdB3Vlchb48BCIFlA5WzDpKDzltgQEDSHaaI=",
+      "GitHubBlogSpa.wasm": "sha256-K0bTyg3QVK7HInpa4T3cNbXjuOBaZHgvysKJiCd7pbI=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-/5Tqatu/0rg99lVUyo9rL2wm3r7OgQXoJ7p3UjT4Xzg=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-h8isFUH8rUFFBebsumRuEg6O/tIQEr9nK4irPY/MmKE=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-GNCNRDpP0vB3TcxbQZZqnWHaSFHfrlTQb5DGsLTSmKA=",
@@ -43,10 +43,10 @@
       "System.Net.Http.Json.wasm": "sha256-Y6vEVIbvTjCl5IKM2wKhF3t+CgzZS6ZkVIuEk+RpoH8=",
       "System.Net.Http.wasm": "sha256-x/hcpP3VMh3U+03YCVYn1XaXIFVzk0wJb6uNNzrFx1I=",
       "System.Net.Primitives.wasm": "sha256-/QCB1AUORCEi4e8NxI73sylA4XyT2+cg4vtQ2GsfSoQ=",
-      "System.Private.CoreLib.wasm": "sha256-e6rjGP4w2pssFXxuz6aGqfDzhprfM0tJCNJPwTk+BF0=",
+      "System.Private.CoreLib.wasm": "sha256-bkb09N/GDPdUcwFTkZZxzDuOQ3JQuAzKuy5arQNG4oY=",
       "System.Private.Uri.wasm": "sha256-ilcTWItuXSp0DbJu3pIArc8+M/MDFMNNL/j3PHyPBfc=",
       "System.Runtime.InteropServices.JavaScript.wasm": "sha256-Hty5njcDWuMetf8m4B4PTxgqFqdbSaTwKApSr3mqzGQ=",
-      "System.Runtime.wasm": "sha256-aYf9ByDkhg0EjKo/MMcva9HjRTw/pg42CLhbPEmYjns=",
+      "System.Runtime.wasm": "sha256-Gho5iIn8vSJl5t204VUGirJcO6EbZujyhtSQMywhg+o=",
       "System.Text.Encodings.Web.wasm": "sha256-e/JDHCLRDdllil3662Gefde17/mCl3cwzMY2Yb3gfu0=",
       "System.Text.Json.wasm": "sha256-UsFsE4djsjGh7loKAt5xiuthSCW1fViQL2z9OmWxC40=",
       "System.Text.RegularExpressions.wasm": "sha256-9UWxHQk+uZ1mgq8eZxuahtQbRZvJrc/6HxznAnmMYI0="

@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-fDOsLHplSUSPIsdmYLgDFMbs+2mbUIVLZPTKpSy+NYo=",
+      "hash": "sha256-dhAyJfej8Za4MxKeuyA9FkhAs6R0ENQZ9NYAJgpaAaI=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -105,7 +105,7 @@
       "url": "_framework\/System.Net.Primitives.wasm.br"
     },
     {
-      "hash": "sha256-LMcc8SIYpirOsNl0T4kTa3WOTrVmlGSxrSts0GF4st0=",
+      "hash": "sha256-hf7zyXwClp+8LmnibTDpPvBApBo0qB98+nsDaEsbViE=",
       "url": "_framework\/System.Private.CoreLib.wasm.br"
     },
     {
@@ -117,7 +117,7 @@
       "url": "_framework\/System.Runtime.InteropServices.JavaScript.wasm.br"
     },
     {
-      "hash": "sha256-hsYO9hNvHKeG9fjS3bcHIDcuThRCfN4NNeD5AfZjGOA=",
+      "hash": "sha256-9Ifp09WI+F0yasCfrDNuBXo0+PsncGnypV79Vz9afWg=",
       "url": "_framework\/System.Runtime.wasm.br"
     },
     {
@@ -133,7 +133,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-+QUkFMhtfEHUZEy+GumgR9bTNcYbFjjsP9UkY3erV5Q=",
+      "hash": "sha256-nstQA8Ske23og\/hDGJbCiPz2GE34e+sMU2Qcec2Twtw=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -177,11 +177,11 @@
       "url": "ads.txt"
     },
     {
-      "hash": "sha256-ldpBwQVkfywYJUMYaba4xJzTXJgZuYkPPZvCyf2kjoM=",
+      "hash": "sha256-kMjH80tl4x6f9TPTt8deB1c2WrzPHb101nUB+sFDuNM=",
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-UOJU5\/6\/SiYHe3t9drz1C8iTER6t5on2o7MtdbEelRk=",
+      "hash": "sha256-v2XABkW6nyKHWC4o0ST2\/v6dc+4nCqTyTiCL\/VFBxuE=",
       "url": "css\/body-style.css"
     },
     {
@@ -207,6 +207,10 @@
     {
       "hash": "sha256-oEo6d+KqX5fjxTiZk\/w9NB3Mi0+ycS5yLwCKwr4IkbA=",
       "url": "icon-512.png"
+    },
+    {
+      "hash": "sha256-ymuTyRjuKPA3mj9bChaXLXcFxHgH0ADslcGvd92iLn8=",
+      "url": "img\/Advertise.png"
     },
     {
       "hash": "sha256-yU+pQhUSHbwvcuX81d19N3DV7fucrSvsnRgdyIs4jYo=",
@@ -271,6 +275,10 @@
     {
       "hash": "sha256-Q6TYrxbX3JWKpl7B99i4IEMcwduiIF70x+fNJamIJis=",
       "url": "img\/EmployeeRest-project-3.jpg"
+    },
+    {
+      "hash": "sha256-6QV5QWUtQmQVDqpVjH+ibh1xJwWEAzeRyQR8oTBkpPg=",
+      "url": "img\/Hero_Banner_60.png"
     },
     {
       "hash": "sha256-ki3V9bHYBwUE0yTMa+qSyzI66xsZZyiK1zR\/834+amQ=",
@@ -1105,5 +1113,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "xaO5+BZa"
+  "version": "eiHY596t"
 };
