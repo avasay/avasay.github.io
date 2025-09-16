@@ -189,9 +189,9 @@
 /* Right Panel (Recent News List) */
 .home-recent-list {
     grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    /*gap: 1.5rem;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 
 .home-recent-card {
@@ -203,11 +203,11 @@
 }
 
     .home-recent-card img {
-        width: 120px;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 4px;
-    }
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
 
     .home-recent-card small {
         color: #666;
@@ -229,6 +229,7 @@
 
     .home-recent-list {
         grid-column: 1;
+        grid-template-columns: 1fr;
        /* margin-top: 2rem;*/
     }
 

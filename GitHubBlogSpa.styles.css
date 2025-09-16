@@ -1,3 +1,65 @@
+/* /Layout/CmsLayout.razor.rz.scp.css */
+
+.cms-container[b-95ir41muqf] {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cms-top-bar[b-95ir41muqf] {
+    background-color: #f0f0f0;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cms-menu[b-95ir41muqf] {
+    display: flex;
+}
+
+.cms-menu-item[b-95ir41muqf] {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.cms-menu-item:hover[b-95ir41muqf] {
+    background-color: #e0e0e0;
+}
+
+.cms-dropdown-content[b-95ir41muqf] {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.cms-dropdown-content a[b-95ir41muqf], .cms-dropdown-content button[b-95ir41muqf] {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.cms-dropdown-content a:hover[b-95ir41muqf], .cms-dropdown-content button:hover[b-95ir41muqf] {
+    background-color: #f1f1f1;
+}
+
+.cms-menu-item:hover .cms-dropdown-content[b-95ir41muqf] {
+    display: block;
+}
+
+.cms-body[b-95ir41muqf] {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
 /* /Layout/MainLayout.razor.rz.scp.css */
 
 /* Flexbox layout */

@@ -42,6 +42,15 @@
     </div>
 
 
+    <script>
+        window.loadAdSenseAd = () => {
+            try {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+                console.error("Error loading AdSense ad:", e);
+            }
+        };
+    </script>
     <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 

@@ -38,6 +38,15 @@ html, body {
         padding-left: 60px;
     }
 
+.layout-container {
+    max-width: 1344px;
+    margin: 0 auto;
+}
+
+.main-content {
+    width: 100%;
+}
+
 .home-hero {
     width: 100%;
     height: 400px;
@@ -46,11 +55,11 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: -20px;
+    margin-top: 0px;
 }
 
     .home-hero .hero-content {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
@@ -79,7 +88,8 @@ html, body {
     }
 
 .body-container {
-    max-width: 1200px;
+
+    max-width: 1920px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -89,6 +99,7 @@ html, body {
 /* Main Content Layout */
 .body-main-content {
     display: flex;
+    flex-direction: column;
     gap: 30px;
     margin-top: 50px;
 }
@@ -187,8 +198,29 @@ html, body {
 }
 
 .home-sections .section-title {
-    background-color: #ecfefa;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    text-align: left;
+    margin-bottom: 20px; 
+}
+
+.home-sections .section-title a {
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.home-sections .section-title::after {
+    content: '';
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000;
+    margin-left: 15px;
 }
     .post .featured-image {
         width: 75%;
@@ -222,7 +254,7 @@ html, body {
 
 /* Mobile Styles */
 
-@media (min-width: 577px) and (max-width: 991px) 
+@media (min-width: 992px) 
 {
     .home-hero {
         height: 400px;
@@ -254,7 +286,7 @@ html, body {
 
 
 }
-@media (max-width: 576px) 
+@media (max-width: 991px) 
 {
     .home-hero {
         height: 300px;
@@ -282,7 +314,6 @@ html, body {
         }
 
     .body-main-content {
-        flex-direction: column;
         margin-top: 0;
     }
 
@@ -424,7 +455,7 @@ html, body {
 }
 /* Search results page */
 .search-results {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 2rem auto;
     padding: 0 1rem;
 }

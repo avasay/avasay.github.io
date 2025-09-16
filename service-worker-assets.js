@@ -1,11 +1,11 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-1ehtPpo\/jXHweZQ3fRH\/WCLXrY3BiAw9y3mxnlSEz0A=",
+      "hash": "sha256-kW2O6oxQDorCI2jbfOcx5oK6b1wQGUTyNSYRYq\/mhQ0=",
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-dhAyJfej8Za4MxKeuyA9FkhAs6R0ENQZ9NYAJgpaAaI=",
+      "hash": "sha256-g8y+xZYyuQ+dzwVwNtggCZIIPYe8gi090+gvdHgrz\/Q=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -17,7 +17,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.WebAssembly.wasm.br"
     },
     {
-      "hash": "sha256-r\/3WgRwyig8YI9qpJ3QqN6iebKlxmNgQtHkqshHvCYY=",
+      "hash": "sha256-+4BA\/As8xZ1fsQI83cZgOWv0wfyq44+UEjjzYfpxSpM=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm.br"
     },
     {
@@ -65,7 +65,7 @@
       "url": "_framework\/Microsoft.JSInterop.wasm.br"
     },
     {
-      "hash": "sha256-\/c184lR60nxnMv\/Gqf2r7cZi9oWHzrRIUSaku1LaCLM=",
+      "hash": "sha256-ZYOqddJLj34u\/r5nHy0btsZCEThIV7UjXdHyxElWqXI=",
       "url": "_framework\/System.Collections.Concurrent.wasm.br"
     },
     {
@@ -93,11 +93,7 @@
       "url": "_framework\/System.Memory.wasm.br"
     },
     {
-      "hash": "sha256-qQBQK+YroK3eMXWgZcJD9EGwjhv61\/rj6j4IAXzg2Tk=",
-      "url": "_framework\/System.Net.Http.Json.wasm.br"
-    },
-    {
-      "hash": "sha256-aZswvdVWpdGuwHNW6gzXee2+kuCoPAEyrSNs17t6Mjw=",
+      "hash": "sha256-+VEw8KyWfoZlWdM9cGQgr1b6FOATJ+RSBytZA7xbvCA=",
       "url": "_framework\/System.Net.Http.wasm.br"
     },
     {
@@ -105,7 +101,7 @@
       "url": "_framework\/System.Net.Primitives.wasm.br"
     },
     {
-      "hash": "sha256-hf7zyXwClp+8LmnibTDpPvBApBo0qB98+nsDaEsbViE=",
+      "hash": "sha256-QiZV\/LDRaNywf46jSGnsPjPbPiEWE3\/rE6wEWvrc54A=",
       "url": "_framework\/System.Private.CoreLib.wasm.br"
     },
     {
@@ -117,7 +113,7 @@
       "url": "_framework\/System.Runtime.InteropServices.JavaScript.wasm.br"
     },
     {
-      "hash": "sha256-9Ifp09WI+F0yasCfrDNuBXo0+PsncGnypV79Vz9afWg=",
+      "hash": "sha256-tX9AeU4pKzXeG9Xl+7g5ZoWTTTlCUlu\/NyHb1sj\/zRg=",
       "url": "_framework\/System.Runtime.wasm.br"
     },
     {
@@ -125,15 +121,15 @@
       "url": "_framework\/System.Text.Encodings.Web.wasm.br"
     },
     {
-      "hash": "sha256-4F89WpbLsl+jxjPC2h98czobkFXVDaxc2rVAmkx8CGA=",
+      "hash": "sha256-ShMdKi++Rb7sTpd30Ps+\/utveB1Ixk8eOKmGmOXehjU=",
       "url": "_framework\/System.Text.Json.wasm.br"
     },
     {
-      "hash": "sha256-wRIs5yALQUWJeadV9MKZqMhEtaLMICR+XfN+RuVuW\/E=",
+      "hash": "sha256-HiCsNI6hjdG4XK+9l+nadhJ6+hFDiSP1doQwRjn+lYg=",
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-nstQA8Ske23og\/hDGJbCiPz2GE34e+sMU2Qcec2Twtw=",
+      "hash": "sha256-WShJl6XQPvRM\/ZlTTms2C2PYJQaAFn663sX3PkGhwxc=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -181,11 +177,11 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-v2XABkW6nyKHWC4o0ST2\/v6dc+4nCqTyTiCL\/VFBxuE=",
+      "hash": "sha256-21UGCeZ19ZBk44wM4pFwVtSjLd8lVv35uyxvIIeCijw=",
       "url": "css\/body-style.css"
     },
     {
-      "hash": "sha256-xdperAX0uoNCqAMIwSnlDwE7MkLfBNbtrEQzfku7gTI=",
+      "hash": "sha256-J7T2RtZSOEUksfm0mjgXmqVsV8z6JomJopDClfz\/pvs=",
       "url": "css\/card-styles.css"
     },
     {
@@ -193,7 +189,7 @@
       "url": "css\/contact-form.css"
     },
     {
-      "hash": "sha256-pl+SMa20T3OGFwYX7MSt6pWD3SNMHW2vjiVWIHwrfFU=",
+      "hash": "sha256-BWj48c+Vnu1wuYM93CVjkqYslqxgFiHG5Vv79m9kuMk=",
       "url": "css\/style.css"
     },
     {
@@ -553,7 +549,7 @@
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
     },
     {
-      "hash": "sha256-dQtuArD54Uf3E73e7IQnPU1VnrmL2VJ+9AbrBwTLLOM=",
+      "hash": "sha256-koXUlsjfojaLpupD4IFSaXBZiBwaLaimOTx5sKG1sXE=",
       "url": "index.html"
     },
     {
@@ -561,7 +557,7 @@
       "url": "js\/anchorUtils.js"
     },
     {
-      "hash": "sha256-PMSlyhhXxgwMaprM3lvKsRXSMWqpjyLZr6LUt+dQ7UQ=",
+      "hash": "sha256-Bm+6Q41ySi8d4\/9GTN6waxwYuw1H6VBiPeiLxgCCjtc=",
       "url": "js\/main.js"
     },
     {
@@ -1113,5 +1109,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "eiHY596t"
+  "version": "B1bAWwiI"
 };
