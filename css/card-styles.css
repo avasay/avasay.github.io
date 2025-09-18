@@ -176,7 +176,7 @@
 
     .home-featured-card img {
         width: 100%;
-        height: 300px;
+        height: 450px;
         object-fit: cover;
         border-radius: 8px;
         margin-bottom: 1rem;
@@ -189,15 +189,15 @@
 /* Right Panel (Recent News List) */
 .home-recent-list {
     grid-column: 2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
 .home-recent-card {
     display: flex;
     gap: 1rem;
-    align-items: flex-start;
+    align-items: center;
     padding: 1rem;
     border-bottom: 1px solid #eee;
 }

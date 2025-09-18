@@ -1,4 +1,4 @@
-﻿html {
+html {
     scroll-behavior: smooth;
 }
 
@@ -96,6 +96,44 @@ html, body {
     min-height: 100vh;
 }
 
+.about-about_me {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.author-profile {
+    flex-basis: 200px;
+}
+.author-profile img {
+    width: 200px !important;
+    height: auto;
+    border-radius: 25%;
+}
+.author-name {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.author-job {
+    text-align: center;
+    font-size: 1.3rem;
+    color:dimgray
+}
+
+.author-bio {
+    flex: 1;
+    align-self: flex-end;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about-about_blog {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 /* Main Content Layout */
 .body-main-content {
     display: flex;
@@ -120,10 +158,20 @@ html, body {
 }
 
 .body-article-image {
-    width: 250px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 4px;
+        width: 100%;
+        height: auto;
+    }
+
+    .home-sections section:not(.home-apps-section) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
+
+    .home-sections section .section-title {
+        grid-column: 1 / -1;
+    }
+
 }
 
 .body-article-content {
@@ -189,7 +237,7 @@ html, body {
 }
 
 .footer-container {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -254,7 +302,7 @@ html, body {
 
 /* Mobile Styles */
 
-@media (min-width: 992px) 
+@media (min-width: 1200px) 
 {
     .home-hero {
         height: 400px;
@@ -283,10 +331,20 @@ html, body {
         height: auto;
     }
 
+    .home-sections section:not(.home-apps-section) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
+
+    .home-sections section .section-title {
+        grid-column: 1 / -1;
+    }
+
 
 
 }
-@media (max-width: 991px) 
+@media (max-width: 1199px) 
 {
     .home-hero {
         height: 300px;
@@ -321,6 +379,10 @@ html, body {
         flex-direction: column;
     }
 
+    .home-sections section:not(.home-apps-section) {
+        display: block;
+    }
+
     .body-article-image {
         width: 100%;
         height: 200px;
@@ -347,7 +409,10 @@ html, body {
         width: 100%;
     }
 
+
+
 }
+
 
 .body-inline-code {
     font-weight: bold;
@@ -558,4 +623,34 @@ html, body {
     .app-link img, .repo-link img {
         width: 50%;
         height: auto;
-    }"/* AdSense styles */\n.adsbygoogle-container {\n    min-width: 300px;\n    min-height: 250px;\n    width: 100%;\n    height: auto;\n    display: block;\n    margin: 1rem 0;\n}\n\n/* Ensure ads don't push content */\n.adsbygoogle-container > div {\n    display: block !important;\n}" 
+    }
+
+    
+    /* AdSense styles */
+    .adsbygoogle-container {
+        min-width: 300px;    
+        min-height: 250px;   
+        width: 100%;    
+        height: auto;    
+        display: block;    
+        margin: 1rem 0;
+        /* Ensure ads don't push content */
+    }
+    .adsbygoogle-container > div 
+    { 
+        display: block !important;
+    }
+.home-sections .section-title:focus-within {
+    outline: none;
+    box-shadow: none;
+}
+.home-sections section:not(.home-apps-section) {
+    margin-bottom: 4rem;
+}
+@media (max-width: 599px) {
+    .about-about_me {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
