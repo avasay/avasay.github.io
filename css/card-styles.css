@@ -176,7 +176,7 @@
 
     .home-featured-card img {
         width: 100%;
-        height: 450px;
+        /*height: 450px;*/
         object-fit: cover;
         border-radius: 8px;
         margin-bottom: 1rem;
@@ -257,7 +257,6 @@
     .home-card-content small {
         font-size: 0.75rem;
     }
-
 
 }
 

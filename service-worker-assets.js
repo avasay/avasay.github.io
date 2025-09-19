@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-7iR0QtdZw\/3MHhR2LPRYCZ4PKQkqPcaVhgmDUK\/ZZWY=",
+      "hash": "sha256-\/iiKxtFOzjvWEcxuj77m1MlzuIQOEJ8r2BSFBUNBUaI=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-fgYvJ8Lrr6llW+TNTmk34Z5l3BWijFmGvBiOCWzwnyU=",
+      "hash": "sha256-kLNLi+LqsdX0NSfsPXnApGvSwzSWlpsPqIS+xtf0kCs=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -181,7 +181,7 @@
       "url": "css\/body-style.css"
     },
     {
-      "hash": "sha256-3rQGDVlqkznOArjL9M6Aw+aFuePRjZtpjQZO7uFRfi8=",
+      "hash": "sha256-\/9PvW7cgBVAZC+N5e3XTqqrkVgxGGbtBeFcO+o7BeNs=",
       "url": "css\/card-styles.css"
     },
     {
@@ -1113,5 +1113,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "w8IuJDOG"
+  "version": "ZdoZRxHa"
 };
