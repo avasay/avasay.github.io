@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-nTl77T+Oy8e4TIB7Pp5Y4dCoJa58BrYRvwfLPIyAXok=",
+      "hash": "sha256-wzcF9P43ri\/dtUmZoGvUAlVF8FAkOFMeraLT7ZJXL0I=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-Ag3NcVFjePELRbL\/tkheC+q19xcc5wCW3S2ItWf16CE=",
+      "hash": "sha256-y99P5ZIxF5NS\/8G0fYgY1Y9ZfJT\/XqZoIkLmTGD\/HxU=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -507,6 +507,14 @@
     {
       "hash": "sha256-4kdtxB8Wf+YhhC03OTRqEqDB3y52QGDYa6cUoAbJs9g=",
       "url": "img\/news\/NvidiaGtc_60.jpg"
+    },
+    {
+      "hash": "sha256-PYYVAQoYvNhkxEvxM9cfxOQaaUrHN9kWZnQzun1jd6o=",
+      "url": "img\/news\/oracle-great-wall_80.jpg"
+    },
+    {
+      "hash": "sha256-l0hV2AVkgHFNMc8TzaWVXwUGlpgG6Jcc1jZfVAo5TVU=",
+      "url": "img\/news\/tiktok-oracle_80.jpg"
     },
     {
       "hash": "sha256-EwYWXv39gctFeKasPDDSfWEUm+Wy3g4H6gT\/9WGy4AI=",
@@ -1115,31 +1123,7 @@
     {
       "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
       "url": "brotliloader.min.js"
-    },
-    {
-      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
-      "url": "decode.min.js"
-    },
-    {
-      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
-      "url": "brotliloader.min.js"
-    },
-    {
-      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
-      "url": "decode.min.js"
-    },
-    {
-      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
-      "url": "brotliloader.min.js"
-    },
-    {
-      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
-      "url": "decode.min.js"
-    },
-    {
-      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
-      "url": "brotliloader.min.js"
     }
   ],
-  "version": "VZ\/YzMpr"
+  "version": "3JDqWWcY"
 };
