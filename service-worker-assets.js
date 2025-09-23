@@ -5,11 +5,11 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-\/iiKxtFOzjvWEcxuj77m1MlzuIQOEJ8r2BSFBUNBUaI=",
+      "hash": "sha256-iSqlYwt1GFq20vyJntA3WZH89qgPDRCvIDVO9uN5jUI=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
-      "hash": "sha256-xP\/R4SxgPyQqQnKZDzEEYeWr3WvCt+dcxOXUKSoal48=",
+      "hash": "sha256-H\/xyPv2UkY2dnIZg7kRD6KVgGVQWQrE48siCEgSfO9E=",
       "url": "_framework\/Microsoft.AspNetCore.Components.Web.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-kLNLi+LqsdX0NSfsPXnApGvSwzSWlpsPqIS+xtf0kCs=",
+      "hash": "sha256-iPp+OoN84lvVLThiBxxpYQHU5b38J21CSUBV1W8p91o=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -507,6 +507,10 @@
     {
       "hash": "sha256-4kdtxB8Wf+YhhC03OTRqEqDB3y52QGDYa6cUoAbJs9g=",
       "url": "img\/news\/NvidiaGtc_60.jpg"
+    },
+    {
+      "hash": "sha256-EwYWXv39gctFeKasPDDSfWEUm+Wy3g4H6gT\/9WGy4AI=",
+      "url": "img\/news\/us-tik-tok_80.png"
     },
     {
       "hash": "sha256-PjkRHTmkwz3luj30vXL++gEpbPPTwCRZq7LsIH0Py2Y=",
@@ -1111,7 +1115,15 @@
     {
       "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
       "url": "brotliloader.min.js"
+    },
+    {
+      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
+      "url": "decode.min.js"
+    },
+    {
+      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
+      "url": "brotliloader.min.js"
     }
   ],
-  "version": "ZdoZRxHa"
+  "version": "ewUPxIrc"
 };
