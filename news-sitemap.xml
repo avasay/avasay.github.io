@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    <url>
+        <loc>https://coderschmoder.com/news/nvidia-gtc-2025</loc>
+        <news:news>
+        <news:publication>
+            <news:name>Coder Schmoder News</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2025-03-21</news:publication_date>
+        <news:title>Nvidia GTC 2025 Takes Center Stage as Global Tech Giants Battle for Dominance</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://coderschmoder.com/news/ai-enhanced-gaming</loc>
+        <news:news>
+        <news:publication>
+            <news:name>Coder Schmoder News</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2025-03-16</news:publication_date>
+        <news:title>AI-Enhanced Gaming: Microsoft's Copilot for Gaming Redefines Xbox Play</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://coderschmoder.com/news/is-us-tiktok-still-tiktok</loc>
+        <news:news>
+        <news:publication>
+            <news:name>Coder Schmoder News</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2025-09-23</news:publication_date>
+        <news:title>Is a US-Only TikTok Still TikTok?</news:title>
+        </news:news>
+    </url>
+</urlset>

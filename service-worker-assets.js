@@ -1115,6 +1115,30 @@
     {
       "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
       "url": "brotliloader.min.js"
+    },
+    {
+      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
+      "url": "decode.min.js"
+    },
+    {
+      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
+      "url": "brotliloader.min.js"
+    },
+    {
+      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
+      "url": "decode.min.js"
+    },
+    {
+      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
+      "url": "brotliloader.min.js"
+    },
+    {
+      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
+      "url": "decode.min.js"
+    },
+    {
+      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
+      "url": "brotliloader.min.js"
     }
   ],
   "version": "VZ\/YzMpr"
