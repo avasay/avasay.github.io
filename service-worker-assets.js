@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-WScGpnqZELKCgjI17wp5euDM\/62fxBxFL+\/xU\/NQhS4=",
+      "hash": "sha256-L5A754vqx0gMcXfIgyzhefbXEOYjjYmRBTaYp9VVIYE=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-\/zFRNbklnK2lI6PVgopzUJuBr4wfgfasI7EiEAP9vA8=",
+      "hash": "sha256-5LW8i6nfI6lQe2nSCUxyrBKVHC9bnQbNejkwXA+oLmM=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -173,12 +173,8 @@
       "url": "ads.txt"
     },
     {
-      "hash": "sha256-8yr7Ngww6MSIJ5x+yZWS3tTtxRAD9VW4SWQ5GpIjtLM=",
+      "hash": "sha256-r1vPpNSU0RlgwsrezS7TQcs3+gTuZiaijn92lVZ4Yl8=",
       "url": "css\/app.css"
-    },
-    {
-      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
-      "url": "css\/body-style.css"
     },
     {
       "hash": "sha256-jHXjw\/UHx67eJ0HyavWtbN3ZDLVn+zy5DvmmhOUwpWw=",
@@ -509,6 +505,10 @@
       "url": "img\/news\/NvidiaGtc_60.jpg"
     },
     {
+      "hash": "sha256-jd4LciNkaZ2L6Pu8hwA3vI+SXLGLeuJ3CsiVxeWH4F4=",
+      "url": "img\/news\/ai-sw.jpg"
+    },
+    {
       "hash": "sha256-PYYVAQoYvNhkxEvxM9cfxOQaaUrHN9kWZnQzun1jd6o=",
       "url": "img\/news\/oracle-great-wall_80.jpg"
     },
@@ -661,7 +661,7 @@
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-DSOuQFEo5I9EhM4WUpQ6Q5rSLwCTlkdW4Jm4liJ4Ves=",
+      "hash": "sha256-SRqLdBm0eLgLoCgKnyiXUbgaZvBOFlz0g+iGNLhbzww=",
       "url": "news-sitemap.xml"
     },
     {
@@ -1133,5 +1133,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "xijVD\/Nf"
+  "version": "L2kLT93y"
 };

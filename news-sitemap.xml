@@ -46,4 +46,16 @@
         <news:title>Oracle's Fortress: How Larry Ellison's Company Became the Architect of America's Digital Great Wall</news:title>
         </news:news>
     </url>
+
+    <url>
+        <loc>https://coderschmoder.com/news/ai-across-software-development</loc>
+        <news:news>
+        <news:publication>
+            <news:name>Coder Schmoder News</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2025-09-25</news:publication_date>
+        <news:title>AI Is Not the Future of Software Development—It’s the Present</news:title>
+        </news:news>
+    </url>
 </urlset>
