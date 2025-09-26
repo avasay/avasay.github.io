@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-L5A754vqx0gMcXfIgyzhefbXEOYjjYmRBTaYp9VVIYE=",
+      "hash": "sha256-cV1d0JKxq+dvlVClZcfBw71klFon6Qi3dxzl+btIUBU=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-5LW8i6nfI6lQe2nSCUxyrBKVHC9bnQbNejkwXA+oLmM=",
+      "hash": "sha256-sM8K9t8D0ATRaHtGWC14zbN\/dl6ia1yC8JroQmEuH7k=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -505,8 +505,16 @@
       "url": "img\/news\/NvidiaGtc_60.jpg"
     },
     {
+      "hash": "sha256-lpOLyHMkBsveMlOkQr\/RwGD5TMU4iCZq8kFcgVaAe0U=",
+      "url": "img\/news\/ai-marketplace_80.png"
+    },
+    {
       "hash": "sha256-jd4LciNkaZ2L6Pu8hwA3vI+SXLGLeuJ3CsiVxeWH4F4=",
       "url": "img\/news\/ai-sw.jpg"
+    },
+    {
+      "hash": "sha256-FtdxrI2GcUOFXOq+O8KnA5dLuO4z8zbumWJrP9v4HZ4=",
+      "url": "img\/news\/h1b-myth_80.jpg"
     },
     {
       "hash": "sha256-PYYVAQoYvNhkxEvxM9cfxOQaaUrHN9kWZnQzun1jd6o=",
@@ -519,6 +527,10 @@
     {
       "hash": "sha256-EwYWXv39gctFeKasPDDSfWEUm+Wy3g4H6gT\/9WGy4AI=",
       "url": "img\/news\/us-tik-tok_80.png"
+    },
+    {
+      "hash": "sha256-kE4c6jCeMjtLUKd8P2t3sk7CaSIJybCwQDDidRiaMRA=",
+      "url": "img\/news\/visa-hikes_80.png"
     },
     {
       "hash": "sha256-PjkRHTmkwz3luj30vXL++gEpbPPTwCRZq7LsIH0Py2Y=",
@@ -661,7 +673,7 @@
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-SRqLdBm0eLgLoCgKnyiXUbgaZvBOFlz0g+iGNLhbzww=",
+      "hash": "sha256-zPgfOeWeUba1lslSqkCrOoRq8wnhCwAGjyjltCDErhQ=",
       "url": "news-sitemap.xml"
     },
     {
@@ -1133,5 +1145,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "L2kLT93y"
+  "version": "7oYZ+eb1"
 };

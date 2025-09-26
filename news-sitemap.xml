@@ -58,4 +58,28 @@
         <news:title>AI Is Not the Future of Software Development—It’s the Present</news:title>
         </news:news>
     </url>
+
+    <url>
+        <loc>https://coderschmoder.com/news/ai-content-marketplace-proposal</loc>
+        <news:news>
+        <news:publication>
+            <news:name>Coder Schmoder News</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2025-09-26</news:publication_date>
+        <news:title>Beyond Lawsuits: Microsoft Proposes an AI Content Marketplace to Pay Publishers for Their Data</news:title>
+        </news:news>
+    </url>
+
+    <url>
+        <loc>https://coderschmoder.com/news/h1b-debunking-job-theft</loc>
+        <news:news>
+        <news:publication>
+            <news:name>Coder Schmoder News</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2025-09-26</news:publication_date>
+        <news:title>Debunking the H1B Visa 'Job Theft' Myth: Data Shows Complementary, Not Competitive, Roles</news:title>
+        </news:news>
+    </url>
 </urlset>
