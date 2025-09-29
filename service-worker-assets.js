@@ -681,7 +681,7 @@
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-wa8AECuxORJYKN2N+ShrUYBCI6mhrywzi3ZptXwvLyo=",
+      "hash": "sha256-H+qnPFZtiJ0oJEnX1TQau6xz73pHPdb\/FsFWMGpQvNo=",
       "url": "news-sitemap.xml"
     },
     {
@@ -1153,5 +1153,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "qhL+LSru"
+  "version": "8O+DKsfa"
 };

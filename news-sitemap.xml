@@ -94,4 +94,16 @@
         <news:title>How Visa Fee Hikes Threaten a Pillar of U.S. Innovation</news:title>
         </news:news>
     </url>
+
+    <url>
+        <loc>https://coderschmoder.com/news/deepseek-v3-2-cuts-price-50-percent</loc>
+        <news:news>
+        <news:publication>
+            <news:name>Coder Schmoder News</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2025-09-29</news:publication_date>
+        <news:title>BREAKING: DeepSeek Cuts Prices in Half with Groundbreaking New Model, DeepSeek-V3.2-Exp</news:title>
+        </news:news>
+    </url>
 </urlset>
