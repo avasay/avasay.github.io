@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-ARYixpjpxH1rofmkzYaX15EBFgZUHbbJdtPqiiNgjdE=",
+      "hash": "sha256-wDZnpGUL+KvtxcVZguT0D4sLEOfQlRMtrQbfZ6vPkXc=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-4XydUWnFqHseLyn4Pf6QkDctKJ5LktJK6vxHqkQQiaA=",
+      "hash": "sha256-XLMkoacTlG2BoFe7U1rJzA+dYW8wWXSTtno+lP5TKE4=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -499,6 +499,14 @@
     {
       "hash": "sha256-gZKZXsH6KIzCoLg\/DHQToAw07ElycuhlbP6bQvI9jtg=",
       "url": "img\/news\/AI-enhanced-gaming_60pct.jpg"
+    },
+    {
+      "hash": "sha256-4dMgk0w4YZ\/uIj9zI9Zc9GYqwk1Cvh5ywdQQTCLryT4=",
+      "url": "img\/news\/Deepseek_v3_2_cost_80.png"
+    },
+    {
+      "hash": "sha256-s3O8ztMFYVW6\/PETknSml4qRxrIOT4eyv8eRXX86IXg=",
+      "url": "img\/news\/Deepseek_v3_2_sharp_80.png"
     },
     {
       "hash": "sha256-4kdtxB8Wf+YhhC03OTRqEqDB3y52QGDYa6cUoAbJs9g=",
@@ -1143,15 +1151,7 @@
     {
       "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
       "url": "brotliloader.min.js"
-    },
-    {
-      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
-      "url": "decode.min.js"
-    },
-    {
-      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
-      "url": "brotliloader.min.js"
     }
   ],
-  "version": "dCA48Lql"
+  "version": "qhL+LSru"
 };
