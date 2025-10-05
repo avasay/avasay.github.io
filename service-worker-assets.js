@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-wDZnpGUL+KvtxcVZguT0D4sLEOfQlRMtrQbfZ6vPkXc=",
+      "hash": "sha256-HKx\/l7vZpJsCfTlHW8SIDP9iolJJwz526xFBLpZwx6U=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-XLMkoacTlG2BoFe7U1rJzA+dYW8wWXSTtno+lP5TKE4=",
+      "hash": "sha256-ORDt+6erK6QHTX4dPo9Sfl+6Z1QqI7pUNXVBZWotnUY=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -501,6 +501,10 @@
       "url": "img\/news\/AI-enhanced-gaming_60pct.jpg"
     },
     {
+      "hash": "sha256-XGH9SvFrVuAA9KHD8TWfcEWaxlr86epVIlteI3mX0\/w=",
+      "url": "img\/news\/AI_browser_80.png"
+    },
+    {
       "hash": "sha256-4dMgk0w4YZ\/uIj9zI9Zc9GYqwk1Cvh5ywdQQTCLryT4=",
       "url": "img\/news\/Deepseek_v3_2_cost_80.png"
     },
@@ -513,8 +517,16 @@
       "url": "img\/news\/NvidiaGtc_60.jpg"
     },
     {
+      "hash": "sha256-UO4iM4BH85Q1l2uhusGfYHTtSoP0xL3RtqVw09wT8lI=",
+      "url": "img\/news\/OpenAI-valuation_80.png"
+    },
+    {
       "hash": "sha256-lpOLyHMkBsveMlOkQr\/RwGD5TMU4iCZq8kFcgVaAe0U=",
       "url": "img\/news\/ai-marketplace_80.png"
+    },
+    {
+      "hash": "sha256-3KFggey4lTOYOyoxAhV52s3J5jlj8Ont6vc8\/5djkY4=",
+      "url": "img\/news\/ai-shutdown_80.png"
     },
     {
       "hash": "sha256-jd4LciNkaZ2L6Pu8hwA3vI+SXLGLeuJ3CsiVxeWH4F4=",
@@ -681,7 +693,7 @@
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-H+qnPFZtiJ0oJEnX1TQau6xz73pHPdb\/FsFWMGpQvNo=",
+      "hash": "sha256-pZZ\/FcnS1shF3DkESHDie\/\/AfFuQkTVJy2A1k3ozRC8=",
       "url": "news-sitemap.xml"
     },
     {
@@ -1153,5 +1165,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "8O+DKsfa"
+  "version": "8jVmOF7N"
 };

@@ -106,4 +106,40 @@
         <news:title>BREAKING: DeepSeek Cuts Prices in Half with Groundbreaking New Model, DeepSeek-V3.2-Exp</news:title>
         </news:news>
     </url>
+
+    <url>
+        <loc>https://coderschmoder.com/news/rise-of-ai-browser</loc>
+        <news:news>
+        <news:publication>
+            <news:name>Coder Schmoder News</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2025-10-04</news:publication_date>
+        <news:title>The Rise of AI Browsers: Your Next Digital Frontier or Just a Smarter Search Bar?</news:title>
+        </news:news>
+    </url>
+
+    <url>
+        <loc>https://coderschmoder.com/news/govt-shutdown-cripples-tech-sector</loc>
+        <news:news>
+        <news:publication>
+            <news:name>Coder Schmoder News</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2025-10-04</news:publication_date>
+        <news:title>AI vs. The Bureaucracy: How the Government Shutdown is Crippling the Tech Sector</news:title>
+        </news:news>
+    </url>
+
+    <url>
+        <loc>https://coderschmoder.com/news/beyond-the-ai-hype</loc>
+        <news:news>
+        <news:publication>
+            <news:name>Coder Schmoder News</news:name>
+            <news:language>en</news:language>
+        </news:publication>
+        <news:publication_date>2025-10-05</news:publication_date>
+        <news:title>Beyond the Hype: OpenAI’s $500 Billion Valuation Signals an Existential Bet on the AI Future.</news:title>
+        </news:news>
+    </url>
 </urlset>
