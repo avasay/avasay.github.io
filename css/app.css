@@ -301,6 +301,15 @@ html, body {
 
 
 /* Mobile Styles */
+@media (min-width: 992px) {
+  .blog_post-snipping-img {
+        display: block;
+        width: 50%;
+        margin-left: auto; /* Sets the left margin to auto */
+        margin-right: auto; /* Sets the right margin to auto */
+    }
+
+}
 
 @media (min-width: 1200px) 
 {
@@ -341,8 +350,7 @@ html, body {
         grid-column: 1 / -1;
     }
 
-
-
+    
 }
 @media (max-width: 1199px) 
 {
