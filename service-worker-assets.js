@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-3f8ONMb7wkCcnv\/EABtGOl23s0X9bLFLs75gCKUFiGY=",
+      "hash": "sha256-tnnLgzfkhaJto2Xq+S641dYFHCavxD4irBfk0CCPBUk=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-kK2Ofs0Bu6WitWqXJCGFGkq06k0YOdEIsKyDO0U79JU=",
+      "hash": "sha256-ZVlnEGJaDCfouce+k\/q7igPbiR9TXoVxvMgUOt6DRbc=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -487,6 +487,14 @@
     {
       "hash": "sha256-gKMtcxYZL6HAMsamUnn6XnuqqKYMWN7NVFiW3dKDcTU=",
       "url": "img\/blog\/custom-validation_80.png"
+    },
+    {
+      "hash": "sha256-dRYIh\/HurhCQKteUfyZfdhkSn7PCaBbhNxml4zC25PE=",
+      "url": "img\/blog\/validation-editcontext.jpg"
+    },
+    {
+      "hash": "sha256-ljRtaop1Y7EsvdrotqIiPq5H3HTtIjpXmKnF7K7H7\/Y=",
+      "url": "img\/blog\/validation-editcontext_test.png"
     },
     {
       "hash": "sha256-aMF1AlnRdAEquSqJdfjGIuHCALd1ei5\/m3djmHDlLd0=",
@@ -1181,5 +1189,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "cQLJv1Kj"
+  "version": "X1kKvPi1"
 };
