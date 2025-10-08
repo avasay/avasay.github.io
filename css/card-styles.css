@@ -220,8 +220,10 @@
     }
 
     .home-recent-card .home-card-content .post-title {
-        font-size: 0.9rem;
+        font-size: 1.0rem;
+        font-weight: 600;
         color: black;
+
     }
 
 /* Mobile View */
