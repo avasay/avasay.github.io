@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-tnnLgzfkhaJto2Xq+S641dYFHCavxD4irBfk0CCPBUk=",
+      "hash": "sha256-mkcbHTafMh\/NHPGuPc\/T2OV+DaiCyWc+lhVm+Wnd2UA=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -85,7 +85,7 @@
       "url": "_framework\/System.Diagnostics.DiagnosticSource.wasm.br"
     },
     {
-      "hash": "sha256-XQNvrAhFoAJ4I1FgIqDlox7vH1++Bv058xtrBKXkgHc=",
+      "hash": "sha256-+KVHCnySbqIOBzIVsazhAcXEOCOBfV9zve7xK5TGu6I=",
       "url": "_framework\/System.Linq.wasm.br"
     },
     {
@@ -101,7 +101,7 @@
       "url": "_framework\/System.Net.Primitives.wasm.br"
     },
     {
-      "hash": "sha256-QiZV\/LDRaNywf46jSGnsPjPbPiEWE3\/rE6wEWvrc54A=",
+      "hash": "sha256-I7kQgB58qh6AVA3+OWY\/S48YFs1Pi5JE2OTB83Lwx7w=",
       "url": "_framework\/System.Private.CoreLib.wasm.br"
     },
     {
@@ -113,7 +113,7 @@
       "url": "_framework\/System.Runtime.InteropServices.JavaScript.wasm.br"
     },
     {
-      "hash": "sha256-tX9AeU4pKzXeG9Xl+7g5ZoWTTTlCUlu\/NyHb1sj\/zRg=",
+      "hash": "sha256-A3gvuaBrfIXqh3N4v\/nepKqC1wUF0up6e0W7v66o8Dc=",
       "url": "_framework\/System.Runtime.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-ZVlnEGJaDCfouce+k\/q7igPbiR9TXoVxvMgUOt6DRbc=",
+      "hash": "sha256-wFGor04y4SKwWG4wb\/mIUUl6HNTBRTNz4E2HyeI+ksw=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -177,12 +177,20 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-jHXjw\/UHx67eJ0HyavWtbN3ZDLVn+zy5DvmmhOUwpWw=",
+      "hash": "sha256-DCw33V6sdOgn4mZZK2Ugx\/hs363Lh9si9mbE4IYAtRo=",
       "url": "css\/card-styles.css"
+    },
+    {
+      "hash": "sha256-t4uiiWDf4iOqUSb4HTHmxkr9+BCUtoImtRZ8gkJxG6I=",
+      "url": "css\/codeblock-three.css"
     },
     {
       "hash": "sha256-SBJPG4L36NmEa+x3xCOTIQ0SX6zn1zLXsuycYpDembs=",
       "url": "css\/contact-form.css"
+    },
+    {
+      "hash": "sha256-px8xtQvxgA4OM0njrTVb7xbMCbYHpYK1lEbISndWUpU=",
+      "url": "css\/prism.css"
     },
     {
       "hash": "sha256-BWj48c+Vnu1wuYM93CVjkqYslqxgFiHG5Vv79m9kuMk=",
@@ -621,7 +629,7 @@
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
     },
     {
-      "hash": "sha256-Mu3aGZ+U25+rIkXDmvMaVAvew9sHLHX63w2PLY6kAC8=",
+      "hash": "sha256-X7M+kK6dUan9lhWfclSRcSBjPRfgpAiEX16idbFTK1U=",
       "url": "index.html"
     },
     {
@@ -635,6 +643,10 @@
     {
       "hash": "sha256-kJ9y1m4+3so216Vz9n1C5JpoinW0\/rsZxZku36LDo\/c=",
       "url": "js\/masonry.js"
+    },
+    {
+      "hash": "sha256-gn+j6b3nLU22n\/4YghDHT++xej4iVr55vjEkRTWCqnU=",
+      "url": "js\/prism.js"
     },
     {
       "hash": "sha256-z\/xYR8yWHm047eCUf54OllDJJSFmA2BGhkfVmUSnVjg=",
@@ -1189,5 +1201,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "X1kKvPi1"
+  "version": "o7jx6\/XR"
 };

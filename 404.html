@@ -29,6 +29,8 @@
     <link href="css/body-style.css" rel="stylesheet">
     <link href="css/contact-form.css" rel="stylesheet">
     <link href="css/card-styles.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/codeblock-three.css" rel="stylesheet">
 
     <link href="GitHubBlogSpa.styles.css" rel="stylesheet">
 
@@ -56,6 +58,28 @@
                 console.error("Error loading AdSense ad:", e);
             }
         };
+    </script>
+    <script src="js/prism.js"></script>
+    <script>
+        // Add JavaScript language support to Prism.js
+        if (typeof Prism !== 'undefined' && !Prism.languages.javascript) {
+            Prism.languages.javascript = {
+                'comment': [
+                    {pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/, lookbehind: true, greedy: true},
+                    {pattern: /(^|[^\\:])\/\/.*/, lookbehind: true, greedy: true}
+                ],
+                'string': {
+                    pattern: /(['"])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
+                    greedy: true
+                },
+                'keyword': /\b(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
+                'boolean': /\b(?:false|true)\b/,
+                'number': /\b(?:0[xX][\dA-Fa-f]+|0[bB][01]+|0[oO][0-7]+|\d+(?:\.\d*)?(?:[Ee][+-]?\d+)?|NaN|Infinity)\b/,
+                'function': /[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*\()/,
+                'operator': /--?|\+\+?|!=?=?|<=?|>=?|==?=?|&&?|\|\|?|\?|\*|\/|~|\^|%/,
+                'punctuation': /[{}[\];(),.:]/
+            };
+        }
     </script>
     <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
@@ -127,6 +151,78 @@
                     history.replaceState({}, '', currentPath + '#' + id);
                 }
             }
+        }
+    </script>
+
+    <script>
+        // Function to highlight Prism code blocks for CodeBlockThree component
+        window.highlightPrismCodeThree = function() {
+            if (typeof Prism !== 'undefined') {
+                // Find all CodeBlockThree code elements
+                var codeElements = document.querySelectorAll('.prism-code-block-three code');
+                
+                codeElements.forEach(function(codeElement) {
+                    // Get the language class
+                    var languageClass = Array.from(codeElement.classList).find(function(cls) {
+                        return cls.startsWith('prism-language-');
+                    });
+                    
+                    if (languageClass) {
+                        // Extract language from class name
+                        var language = languageClass.replace('prism-language-', '');
+                        
+                        // Set the standard Prism language class
+                        codeElement.className = 'language-' + language;
+                        
+                        // Apply line numbers if needed
+                        var preElement = codeElement.parentElement;
+                        if (preElement && preElement.classList.contains('prism-line-numbers')) {
+                            preElement.classList.add('line-numbers');
+                        }
+                        
+                        // Highlight the code
+                        Prism.highlightElement(codeElement);
+                    }
+                });
+            }
+        };
+
+        // Function to highlight Prism code blocks (legacy)
+        window.highlightPrismCode = function(selector) {
+            if (typeof Prism !== 'undefined') {
+                if (selector) {
+                    // Highlight specific elements
+                    var elements = document.querySelectorAll(selector);
+                    elements.forEach(function(element) {
+                        Prism.highlightElement(element);
+                    });
+                } else {
+                    // Highlight all code blocks
+                    Prism.highlightAll();
+                }
+            }
+        };
+
+        // Initialize Prism when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof Prism !== 'undefined') {
+                Prism.highlightAll();
+                // Also initialize CodeBlockThree elements
+                setTimeout(window.highlightPrismCodeThree, 100);
+            }
+        });
+
+        // Re-highlight after Blazor navigation
+        if (window.Blazor) {
+            window.Blazor.addEventListener('navigation', function() {
+                setTimeout(function() {
+                    if (typeof Prism !== 'undefined') {
+                        Prism.highlightAll();
+                        // Also re-highlight CodeBlockThree elements
+                        window.highlightPrismCodeThree();
+                    }
+                }, 200);
+            });
         }
     </script>
     <script src="brotliloader.min.js" type="module"></script>

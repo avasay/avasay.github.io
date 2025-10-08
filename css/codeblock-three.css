@@ -1,0 +1,164 @@
+/* CodeBlockThree component styles with unique class names */
+.prism-code-block-three {
+    margin: 1rem 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e1e1;
+}
+
+.prism-code-block-three pre {
+    margin: 0;
+    padding: 1rem;
+    background: #f8f8f8;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+/* Apply Prism classes to our custom elements */
+.prism-code-block-three .prism-language-csharp,
+.prism-code-block-three .prism-language-javascript,
+.prism-code-block-three .prism-language-markup,
+.prism-code-block-three .prism-language-aspnet {
+    color: #000;
+    background: #f8f8f8;
+    text-shadow: 0 1px #fff;
+}
+
+/* Remove gray background and rounded corners from HTML elements in ASP.NET */
+.prism-code-block-three .token.tag,
+.prism-code-block-three .token.punctuation {
+    background: transparent !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+.prism-code-block-three .token.attr-name,
+.prism-code-block-three .token.attr-value {
+    background: transparent !important;
+    border-radius: 0 !important;
+}
+
+.prism-code-block-three .token.namespace {
+    background: transparent !important;
+}
+
+/* Remove any styling from markup tokens */
+.prism-code-block-three .language-aspnet .token,
+.prism-code-block-three .language-markup .token {
+    background: transparent !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+/* Custom line numbers styling */
+.prism-code-block-three .prism-line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: prism-linenumber;
+}
+
+.prism-code-block-three .prism-line-numbers .prism-line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.prism-code-block-three .prism-line-numbers-rows > span {
+    display: block;
+    counter-increment: prism-linenumber;
+    min-height: 1.5em;
+}
+
+.prism-code-block-three .prism-line-numbers-rows > span:before {
+    content: counter(prism-linenumber);
+    color: #999;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+
+/* Override Prism's default line numbers to extend full height */
+.prism-code-block-three .line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 100%;
+}
+
+.prism-code-block-three .line-numbers .line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+    min-height: 1.5em;
+    line-height: 1.5;
+}
+
+.prism-code-block-three .line-numbers .line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+
+/* Ensure pre element maintains proper height */
+.prism-code-block-three pre {
+    min-height: 100%;
+    display: block;
+}
+
+/* Code block hover effect */
+.prism-code-block-three pre:hover {
+    background: #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .prism-code-block-three pre {
+        font-size: 12px;
+        padding: 0.75rem;
+    }
+    
+    .prism-code-block-three .prism-line-numbers {
+        padding-left: 2.5em;
+    }
+}
+
+/* Scrollbar styling for code blocks */
+.prism-code-block-three pre::-webkit-scrollbar {
+    height: 8px;
+}
+
+.prism-code-block-three pre::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.prism-code-block-three pre::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.prism-code-block-three pre::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

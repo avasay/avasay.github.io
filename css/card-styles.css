@@ -219,6 +219,11 @@
         flex: 1;
     }
 
+    .home-recent-card .home-card-content .post-title {
+        font-size: 0.9rem;
+        color: black;
+    }
+
 /* Mobile View */
 @media (max-width: 768px) {
 
