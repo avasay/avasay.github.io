@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-mkcbHTafMh\/NHPGuPc\/T2OV+DaiCyWc+lhVm+Wnd2UA=",
+      "hash": "sha256-kLQjnsXLFiQv\/u1rrqms65JlMplocncQUwK3YGeXN2Q=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-wFGor04y4SKwWG4wb\/mIUUl6HNTBRTNz4E2HyeI+ksw=",
+      "hash": "sha256-3+iO9Wr18s\/\/uETJZecm0x5Aao8AXRDKE8c+76xHHWE=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -1201,5 +1201,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "o7jx6\/XR"
+  "version": "YDCQaQ4+"
 };
