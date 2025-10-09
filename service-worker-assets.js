@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-GolnWCn8xJsYIX\/a64sZg+flqZQFU2QACqmtqF3B3j0=",
+      "hash": "sha256-TdLSBeLihymfS\/8IURcTiFKSpttwlUJ2mCaIMeFCtnc=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-0uj\/+\/Cqg05\/sslrwviaDI5iP5QOBm42e8VEc1F3i8A=",
+      "hash": "sha256-UG+l3uRHWf1KFYND4UyT2831fjIwZlXxSF0oEA+g5Lk=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -1189,7 +1189,7 @@
       "url": "scss\/style.scss"
     },
     {
-      "hash": "sha256-AHL7l4Y79DkOJAOitWe52OArRfjEgosu3RrgNOCQYog=",
+      "hash": "sha256-ZyxHJNA8WkfMbM5kkMwMYWYkPGTDero+c55OqM3dHAI=",
       "url": "sitemap.xml"
     },
     {
@@ -1201,5 +1201,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "Bgh6P1+w"
+  "version": "G+4kE218"
 };
