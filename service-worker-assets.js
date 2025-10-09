@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-FdInM+SfYwiz93YGV7WvULoOsbVGgpY\/1MkYD7ORqfM=",
+      "hash": "sha256-t2OhSItQdqtSkhZkC4bwCg\/+HOpnIU5ptQhBUp6GSI0=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-k0TL7Lk7tTx95usgK5QWJ8C4rCsMsJWEi9Jn1LVs0fE=",
+      "hash": "sha256-it6sgq8B5kpmu4ZLnHRetS2jExN09ku6ZwrtEnzNebI=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -173,7 +173,7 @@
       "url": "ads.txt"
     },
     {
-      "hash": "sha256-Tef8tc5CYYARu7O5nyayphGUg\/w0lW5PbG9Zt3Urk1A=",
+      "hash": "sha256-OmwM85Ji1IDb1SY0p0qEO9L+62qvFlEWS9O9EAxdrvw=",
       "url": "css\/app.css"
     },
     {
@@ -495,6 +495,10 @@
     {
       "hash": "sha256-gKMtcxYZL6HAMsamUnn6XnuqqKYMWN7NVFiW3dKDcTU=",
       "url": "img\/blog\/custom-validation_80.png"
+    },
+    {
+      "hash": "sha256-BLE7zCdK9RCrvscYwo9WTHf5Uap\/91NGXFj0dpTjGRw=",
+      "url": "img\/blog\/debunk_cplusplus.jpg"
     },
     {
       "hash": "sha256-dRYIh\/HurhCQKteUfyZfdhkSn7PCaBbhNxml4zC25PE=",
@@ -1189,8 +1193,16 @@
       "url": "scss\/style.scss"
     },
     {
-      "hash": "sha256-ZyxHJNA8WkfMbM5kkMwMYWYkPGTDero+c55OqM3dHAI=",
+      "hash": "sha256-xujPm+qud8lypsiJbiT2JMU5f60oPt09NbB5WWRwhNg=",
       "url": "sitemap.xml"
+    },
+    {
+      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
+      "url": "decode.min.js"
+    },
+    {
+      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
+      "url": "brotliloader.min.js"
     },
     {
       "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
@@ -1201,5 +1213,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "KA9dcSE7"
+  "version": "dSeJ3wNt"
 };

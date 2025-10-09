@@ -299,7 +299,13 @@ html, body {
         height: auto;
     }
 
+.breaches-table table, th, td {
+     border: 1px solid darkgrey;
+}
 
+.breaches-table th, td {
+    text-align:left;
+}
 /* Mobile Styles */
 @media (min-width: 992px) {
   .blog_post-snipping-img {

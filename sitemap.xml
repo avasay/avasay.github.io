@@ -174,4 +174,10 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://coderschmoder.com/debunking-the-myth-c-and-cybersecurity-concerns</loc>
+        <lastmod>2025-10-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
