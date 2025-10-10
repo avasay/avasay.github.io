@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-zl1ox7jRHtIF2SQwmq43rA5V\/XhvATUTic4w9NB1Nzw=",
+      "hash": "sha256-6SfUC9C7w2odFZqirCCnDMHqciAWZEHez81KoF0gO58=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-MjbMFQn4nH0+kNz6LlkY67HZJ53ZjRos4slGXqI1lyQ=",
+      "hash": "sha256-OE0+PD0Ipj3Dkh\/fKsk1pEfu4ZPi+git0Vb6Wghvfmo=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -483,6 +483,14 @@
     {
       "hash": "sha256-n\/RoT9zzXSG20aJkRO9i0\/NW7u9P3V2Xi7jwMW3Kxo0=",
       "url": "img\/blog-2.jpg"
+    },
+    {
+      "hash": "sha256-8Y3kn4VVsat6DhAqk4o\/3f1d53T5eVdAcrOdZxQfsi0=",
+      "url": "img\/blog\/BPO-1_80.png"
+    },
+    {
+      "hash": "sha256-rzFvY3+4wUpXi0OlGCcfCJucfcqDjUvg+AjdI9nT6D0=",
+      "url": "img\/blog\/Csharp-element.jpg"
     },
     {
       "hash": "sha256-2ctIQx0oJRhizDTtGruMToVKJPwLKnjh6SCIOdppyus=",
@@ -1205,5 +1213,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "CHJk\/4bR"
+  "version": "BCgaOTB2"
 };
