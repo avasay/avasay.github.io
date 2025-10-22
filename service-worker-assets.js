@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-YvYo6kYTqQ40HRRmSz6SzhqKPxzQLQIfLno\/AHXlAhc=",
+      "hash": "sha256-JLgvcYT6spdllTuwe1sfoAekVg197eAMuVUOVt9kFWg=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-zsJUPf90e6JOTT4UeIPRuUeOeEm\/qZBybLqnqgatBwI=",
+      "hash": "sha256-Xxdu1659pTXaruMt9771ublmYfIY0hNd7O\/o5ADQRcw=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -173,11 +173,11 @@
       "url": "ads.txt"
     },
     {
-      "hash": "sha256-8jyua9WEbzj4mG4JxHxXLRqGHPQjFaGif3PXRVyM5HE=",
+      "hash": "sha256-FsGwvP2r3Y9G05Q3ylcM6n3OC+dgo21t\/aIlpuAphNE=",
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-+W2\/rXJVYB8HLYQ32c3CTz2X53wQL8V7Wj\/+ZdA7HhU=",
+      "hash": "sha256-5J535lDyN9qE2ahjOHPMQI0vw+R9V7F4DtcJsEpUKmM=",
       "url": "css\/card-styles.css"
     },
     {
@@ -497,6 +497,10 @@
       "url": "img\/blog\/blazor-custom-validation.png"
     },
     {
+      "hash": "sha256-H7DFNyJ2wWnEVOBtvSAVmfvWFREQnsd9AxsadO\/4mOk=",
+      "url": "img\/blog\/blazor-validate-submit_80.png"
+    },
+    {
       "hash": "sha256-VplwLbKEUfvPKpu0aQrTC2JOfElzdVXL9GxaA6zPqHo=",
       "url": "img\/blog\/blazor-validation-annotation_80.png"
     },
@@ -509,6 +513,26 @@
       "url": "img\/blog\/debunk_cplusplus.jpg"
     },
     {
+      "hash": "sha256-DLpFDziVbLqXT\/3QX5UsDIG11VwPr1uw8BR3vIzwO6M=",
+      "url": "img\/blog\/default-blazor-1_80.jpg"
+    },
+    {
+      "hash": "sha256-ppKxwQ\/hAZZbbxGuRs+\/2D22x7ITjDkFp6PmYA6XJEI=",
+      "url": "img\/blog\/validateSubmit-1.png"
+    },
+    {
+      "hash": "sha256-qdMSErWD2vsReP4CUDR2H+\/ByA58gOrmg7+5ZSC8i0c=",
+      "url": "img\/blog\/validateSubmit-2.png"
+    },
+    {
+      "hash": "sha256-9S3EhX1T+aEsKj7UmH4bGZck5\/DsZcNyQ30doREXXws=",
+      "url": "img\/blog\/validateSubmit-3.png"
+    },
+    {
+      "hash": "sha256-XBSdhAJksBZBOHQ2WdS+l8pJ6zvyBjhfq6HLY3aKHX4=",
+      "url": "img\/blog\/validateSubmit-4.png"
+    },
+    {
       "hash": "sha256-dRYIh\/HurhCQKteUfyZfdhkSn7PCaBbhNxml4zC25PE=",
       "url": "img\/blog\/validation-editcontext.jpg"
     },
@@ -519,6 +543,14 @@
     {
       "hash": "sha256-aMF1AlnRdAEquSqJdfjGIuHCALd1ei5\/m3djmHDlLd0=",
       "url": "img\/blog\/validation-form-test.png"
+    },
+    {
+      "hash": "sha256-Fn3nwM6jDQ1zidkAdEFUB02mwmzjCNDQBnsAV3GZb58=",
+      "url": "img\/blog\/verge-footer.png"
+    },
+    {
+      "hash": "sha256-aR\/q7oc0EetWzblnSodXxF1J3PBNgg8QN72ExD6TcVw=",
+      "url": "img\/default-2_80.jpg"
     },
     {
       "hash": "sha256-2N8TfrxMjGda6YUrpdQJJnN7LVJuTa9ZEGCCz+TJ+Yo=",
@@ -605,6 +637,10 @@
       "url": "img\/pass-values.jpg"
     },
     {
+      "hash": "sha256-Sk5beI3P7ohHX8NLE3T1uyarz9F5MRjC6AUm0Iqmd9Y=",
+      "url": "img\/pirate-doll.png"
+    },
+    {
       "hash": "sha256-qrIleGz19aeMHe1ATt02CAVVJs\/ehMRkBHnLnIrKv00=",
       "url": "img\/project-1.jpg"
     },
@@ -641,7 +677,11 @@
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
     },
     {
-      "hash": "sha256-KMoGtN44xwV0aU\/gXruymIRZAaZdYXXpQEnXf0QxIT8=",
+      "hash": "sha256-vQM61UyzxNi5UXOcmyuJeWh36lb7\/H43KSpfedQHj94=",
+      "url": "img\/visa-hikes_cropped.png"
+    },
+    {
+      "hash": "sha256-+N1F2fWgDrNt0iCxc38SJMhNvx2D1Is17LmffyrA+vw=",
       "url": "index.html"
     },
     {
@@ -1213,5 +1253,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "AJdhP4An"
+  "version": "NSaeprBc"
 };

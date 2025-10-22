@@ -276,8 +276,13 @@ html, body {
         margin-bottom: 15px;
     }        
 
-    .app-featured-image-container {
-
+    .post .subheading {
+        font-size: 1.25rem;
+        font-weight: 600;
+        padding: 30px;
+        margin-bottom: 5px;
+        background-color: antiquewhite;
+        border-radius: 25px;
     }
 
     .app-featured-image-container img {
