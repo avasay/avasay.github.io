@@ -437,11 +437,7 @@ html, body {
     font-weight: bold;
     font-family: "Courier New", Courier, monospace;
 }
-/*
-.token.operator { 
-    background-color: transparent !important;
-}
-*/
+
 /* wwwroot/css/blog.css */
 .navbar-zindex2 {
     /* position: relative;  Creates a stacking context */
@@ -499,24 +495,9 @@ html, body {
     transition: all 0.2s ease;
 
 }
-    .tag a {
-        color: black;
-        text-decoration: none;
-    }
-
-    .tag a:hover {
-        background-color: #007bff;
-        color: white;
-        transform: translateY(-1px);
-        text-decoration: underline;
-    }
-    .tag a:visited {
-        color: orangered;
-    }
 
 .app-tag {
-    background-color: #c0f3fd;
-
+    background-color: lightgoldenrodyellow;
     padding: 0.15rem 0.50rem;
     border-radius: 0.3rem;
     font-size: 0.8rem;
@@ -607,96 +588,24 @@ html, body {
     margin: 0 0.25rem;
 }
 
-.current-page {
-    color: #333;
-    font-weight: 500;
+.giscus, .giscus-frame {
+    margin-top: 3rem;
+    width: 100%;
 }
 
-
-
-
-/* NavSearch styling */
-.nav-search {
+.code-container {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
     position: relative;
-    margin-left: 0;
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.search-icon {
-    background: none;
-    border: none;
-    color: #333;
-    cursor: pointer;
-    padding: 0.5rem;
-    display: none; /* Hide on desktop */
-}
-
-.search-input {
-    width: 200px;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: width 0.3s ease;
-    margin-top: 18px;
-}
-
-    .search-input:focus {
-        outline: none;
-        border-color: #007bff;
-    }
-
-
-    .app-link, .repo-link {
-        background-color: #efefef;
-        border-radius: 50% 20% / 10% 40%;
-    }
-
-    .app-link img, .repo-link img {
-        width: 50%;
-        height: auto;
-    }
-
-    
-    /* AdSense styles */
-    .adsbygoogle-container {
-        min-width: 300px;    
-        min-height: 250px;   
-        width: 100%;    
-        height: auto;    
-        display: block;    
-        margin: 1rem 0;
-        /* Ensure ads don't push content */
-    }
-    .adsbygoogle-container > div 
-    { 
-        display: block !important;
-    }
-.home-sections .section-title:focus-within {
-    outline: none;
-    box-shadow: none;
-}
-.home-sections section:not(.home-apps-section) {
-    margin-bottom: 4rem;
-}
-@media (max-width: 599px) {
-    .about-about_me {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-}
-
-
-
-/* Code block container */
+/* Custom styled code block */
 .code-block {
     position: relative;
-    background: #282a36; /* Dark background */
+    background-color: #2b2b2b; /* Dark background */
     color: #f8f8f2; /* Light text */
     border-radius: 6px;
     padding: 1rem 1rem 1rem 3.5rem; /* Left padding for line numbers */
@@ -719,13 +628,13 @@ html, body {
         text-align: right;
         color: #6272a4; /* Muted color for line numbers */
         border-right: 1px solid #44475a; /* Separator */
-        user-select: none;
+        /* user-select: none; */
         line-height: 1.4; /* Match code line height */
         white-space: pre; /* Preserve line breaks */
     }
 
 /* Inline code */
-code:not(.code-block code) {
+:not(pre) > code {
     font-size: 87.5%;
     color: #e83e8c;
     background: #f8f9fa;
@@ -759,7 +668,9 @@ code:not(.code-block code) {
     display: block !important;
 }
 
-
+.ql-syntax {
+    background-color: beige;
+}
 /*
         @media (min-width: 576px) {
   .container, .container-sm {

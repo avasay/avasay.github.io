@@ -59,7 +59,7 @@ button {
         transform: translateY(1px);
     }
 
-@@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .contact-container {
         padding: 20px;
         margin: 10px;

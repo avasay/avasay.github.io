@@ -1,0 +1,256 @@
+Prism and Highlight Conflict
+I've analyzed your GitHubBlogSpa application and identified the root cause of the syntax highlighting mismatch between the QuillJS editor and the published Blazor pages.
+
+## Problem Analysis
+
+The issue stems from using **different syntax highlighting libraries** in different parts of your application:
+
+### 1. QuillJS Editor (CMS)
+- **Uses**: Highlight.js 11.8.0 with **Monokai theme**
+- **CSS Source**: `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css`
+- **Classes**: `hljs-attr`, `hljs-string`, `hljs-name`, etc.
+
+### 2. Published Blazor Pages
+- **Uses**: PrismJS (not Highlight.js)
+- **CSS Source**: [`wwwroot/css/prism.css`](wwwroot/css/prism.css:3) and [`wwwroot/css/codeblock-three.css`](wwwroot/css/codeblock-three.css:1)
+- **Classes**: `token.attr-name`, `token.string`, `token.tag`, etc.
+
+## Key Differences Found
+
+1. **Different Libraries**: Highlight.js vs PrismJS
+2. **Different Themes**: Monokai (dark theme) vs Prism's default light theme
+3. **Different Class Names**: `hljs-*` vs `token-*`
+
+## Solution Recommendations
+
+### Option 1: Standardize on Highlight.js (Recommended)
+Replace PrismJS with Highlight.js in your Blazor application:
+
+1. **Add Highlight.js to your main layout** (e.g., in `_Imports.razor` or `App.razor`):
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/csharp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cshtml-razor.min.js"></script>
+```
+
+2. **Initialize Highlight.js** in your Blazor components:
+```javascript
+// In your component or in a script tag
+hljs.highlightAll();
+```
+
+3. **Update your code display components** to use Highlight.js instead of PrismJS
+
+### Option 2: Update QuillJS to use PrismJS
+Modify [`GitHubBlogSpaCMS/public/editor.html`](GitHubBlogSpaCMS/public/editor.html:25) to use PrismJS instead of Highlight.js:
+
+```html
+<!-- Replace Highlight.js with PrismJS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+```
+
+And update the syntax highlighting function in [`editor.js`](GitHubBlogSpaCMS/public/js/editor.js:84) to use PrismJS.
+
+### Option 3: Create Custom CSS to Match Colors
+Add custom CSS to [`wwwroot/css/app.css`](wwwroot/css/app.css:1) to make PrismJS colors match the Monokai theme:
+
+```css
+/* Monokai-style colors for PrismJS */
+.token.attr-name { color: #66d9ef; }
+.token.string { color: #e6db74; }
+.token.tag { color: #f92672; }
+.token.keyword { color: #f92672; }
+.token.comment { color: #75715e; }
+.token.number { color: #ae81ff; }
+.token.function { color: #a6e22e; }
+```
+
+## Recommendation
+
+**Option 1** (standardize on Highlight.js) is recommended because:
+1. Consistency across editor and published pages
+2. Monokai theme provides excellent contrast and readability
+3. Highlight.js has better support for Razor/CSHTML syntax
+4. Minimal changes required to your existing CMS setup
+
+The mismatch occurs because your CMS uses Highlight.js with Monokai theme while your Blazor app uses PrismJS with its default light theme, creating the visual inconsistency you're experiencing.
+
+
+Only three razor files use Prism so I can just replace them.
+Based on my analysis, you have **3 Blazor pages/components** that use Prism.js:
+
+1. **[`Pages/Test/CodeBlockTest.razor`](Pages/Test/CodeBlockTest.razor:1)** - A test page demonstrating various code blocks
+2. **[`Shared/CodeBlockThree.razor`](Shared/CodeBlockThree.razor:1)** - A reusable component for syntax highlighting
+3. **[`Shared/CodeBlockRazor.razor`](Shared/CodeBlockRazor.razor:1)** - A specialized component for Razor/Blazor files
+
+## Current Prism.js Usage
+
+Your application uses Prism.js in these specific ways:
+
+- **CSS**: [`wwwroot/css/prism.css`](wwwroot/css/prism.css:1) and [`wwwroot/css/codeblock-three.css`](wwwroot/css/codeblock-three.css:1)
+- **JavaScript**: [`wwwroot/js/prism.js`](wwwroot/js/prism.js:1) (minified PrismJS 1.30.0)
+- **JS Function**: `highlightPrismCodeThree()` called from your components
+
+## Recommendation: Switch to Highlight.js
+
+Since you only have 3 components using Prism.js, switching to Highlight.js is quite manageable. Here's what you'd need to do:
+
+### 1. Replace Prism.js with Highlight.js
+Add this to your main layout or `_Imports.razor`:
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/csharp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cshtml-razor.min.js"></script>
+```
+
+### 2. Update the 3 Components
+Replace Prism-specific classes and functions:
+
+**In [`CodeBlockThree.razor`](Shared/CodeBlockThree.razor:7):**
+```html
+<!-- Replace this: -->
+<pre class="@(ShowLineNumbers ? "prism-line-numbers" : "")"><code class="prism-language-@Language.ToLower()">@Code</code></pre>
+
+<!-- With this: -->
+<pre><code class="language-@Language.ToLower()">@Code</code></pre>
+```
+
+**In [`CodeBlockRazor.razor`](Shared/CodeBlockRazor.razor:8):**
+```html
+<!-- Replace Prism classes with Highlight.js classes -->
+<pre><code class="language-aspnet">@HtmlContent</code></pre>
+<pre><code class="language-csharp">@CSharpContent</code></pre>
+```
+
+### 3. Update JavaScript Function
+Replace `highlightPrismCodeThree()` with:
+```javascript
+function highlightCodeBlocks() {
+    hljs.highlightAll();
+}
+```
+
+### 4. Update CSS
+Remove [`prism.css`](wwwroot/css/prism.css:1) and update [`codeblock-three.css`](wwwroot/css/codeblock-three.css:1) to use Highlight.js classes.
+
+## Benefits of Switching
+
+1. **Consistency**: Same syntax highlighting in editor and published pages
+2. **Better Razor Support**: Highlight.js has better CSHTML/Razor syntax support
+3. **Monokai Theme**: The dark theme you love in the editor
+4. **Minimal Impact**: Only 3 components need updates
+
+The migration is straightforward since you have limited Prism.js usage, and it will solve the color mismatch issue you're experiencing between the QuillJS editor and published pages.
+
+What to do:
+Yes, exactly! You're correct. Looking at your [`wwwroot/index.html`](wwwroot/index.html:1), I can see you already have **both libraries loaded**:
+
+## Current Setup in wwwroot/index.html
+
+**Prism.js (for your 3 Blazor components):**
+- Line 32: [`<link href="css/prism.css" rel="stylesheet">`](wwwroot/index.html:32)
+- Line 134: [`<script src="js/prism.js"></script>`](wwwroot/index.html:134)
+- Lines 241-286: `highlightPrismCodeThree()` function for your components
+
+**Highlight.js (for CMS content):**
+- Line 36: [`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">`](wwwroot/index.html:36)
+- Lines 137-143: Highlight.js scripts with multiple language support
+- Lines 319-339: `highlightAllCode()` function for CMS content
+
+## The Issue
+
+You have a **dual-library setup** where:
+- **CMS content** (from QuillJS editor) uses Highlight.js with Monokai theme → **Dark theme**
+- **Blazor components** use Prism.js with default theme → **Light theme**
+
+## Simple Solution
+
+Since you already have both libraries loaded, you just need to **standardize on Highlight.js** by:
+
+### 1. Remove Prism.js references from index.html:
+```html
+<!-- Remove these lines: -->
+<link href="css/prism.css" rel="stylesheet">
+<script src="js/prism.js"></script>
+```
+
+### 2. Update the JavaScript functions:
+Replace the `highlightPrismCodeThree()` function (lines 241-270) with:
+```javascript
+window.highlightPrismCodeThree = function() {
+    if (typeof hljs !== 'undefined') {
+        document.querySelectorAll('.prism-code-block-three code').forEach(function(codeElement) {
+            // Get the language from prism-language-* class
+            var languageClass = Array.from(codeElement.classList).find(function(cls) {
+                return cls.startsWith('prism-language-');
+            });
+            
+            if (languageClass) {
+                var language = languageClass.replace('prism-language-', '');
+                codeElement.className = 'language-' + language;
+                hljs.highlightElement(codeElement);
+            }
+        });
+    }
+};
+```
+
+### 3. Update your 3 components to use Highlight.js classes:
+- In [`CodeBlockThree.razor`](Shared/CodeBlockThree.razor:7): Change `prism-language-@Language.ToLower()` to `language-@Language.ToLower()`
+- In [`CodeBlockRazor.razor`](Shared/CodeBlockRazor.razor:8): Change `prism-language-aspnet` to `language-aspnet`
+
+This will give you **consistent Monokai dark theme** across both CMS content and your Blazor components, matching the QuillJS editor colors perfectly.
+
+Keep the use of some  class names
+**Yes, you're absolutely correct!** 
+
+Looking at the JavaScript selector `querySelectorAll('.prism-code-block-three code')`, you need to **keep the `.prism-code-block-three` class** in your HTML structure.
+
+## What You Need to Keep
+
+**Keep these class names in your components:**
+- `.prism-code-block-three` - This is the container class that the JavaScript uses to find your code blocks
+- This class is used by [`codeblock-three.css`](wwwroot/css/codeblock-three.css:1) for styling
+
+## What You Need to Change
+
+**Only change the language classes:**
+
+**In [`CodeBlockThree.razor`](Shared/CodeBlockThree.razor:7):**
+```html
+<!-- Keep this: -->
+<div class="prism-code-block-three">
+
+<!-- Change this: -->
+<code class="prism-language-@Language.ToLower()">
+
+<!-- To this: -->
+<code class="language-@Language.ToLower()">
+```
+
+**In [`CodeBlockRazor.razor`](Shared/CodeBlockRazor.razor:8):**
+```html
+<!-- Keep this: -->
+<div class="prism-code-block-three">
+
+<!-- Change these: -->
+<code class="prism-language-aspnet">
+<code class="prism-language-csharp">
+
+<!-- To these: -->
+<code class="language-aspnet">
+<code class="language-csharp">
+```
+
+## Summary
+
+- ✅ **Keep**: `.prism-code-block-three` (for JavaScript selector and CSS styling)
+- ❌ **Remove**: `.prism-language-*` classes
+- ✅ **Add**: `.language-*` classes (Highlight.js standard)
+
+This way, the JavaScript can still find your code blocks using `querySelectorAll('.prism-code-block-three code')`, but Highlight.js will recognize the `language-*` classes for syntax highlighting with the Monokai theme.
+

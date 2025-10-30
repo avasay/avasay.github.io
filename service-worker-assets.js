@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-BnE48OQYYVAAe3S0bsMCDd\/3ntDo4jR32XKcJkD5VSc=",
+      "hash": "sha256-T+evlQFtxaPIoJvlSksXnm2o18LyogY7o5fM9LvJJVA=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -101,7 +101,7 @@
       "url": "_framework\/System.Net.Primitives.wasm.br"
     },
     {
-      "hash": "sha256-I7kQgB58qh6AVA3+OWY\/S48YFs1Pi5JE2OTB83Lwx7w=",
+      "hash": "sha256-\/J5L4y1iKyOZCEFzE9G9HylZk5QoNc1noRFqCTBahAk=",
       "url": "_framework\/System.Private.CoreLib.wasm.br"
     },
     {
@@ -125,11 +125,11 @@
       "url": "_framework\/System.Text.Json.wasm.br"
     },
     {
-      "hash": "sha256-HiCsNI6hjdG4XK+9l+nadhJ6+hFDiSP1doQwRjn+lYg=",
+      "hash": "sha256-KjunS\/uZL3X05cCJZDe3IihhUWglIedHGqQupc4Dy5M=",
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-tQxG\/8nRFHXOry+L94KcteBSNFt+cDcSQWtGIzNtlUA=",
+      "hash": "sha256-SZjxkxKg96yjst3kCWJD0Qc2eefNZelLJ7EPxDihH7U=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -173,7 +173,7 @@
       "url": "ads.txt"
     },
     {
-      "hash": "sha256-FsGwvP2r3Y9G05Q3ylcM6n3OC+dgo21t\/aIlpuAphNE=",
+      "hash": "sha256-cdhLUBexBrcAH8httG9+ggcYAtzQTlQ5AcIO0uBZ\/vc=",
       "url": "css\/app.css"
     },
     {
@@ -185,8 +185,32 @@
       "url": "css\/codeblock-three.css"
     },
     {
-      "hash": "sha256-SBJPG4L36NmEa+x3xCOTIQ0SX6zn1zLXsuycYpDembs=",
+      "hash": "sha256-Nfd17hWWtIn0ZFJAeONCd2qdYr6bQMiAO2ep5psKCVw=",
       "url": "css\/contact-form.css"
+    },
+    {
+      "hash": "sha256-w52O4KqC4\/5hkFisK2ILP8QVIxsFNaGI1TlzJ7YNy0Y=",
+      "url": "css\/delete later\/app.css"
+    },
+    {
+      "hash": "sha256-5J535lDyN9qE2ahjOHPMQI0vw+R9V7F4DtcJsEpUKmM=",
+      "url": "css\/delete later\/card-styles.css"
+    },
+    {
+      "hash": "sha256-agqgfTtLZA+ZzIOpOqh9FQ+VLwiKaUhmJafRe3L7uB4=",
+      "url": "css\/delete later\/codeblock-three.css"
+    },
+    {
+      "hash": "sha256-ea7CLWEcB0ZjnCKzeVwZzDGDM6ajtOdkRjge3dEcFYI=",
+      "url": "css\/delete later\/prism.css"
+    },
+    {
+      "hash": "sha256-uhVMiHkz98jpm41j1vCu5zY7eBftsZNewIuQD\/\/44h4=",
+      "url": "css\/delete later\/style.css"
+    },
+    {
+      "hash": "sha256-mOSLG2+VB1Mj9BKoiGe586OSjWw4N0DFPI\/QZqfPom8=",
+      "url": "css\/delete later\/style.min.css"
     },
     {
       "hash": "sha256-px8xtQvxgA4OM0njrTVb7xbMCbYHpYK1lEbISndWUpU=",
@@ -697,7 +721,7 @@
       "url": "js\/masonry.js"
     },
     {
-      "hash": "sha256-gn+j6b3nLU22n\/4YghDHT++xej4iVr55vjEkRTWCqnU=",
+      "hash": "sha256-j8K6HCztMqMioZA64mIVKqDp8ZNAMLLyMZdZdSslFfU=",
       "url": "js\/prism.js"
     },
     {
@@ -783,6 +807,10 @@
     {
       "hash": "sha256-ylpag\/YSYK+oGGNchZTaANCa7FdERnn1jGS9qdF8ZHU=",
       "url": "news-sitemap.xml"
+    },
+    {
+      "hash": "sha256-mj7nw+mRWhm0MTqFVPVYFPsmZvsI85Z6E3DqJ7sHUGs=",
+      "url": "prism_highlightjs_conflict.txt"
     },
     {
       "hash": "sha256-7KDopmGTGYR7afiDQhGyd0FyezgcuIt0\/Q9gvOy+Xx0=",
@@ -1253,5 +1281,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "c9fsgKfn"
+  "version": "R07HsDpp"
 };
