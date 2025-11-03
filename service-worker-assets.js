@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-T+evlQFtxaPIoJvlSksXnm2o18LyogY7o5fM9LvJJVA=",
+      "hash": "sha256-6MX2w9wn1W2etRWUEIoc+o0M2vI8+AOqjOwdfn5b28w=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-SZjxkxKg96yjst3kCWJD0Qc2eefNZelLJ7EPxDihH7U=",
+      "hash": "sha256-HUvijBi6wsPZrxtes7FRF2uDqUgIwWl5IxcwASsxjS0=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -165,7 +165,7 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-tX8rR0r3e0dn1CV6VvkVg0sUm3katfsAcNeSoFsLV1Q=",
+      "hash": "sha256-9BlswVZXFLK3AHFZe5i0QFyMKFxJrbzMeSjySU\/OEOU=",
       "url": "_redirects"
     },
     {
@@ -539,6 +539,18 @@
     {
       "hash": "sha256-DLpFDziVbLqXT\/3QX5UsDIG11VwPr1uw8BR3vIzwO6M=",
       "url": "img\/blog\/default-blazor-1_80.jpg"
+    },
+    {
+      "hash": "sha256-PU74f1S+re6FR3Oh6s9bgcNRlo9yzA\/ReFRGtGbEDC4=",
+      "url": "img\/blog\/imagerandomizer-test-1.png"
+    },
+    {
+      "hash": "sha256-x9NmRrHlLuhnQLG8xRESnRbh5iOTj8Nzu+v0zfAVsm0=",
+      "url": "img\/blog\/imagerandomizer-test-2.png"
+    },
+    {
+      "hash": "sha256-INItoFqRep+Y4m9quYmXiiQ1R27lM8KKqU8Dhulhy4w=",
+      "url": "img\/blog\/imagerandomizer-test-3.png"
     },
     {
       "hash": "sha256-ppKxwQ\/hAZZbbxGuRs+\/2D22x7ITjDkFp6PmYA6XJEI=",
@@ -1281,5 +1293,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "R07HsDpp"
+  "version": "ocNh4Dm8"
 };
