@@ -6,17 +6,17 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: 1px solid #e1e1e1;
 }
-
+/*
 .prism-code-block-three pre {
     margin: 0;
     padding: 1rem;
-    background: #f8f8f8;
+     background: #f8f8f8; 
     overflow-x: auto;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.0;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
-
+*/
 /* Apply Prism classes to our custom elements */
 .prism-code-block-three .prism-language-csharp,
 .prism-code-block-three .prism-language-javascript,
@@ -128,11 +128,12 @@
 }
 
 /* Code block hover effect */
+/*
 .prism-code-block-three pre:hover {
     background: #f0f0f0;
     transition: background-color 0.2s ease;
 }
-
+*/
 /* Responsive design */
 @media (max-width: 768px) {
     .prism-code-block-three pre {
@@ -161,4 +162,10 @@
 
 .prism-code-block-three pre::-webkit-scrollbar-thumb:hover {
     background: #a8a8a8;
+}
+
+/* Hide all bottom controls */
+.prism-code-block-three .toolbar,
+.prism-code-block-three .copy-to-clipboard-button {
+    display: none !important;
 }

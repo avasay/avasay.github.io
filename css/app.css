@@ -719,21 +719,23 @@ html, body {
         text-align: right;
         color: #6272a4; /* Muted color for line numbers */
         border-right: 1px solid #44475a; /* Separator */
+        -webkit-user-select: none;
         user-select: none;
         line-height: 1.4; /* Match code line height */
         white-space: pre; /* Preserve line breaks */
     }
 
 /* Inline code */
+/* 
 code:not(.code-block code) {
-    font-size: 87.5%;
+    font-size: 87.5%; 
     color: #e83e8c;
     background: #f8f9fa;
     padding: 0.2em 0.4em;
     border-radius: 3px;
     font-family: inherit;
 }
-
+*/
 /* Code block content */
 .code-block code {
     color: inherit;
