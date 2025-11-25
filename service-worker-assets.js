@@ -885,7 +885,7 @@
       "url": "prism-choices-backup\/prism-minimum\/prism.js"
     },
     {
-      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "hash": "sha256-LA92ri0m8T29\/Ig+aBSsi31n+Aj9OrFfGCszMn9yQn8=",
       "url": "robots.txt"
     },
     {
@@ -1357,5 +1357,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "4aSmF3p+"
+  "version": "8\/p3teel"
 };
