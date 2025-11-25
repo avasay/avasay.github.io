@@ -885,6 +885,10 @@
       "url": "prism-choices-backup\/prism-minimum\/prism.js"
     },
     {
+      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "url": "robots.txt"
+    },
+    {
       "hash": "sha256-7KDopmGTGYR7afiDQhGyd0FyezgcuIt0\/Q9gvOy+Xx0=",
       "url": "sample-data\/CodeBlockTwo.txt"
     },
@@ -1341,7 +1345,7 @@
       "url": "scss\/style.scss"
     },
     {
-      "hash": "sha256-VU42zTkIjTThHDKRu+jY\/TiOSL41U8xYtSVNtcC19KU=",
+      "hash": "sha256-Df0YmRlZ0l0+AqVndPjXy0JzKwksD9+1NCbXxkJSSdg=",
       "url": "sitemap.xml"
     },
     {
@@ -1353,5 +1357,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "aEjo+PgX"
+  "version": "4aSmF3p+"
 };
