@@ -42,6 +42,23 @@ https://www.coderschmoder.com/create-a-database-management-system-spa-in-blazor/
 https://www.coderschmoder.com/home/ https://coderschmoder.com 301
 https://www.coderschmoder.com/category/thoughts/ https://coderschmoder.com/blog 301
 https://www.coderschmoder.com/tag/form-validation/ https://coderschmoder.com/search/form%20validation 301
+https://www.coderschmoder.com/tag/msbuild/ https://coderschmoder.com/blog 301
+https://coderschmoder.com/blog/employee-db-rest-api https://coderschmoder.com/create-a-simple-employee-database-rest-api 301
+https://coderschmoder.com/blog/repository-design-pattern https://coderschmoder.com/repository-design-pattern 301
+https://coderschmoder.com/blog/five-ways-pass-values-blazor https://coderschmoder.com/five-ways-to-pass-data-from-one-blazor-component-to-another 301
+https://coderschmoder.com/blog/send-http-patch-request https://coderschmoder.com/how-to-send-a-http-patch-request-in-csharp 301
+https://coderschmoder.com/blog/single-page-app https://coderschmoder.com/search/spa 301
+https://www.coderschmoder.com/five-ways-to-pass-data-from-one-blazor-component-to-another/ https://coderschmoder.com/five-ways-to-pass-data-from-one-blazor-component-to-another 301
+https://www.coderschmoder.com/create-a-database-management-system-spa-in-blazor/ https://coderschmoder.com/search/database 301
+https://www.coderschmoder.com/home/ https://coderschmoder.com 301
+https://www.coderschmoder.com/category/thoughts/ https://coderschmoder.com/blog 301
+https://www.coderschmoder.com/tag/form-validation/ https://coderschmoder.com/search/form%20validation 301
+https://www.coderschmoder.com/how-to-read-json-config-files-into-your-app-in-blazor-wasm/ https://coderschmoder.com/how-to-read-json-config-files-into-your-app-in-blazor-wasm 301
+https://www.coderschmoder.com/reload-changes-in-appsetting-json-without-website-restart/ https://coderschmoder.com/reload-changes-in-appsetting-json-without-website-restart 301 
+https://www.coderschmoder.com/get-random-element-from-list-in-c-net-6-0/ https://coderschmoder.com/get-random-element-from-list-in-c-net-6-0 301
+https://www.coderschmoder.com/privacy-policy/ https://coderschmoder.com/privacy-policy 301
+https://www.coderschmoder.com/create-a-rest-client-single-page-application-in-blazor/ https://coderschmoder.com/create-a-rest-client-single-page-application-in-blazor 301
+https://www.coderschmoder.com/debunking-the-myth-c-and-cybersecurity-concerns/ https://coderschmoder.com/debunking-the-myth-c-and-cybersecurity-concerns 301
 
 https://www.coderschmoder.com/* https://coderschmoder.com/:splat 301!
 /* /index.html 200
