@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-dfGTkBv3E7SzNHVYeeJSEPM\/SNhzj8fD7jFbDZZ5cJ8=",
+      "hash": "sha256-8yukTyxTkSsRtqzJKdRdu3hWkQPClfU4L0x8l4M6jG0=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-c5WWtB161zt96HFbxtv+Ai7CgVOBXg64XhGY1QEcI9c=",
+      "hash": "sha256-2q+8+tdFNnvBCuDNcctK9IzXqJNwt6Suum34vZmdxCw=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -165,7 +165,7 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-nPFJY7shxEwLM3gx\/bEn2aeS36WjXzuatIbTotJZWBU=",
+      "hash": "sha256-g+CEGuJmgtdO9njxwpYDSDgG0kWlBUUPeoRy5LPTIGg=",
       "url": "_redirects"
     },
     {
@@ -445,6 +445,10 @@
       "url": "img\/REST-API-Application-1.jpg"
     },
     {
+      "hash": "sha256-Y3+BF0XmMvAhjhhJolY9UldWGvdYnAkTV7VcMLStJDk=",
+      "url": "img\/Red_Kitten_01.jpg"
+    },
+    {
       "hash": "sha256-knGQQfhwsVTdsVwlSvfSnny2Xr2dz54T2NunqZSfvrk=",
       "url": "img\/SPA-feature.jpg"
     },
@@ -661,6 +665,10 @@
       "url": "img\/inmemory-db.jpg"
     },
     {
+      "hash": "sha256-WmloqXybRK2RYazxCZjv2ElS2fUSe3DKXv0JF3Y+gKA=",
+      "url": "img\/kitten-nursery-operation-kindness.jpg"
+    },
+    {
       "hash": "sha256-n57z0ukTnR2QDeJXHjnNGMU4ZwwVu+\/xB3wyywbECaY=",
       "url": "img\/news\/AI-enhanced-gaming_50.jpg"
     },
@@ -771,6 +779,14 @@
     {
       "hash": "sha256-vQM61UyzxNi5UXOcmyuJeWh36lb7\/H43KSpfedQHj94=",
       "url": "img\/visa-hikes_cropped.png"
+    },
+    {
+      "hash": "sha256-HQCs85j5qwm\/WG+hOH8geDhTnh81g\/557Xd4kIX2yDQ=",
+      "url": "img\/why-learn-blazor_60.png"
+    },
+    {
+      "hash": "sha256-Lsrjn7\/IN9qATN0a5RRbQH+mKp7jxhi5cEnAfJq7zMs=",
+      "url": "img\/why-learn-csharp_80.png"
     },
     {
       "hash": "sha256-5v25xz4H5l9yJorFGCL80l9zsnkhiQ+tXdSRVzQWOH8=",
@@ -1357,5 +1373,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "8\/p3teel"
+  "version": "HwQLhDJ8"
 };

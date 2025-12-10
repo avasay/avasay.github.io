@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "GitHubBlogSpa",
   "resources": {
-    "hash": "sha256-kZWI1+Bn0BMBOBKQzgh3jH/OfDeanOuQl3SPODha6dg=",
+    "hash": "sha256-9LwJCBm6n7TyIp497UFx9f8Z7CHVPOGftZgu+AYAfO0=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-vtotCeXt2UD6oc459laJT32vBgigZ+eLoUmdeFkvYDk="
     },
@@ -48,7 +48,7 @@
       "System.Text.Json.wasm": "sha256-pBzGk+Yijcg9ImuYqspsPxAT3spoRbfzHFrt5AQTjXo=",
       "System.Text.RegularExpressions.wasm": "sha256-gR0RILyAMa/XAfpgW3NJm8Q08J6vTRoae697ZwAY4fc=",
       "System.Private.CoreLib.wasm": "sha256-7cF9RSPh4IG/DAOJ7ASS02zixnh+p+jYJvicdVa7Rbs=",
-      "GitHubBlogSpa.wasm": "sha256-SDb+U8cW3JZCou0XIWsoKR3oxXpNl+pSCotZOX/GuUo="
+      "GitHubBlogSpa.wasm": "sha256-ftbVpc1QevNFOBoQQyzGnzUBS1/JGMKqfY2mg5uibbo="
     }
   },
   "cacheBootResources": true,
