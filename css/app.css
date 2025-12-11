@@ -320,6 +320,12 @@ html, body {
         margin-right: auto; /* Sets the right margin to auto */
     }
 
+    .blog_post-snipping-img_95px {
+        display: block;
+        width: 95%;
+        margin-left: auto; /* Sets the left margin to auto */
+        margin-right: auto; /* Sets the right margin to auto */
+    }
 }
 
 @media (min-width: 1200px) 

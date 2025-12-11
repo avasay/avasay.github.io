@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-8yukTyxTkSsRtqzJKdRdu3hWkQPClfU4L0x8l4M6jG0=",
+      "hash": "sha256-eEIkglJUnFAxHYGuLpj4G7ATqL1lWPYOOTvWy3ONtBw=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-2q+8+tdFNnvBCuDNcctK9IzXqJNwt6Suum34vZmdxCw=",
+      "hash": "sha256-jCyzB\/ty3AGWoOKRsCtyjkkNYQWNcc+Mq7WEBUqLP5o=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -165,7 +165,7 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-g+CEGuJmgtdO9njxwpYDSDgG0kWlBUUPeoRy5LPTIGg=",
+      "hash": "sha256-MSZ6LXcN2GLiYLcOeLmTd0Ya1PGH0IVeptKcX+vEVvg=",
       "url": "_redirects"
     },
     {
@@ -173,7 +173,7 @@
       "url": "ads.txt"
     },
     {
-      "hash": "sha256-T3Fb9fF\/aeR3HQ2w5ZkvvlNRJ8EjpgbWyEECgdvmX4U=",
+      "hash": "sha256-55q1yNstpOQDEk9tAyxzSLwzHU7Kt2+gmCdEiP6mIVY=",
       "url": "css\/app.css"
     },
     {
@@ -277,6 +277,26 @@
       "url": "icon-512.png"
     },
     {
+      "hash": "sha256-TKzW1gVihu4g0VupPexmQoxGmdA5NCWd1JNyomqyyYA=",
+      "url": "img\/AI-cashier_80.png"
+    },
+    {
+      "hash": "sha256-txt8t4dnpugjYT60uqeIcqbZgx4aNAQnCJ\/xgYIoddg=",
+      "url": "img\/AI-delivery.png"
+    },
+    {
+      "hash": "sha256-ruMfzODKRazaDFiYh3LtI+ZdVsU6fKukm7WLQFQ8naw=",
+      "url": "img\/AI-delivery_80.png"
+    },
+    {
+      "hash": "sha256-FKkn1Hee11cKt0MnAOOUCDAdnsI6xI2tc7N5FRzTpmY=",
+      "url": "img\/AI-doctor_80.png"
+    },
+    {
+      "hash": "sha256-BBE0dVW7aI0F+E5Ate5vzo2xXZkiweMG82ssv1gccpI=",
+      "url": "img\/AI-projected-impact_80.png"
+    },
+    {
       "hash": "sha256-ymuTyRjuKPA3mj9bChaXLXcFxHgH0ADslcGvd92iLn8=",
       "url": "img\/Advertise.png"
     },
@@ -321,6 +341,10 @@
       "url": "img\/CascadingParameter-1.jpg"
     },
     {
+      "hash": "sha256-BntSxmc\/4ao61R5475LJYgdc\/ZuFMuvexVgx90yjea0=",
+      "url": "img\/ChatGPT Image Dec 11, 2025, 01_35_18 PM.png"
+    },
+    {
       "hash": "sha256-2N8TfrxMjGda6YUrpdQJJnN7LVJuTa9ZEGCCz+TJ+Yo=",
       "url": "img\/CoderSchmode-Logo.png"
     },
@@ -343,6 +367,10 @@
     {
       "hash": "sha256-Q6TYrxbX3JWKpl7B99i4IEMcwduiIF70x+fNJamIJis=",
       "url": "img\/EmployeeRest-project-3.jpg"
+    },
+    {
+      "hash": "sha256-EVpu9QUSNIt7yfFZAXr+KUiOZicJSo0PWwfJNB3vojw=",
+      "url": "img\/Gemini_Generated_Image_xklabsxklabsxkla.png"
     },
     {
       "hash": "sha256-6QV5QWUtQmQVDqpVjH+ibh1xJwWEAzeRyQR8oTBkpPg=",
@@ -775,6 +803,14 @@
     {
       "hash": "sha256-LOfSE9sUOJ2Ix20ao+alxo4xSNI7nVkVE22hUQv11ME=",
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
+    },
+    {
+      "hash": "sha256-BIQLeXAjNs5gZIp54P16S5+nYzyic1D0bMaj\/6zEB3U=",
+      "url": "img\/top-20-jobs-replaced-feature-img_80.png"
+    },
+    {
+      "hash": "sha256-xPhd7TCNOvvIgZlnnxxNlwoLEX8yOHnZS0YMzEzDYms=",
+      "url": "img\/top-20-jobs-replaced_80.png"
     },
     {
       "hash": "sha256-vQM61UyzxNi5UXOcmyuJeWh36lb7\/H43KSpfedQHj94=",
@@ -1373,5 +1409,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "HwQLhDJ8"
+  "version": "X8GK66Vp"
 };
