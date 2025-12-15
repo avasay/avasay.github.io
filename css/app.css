@@ -277,14 +277,30 @@ html, body {
     }        
 
     .post .subheading {
-        font-size: 1.25rem;
+        font-size: 1.65rem;
         font-weight: 600;
-        padding: 30px;
-        margin-bottom: 5px;
-        background-color: antiquewhite;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-left: 45px;
+        padding-right: 45px;
+        margin-bottom: 25px;
+        background-color: #e3f8fb;
         border-radius: 25px;
+        font-family: 'Abril Fatface', serif;
     }
-
+ /*   .post .subheading::before {
+        content: "\201C"; 
+        font-size: 1.5em; 
+        vertical-align: -0.2em; 
+        margin-right: 0.1em;
+    }
+    .post .subheading::after {
+        content: "\201D"; 
+        font-size: 1.5em; 
+        vertical-align: -0.2em; 
+        margin-left: 0.1em;
+    }
+*/
     .app-featured-image-container img {
 
         height: 250px !important;

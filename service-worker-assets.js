@@ -173,7 +173,7 @@
       "url": "ads.txt"
     },
     {
-      "hash": "sha256-55q1yNstpOQDEk9tAyxzSLwzHU7Kt2+gmCdEiP6mIVY=",
+      "hash": "sha256-5xVNi0X7yDVAzdkQsjrBc\/QKCe2N5LXjckl\/wzRkrqg=",
       "url": "css\/app.css"
     },
     {
@@ -829,7 +829,7 @@
       "url": "img\/why-learn-csharp_80.png"
     },
     {
-      "hash": "sha256-5v25xz4H5l9yJorFGCL80l9zsnkhiQ+tXdSRVzQWOH8=",
+      "hash": "sha256-24V\/k6zBCgZOxqsHATl8hyolKSh+PCZNVek7mzn5\/+k=",
       "url": "index.html"
     },
     {
@@ -1413,5 +1413,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "qoUDuZOF"
+  "version": "B8L+IP2+"
 };
