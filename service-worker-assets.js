@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-pmvsn\/42q6ol\/pIEG8E0sw6R1A35GYaByjxoE+tqR64=",
+      "hash": "sha256-37wJ1oWONwqww1F\/iVsuBy+uMvDBr\/2C58jbycO6gbk=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-SV2FPfUFhgOEzbUlEwitMrI36Yo2c9zoQNus\/9G78zI=",
+      "hash": "sha256-QvE5ogwyS8b7huHGmZANlSMP2d854KC6pycn4GuynNw=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -165,7 +165,7 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-ZDLFTxIMBnGfpzeWIr3Bt7ZqIJa7MUR8F1fH6DbSfoA=",
+      "hash": "sha256-d1DVzxWuZEQnCbdow\/Jtoux+0K9+AE5Wy1PeHnFmOhc=",
       "url": "_redirects"
     },
     {
@@ -577,6 +577,14 @@
       "url": "img\/apps\/todo-app_60.jpg"
     },
     {
+      "hash": "sha256-TRjL5wA4C8LQhyohXmYL7WN5LFpQvwyguFerLds6caE=",
+      "url": "img\/bjarne-bot-b-1024x315.png"
+    },
+    {
+      "hash": "sha256-8Fm2NO62D1gJKDzlVWKQyvgC6QeH8WHIxvwIQlev4Dw=",
+      "url": "img\/bjarne-top-b-1024x213.png"
+    },
+    {
       "hash": "sha256-EoTigUy228h3sLr2aF6Oulf4ZdR3O0a9FGXQPF02td8=",
       "url": "img\/blog-1.jpg"
     },
@@ -807,6 +815,10 @@
     {
       "hash": "sha256-LOfSE9sUOJ2Ix20ao+alxo4xSNI7nVkVE22hUQv11ME=",
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
+    },
+    {
+      "hash": "sha256-KLYcQMNIcpMlKwBmMuOsur6ok2vLFU8oK119EUM8QRA=",
+      "url": "img\/time-travel-1979_80.png"
     },
     {
       "hash": "sha256-BIQLeXAjNs5gZIp54P16S5+nYzyic1D0bMaj\/6zEB3U=",
@@ -1413,5 +1425,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "B8L+IP2+"
+  "version": "Z55pPAXv"
 };
