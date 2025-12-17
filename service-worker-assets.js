@@ -841,7 +841,7 @@
       "url": "img\/why-learn-csharp_80.png"
     },
     {
-      "hash": "sha256-24V\/k6zBCgZOxqsHATl8hyolKSh+PCZNVek7mzn5\/+k=",
+      "hash": "sha256-2Pn79U53CVOWuVc6ZniWsUhB\/ABSfMh+C9WK4TTCMrA=",
       "url": "index.html"
     },
     {
@@ -1425,5 +1425,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "df2fT6JT"
+  "version": "WiYP\/huz"
 };
