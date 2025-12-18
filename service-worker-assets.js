@@ -5,7 +5,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-DdpLydPW2kvdV2morzbYb4lRSWF+Mw0jTphGXJIJFGQ=",
+      "hash": "sha256-DtIh2W4Of85WUeRhO+4mdH2Q3N8Pg0IVrz4AgiK9csA=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-DVmTa842WAzpn2oA7TopBGciYFYgX\/qTcVsavR74mT8=",
+      "hash": "sha256-jNyMIpq13X1D5lvGHGkEyiWhhkN46ucqfIBltge9mkc=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -817,7 +817,7 @@
       "url": "img\/thumb\/2972-featured-50x50@1.5x.jpg"
     },
     {
-      "hash": "sha256-KLYcQMNIcpMlKwBmMuOsur6ok2vLFU8oK119EUM8QRA=",
+      "hash": "sha256-JC9R86hflRRpJvjDI0bdVSGtI0+Gd4FVtUNuPJEHQwU=",
       "url": "img\/time-travel-1979_80.png"
     },
     {
@@ -1425,5 +1425,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "VnDQPEvL"
+  "version": "Gxm6yE7J"
 };
