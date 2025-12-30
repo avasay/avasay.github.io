@@ -169,7 +169,7 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-CP2nT8VaKSyXaCsECb7W3mVeJUczM7BzyXjfTOdtBKo=",
+      "hash": "sha256-wrtnsRsZoWkkTggtZmTx+gAFMJUVaShwbpQRc8HdXCk=",
       "url": "_redirects"
     },
     {
@@ -1429,5 +1429,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "k5pGNWPO"
+  "version": "wgrK\/hCD"
 };
