@@ -1,6 +1,10 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
+      "hash": "sha256-XSvEegt9qKebz4xM3yf6KQK1beayn7qigE+6wDdFJWQ=",
+      "url": "CNAME"
+    },
+    {
       "hash": "sha256-moX6D\/RMR\/BJE3\/oCP1Qa4wz8w\/9D92t1oOLENzws1E=",
       "url": "GitHubBlogSpa.styles.css"
     },
@@ -165,7 +169,7 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-d1DVzxWuZEQnCbdow\/Jtoux+0K9+AE5Wy1PeHnFmOhc=",
+      "hash": "sha256-CP2nT8VaKSyXaCsECb7W3mVeJUczM7BzyXjfTOdtBKo=",
       "url": "_redirects"
     },
     {
@@ -1425,5 +1429,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "Gxm6yE7J"
+  "version": "k5pGNWPO"
 };
