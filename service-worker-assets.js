@@ -9,7 +9,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-pW6ljnJuELMC3P1bAYcs1SimP1V0QyRTTqJsSlYo3Zs=",
+      "hash": "sha256-AF3I4CC\/xsobzuA+hJYHPNh30omEw03qvFE+WzPtlW0=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -133,7 +133,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-XD7k5OLGwwN2\/DI9hFQ9lujOU0zDQ2p\/o\/n6X7ixtqE=",
+      "hash": "sha256-DzVhsaTeI40y+YJJpvNqieTOm79xC3nOqvzyFk3Vzis=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -679,6 +679,10 @@
     {
       "hash": "sha256-Fn3nwM6jDQ1zidkAdEFUB02mwmzjCNDQBnsAV3GZb58=",
       "url": "img\/blog\/verge-footer.png"
+    },
+    {
+      "hash": "sha256-LcdoEe6k4GU9V44r723Y9ts0lobEPTjej7svJoU9VeY=",
+      "url": "img\/box-delivery.jpg"
     },
     {
       "hash": "sha256-aR\/q7oc0EetWzblnSodXxF1J3PBNgg8QN72ExD6TcVw=",
@@ -1429,5 +1433,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "kZT1bxXO"
+  "version": "UujyANlv"
 };
