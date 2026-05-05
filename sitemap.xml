@@ -43,25 +43,25 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/beyond-the-ai-hype</loc>
+    <loc>https://coderschmoder.com/beyond-the-ai-hype</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/govt-shutdown-cripples-tech-sector</loc>
+    <loc>https://coderschmoder.com/govt-shutdown-cripples-tech-sector</loc>
     <lastmod>2025-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/rise-of-ai-browser</loc>
+    <loc>https://coderschmoder.com/rise-of-ai-browser</loc>
     <lastmod>2025-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/deepseek-v3-2-cuts-price-50-percent</loc>
+    <loc>https://coderschmoder.com/deepseek-v3-2-cuts-price-50-percent</loc>
     <lastmod>2025-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -97,25 +97,25 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/apps/image-upscaler</loc>
+    <loc>https://coderschmoder.com/image-upscaler</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/apps/image-compressor</loc>
+    <loc>https://coderschmoder.com/image-compressor</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/apps/to-do-list</loc>
+    <loc>https://coderschmoder.com/to-do-list</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/apps/my-calculator</loc>
+    <loc>https://coderschmoder.com/my-calculator</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -301,13 +301,13 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/blog/cascading-parameters</loc>
+    <loc>https://coderschmoder.com/cascading-parameters</loc>
     <lastmod>2022-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/search/Paramaters</loc>
+    <loc>https://coderschmoder.com/search/Parameters</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -319,7 +319,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/blog/component-parameters</loc>
+    <loc>https://coderschmoder.com/component-parameters</loc>
     <lastmod>2022-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -331,19 +331,19 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/blog/query-string-parameters</loc>
+    <loc>https://coderschmoder.com/query-string-parameters</loc>
     <lastmod>2022-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/blog/route-parameters</loc>
+    <loc>https://coderschmoder.com/route-parameters</loc>
     <lastmod>2022-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/blog/state-containers</loc>
+    <loc>https://coderschmoder.com/state-containers</loc>
     <lastmod>2022-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -463,50 +463,86 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/h1b-debunking-job-theft</loc>
+    <loc>https://coderschmoder.com/h1b-debunking-job-theft</loc>
     <lastmod>2025-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/ai-content-marketplace-proposal</loc>
+    <loc>https://coderschmoder.com/ai-content-marketplace-proposal</loc>
     <lastmod>2025-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/visa-hikes-agains-us-innovation</loc>
+    <loc>https://coderschmoder.com/visa-hikes-agains-us-innovation</loc>
     <lastmod>2025-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/ai-across-software-development</loc>
+    <loc>https://coderschmoder.com/ai-across-software-development</loc>
     <lastmod>2025-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/oracle-americas-great-wall</loc>
+    <loc>https://coderschmoder.com/oracle-americas-great-wall</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/is-us-tiktok-still-tiktok</loc>
+    <loc>https://coderschmoder.com/is-us-tiktok-still-tiktok</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/nvidia-gtc-2025</loc>
+    <loc>https://coderschmoder.com/nvidia-gtc-2025</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://coderschmoder.com/news/ai-enhanced-gaming</loc>
+    <loc>https://coderschmoder.com/ai-enhanced-gaming</loc>
     <lastmod>2025-03-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://coderschmoder.com/quick-blazor-tip-pass-data-between-components-right-way</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://coderschmoder.com/i-time-traveled-1979-met-bjarne-stroustrup</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://coderschmoder.com/implementing-image-caching-net-imemorycache-tutorial</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://coderschmoder.com/top-20-jobs-most-likely-replaced-ai-ranked-20252035</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://coderschmoder.com/5-reasons-why-you-should-learn-blazor</loc>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://coderschmoder.com/5-reasons-why-you-should-learn-csharp</loc>
+    <lastmod>2025-12-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
