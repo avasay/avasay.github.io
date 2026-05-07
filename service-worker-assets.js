@@ -853,7 +853,7 @@
       "url": "img\/why-learn-csharp_80.png"
     },
     {
-      "hash": "sha256-QpQiwb1L23FRtlwr7zQWo07+3GzSOnfsG4Os\/LrXXcM=",
+      "hash": "sha256-jPtNy9+uG6DgCAv3F166fQEXqcEpFVs3tchKDuUa7N0=",
       "url": "index.html"
     },
     {
@@ -1431,7 +1431,15 @@
     {
       "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
       "url": "brotliloader.min.js"
+    },
+    {
+      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
+      "url": "decode.min.js"
+    },
+    {
+      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
+      "url": "brotliloader.min.js"
     }
   ],
-  "version": "NV3GI9SN"
+  "version": "Rm6IzQBQ"
 };
