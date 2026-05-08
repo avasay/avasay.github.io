@@ -9,7 +9,7 @@
       "url": "GitHubBlogSpa.styles.css"
     },
     {
-      "hash": "sha256-RV5QHKSYFAXVF3TJ4EOR8B9aKnExVNhOC+ToAij1DUM=",
+      "hash": "sha256-49ekqRq34JOhYXeq3EF58AaXZPhop+KUfj+Ir3O1NsY=",
       "url": "_framework\/GitHubBlogSpa.wasm.br"
     },
     {
@@ -133,7 +133,7 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm.br"
     },
     {
-      "hash": "sha256-HE5Ns1HKWAZkDJpYBb6HT6plEnqDmpw6Cu562mNn9FE=",
+      "hash": "sha256-u+ROjLId7AzPZTs0Ku+4QuM38yMYTsOABtOyFWJO26U=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -359,6 +359,10 @@
     {
       "hash": "sha256-Sudrw8NMorMh7XcpnUBD0OwnavZhOG0Jj\/PNlg6dFKc=",
       "url": "img\/CompParameter-7.jpg"
+    },
+    {
+      "hash": "sha256-hO7lgl81qvjZCeJYQ79wxfAUWs0pb4XA7Vy6WDazFi0=",
+      "url": "img\/Copilot_ecosystem_80.png"
     },
     {
       "hash": "sha256-mNYr3S\/Y4wBoufIjwzVx0rNeCWWbUyHGPXDkXu143tE=",
@@ -1431,15 +1435,7 @@
     {
       "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
       "url": "brotliloader.min.js"
-    },
-    {
-      "hash": "sha256-wX1LB4yuBRFM4fmdSsH6jBlCch9uCHXV9uFTxnz2blQ=",
-      "url": "decode.min.js"
-    },
-    {
-      "hash": "sha256-o1qrUazFD8MPygFt+oWr3C+bSJuECWGcOxNQzps7NEk=",
-      "url": "brotliloader.min.js"
     }
   ],
-  "version": "Rm6IzQBQ"
+  "version": "Of15da7K"
 };
