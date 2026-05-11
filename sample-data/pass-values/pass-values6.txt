@@ -1,0 +1,10 @@
+﻿// Success
+navigationManager.NavigateTo($"/updateemployee");                                         
+navigationManager.NavigateTo($"/updateemployee/{employeeId}"); 
+navigationManager.NavigateTo($"/updateemployee/{employeeId}/{departmentId}");           
+navigationManager.NavigateTo($"/updateemployee/{employeeId}/{departmentId}/{lastName}");
+// Error message - "Sorry, there'es nothing at this address."
+navigationManager.NavigateTo($"/updateemployee/{employeeId}/{lastName}");                 
+navigationManager.NavigateTo($"/updateemployee/{firstName}/{lastName}");                  
+navigationManager.NavigateTo($"/updateemployee/{employeeId}/{lastName}/{firstName}");     
+navigationManager.NavigateTo($"/updateemployee/{departmentId}/{lastName}");   

@@ -1,0 +1,8 @@
+﻿@page "/displaydepartment"
+<h3>Display Department - @Department</h3>
+<p></p>
+<DisplayEmployee></DisplayEmployee>
+@code {
+    [CascadingParameter(Name = "Department")]
+    public int Department { get; set; }
+}

@@ -1,0 +1,15 @@
+﻿@page "/displayemployee"
+@inject MyStateContainer myStateContainer
+<h3>DisplayEmployee</h3>
+<p>Employee Id: @employee.Id</p>
+<p>Employee Department: @employee.Department</p>
+<p>Employee First Name: @employee.FName</p>
+<p>Employee Last Name: @employee.LName</p>
+@code {
+    private Employee employee;
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        employee = myStateContainer.Value;
+    }
+}

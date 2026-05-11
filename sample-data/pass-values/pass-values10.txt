@@ -1,0 +1,15 @@
+﻿using BlazorStateContainer.Shared.Model;
+namespace BlazorStateContainer.Shared
+{
+    public class MyStateContainer
+    {
+        public Employee Value { get; set; }
+        public event Action OnStateChange;
+        public void SetValue(Employee value)
+        { 
+            this.Value = value;
+            NotifyStateChanged();
+        }
+        private void NotifyStateChanged() => OnStateChange?.Invoke();
+    }
+}

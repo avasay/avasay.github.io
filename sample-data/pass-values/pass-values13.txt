@@ -1,0 +1,10 @@
+﻿@page "/displayemployee"
+<h3>Display Employee</h3>
+<p>Employee Id: @Id</p>
+<p>Employee Last Name: @LName</p>
+@code {
+    [Parameter]
+    public int? Id { get; set; } = 0;
+    [Parameter]
+    public string? LName { get; set; } = "Coder Schmoder";
+}

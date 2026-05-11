@@ -1,0 +1,12 @@
+﻿@page "/updateemployee"
+@page "/updateemployee/{Id:int}"
+@page "/updateemployee/{LName}"
+<h3>Update Employee</h3>
+<p>Updating Employee Id: @Id</p>
+<p>Updating Employee Last Name: @LName</p>
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+    [Parameter]
+    public string? LName { get; set; }
+}

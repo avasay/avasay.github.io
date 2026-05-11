@@ -1,0 +1,301 @@
+﻿
+
+/* ================================
+     News/Blog Section 
+   ================================ */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display 3 columns on desktop */
+    gap: 20px; /* Space between cards */
+    width: 100%;
+}
+
+/* Make each card break inside avoid to prevent splitting across columns */
+.post-card {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Ensure interactive elements container doesn't break across columns */
+.post-card > div {
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+}
+
+    /* Make images responsive */
+    .post-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .post-card small {
+        color: #666;
+        font-size: 0.75rem;
+        background-color: #ecfefa;
+    }
+    .tags-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+/* Add media queries for responsive behavior */
+@media screen and (max-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+}
+
+/* ================================
+     Homepage Apps Section 
+   ================================ */
+/* Apps Section */
+.home-apps-section {
+    margin: 4rem 0;
+}
+
+.home-apps-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+.home-apps-card {
+    flex: 1 1 calc(25% - 2rem); /* 4 cards per row */
+    /*min-width: 250px;*/
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+    .home-apps-card:hover {
+        transform: translateY(-3px);
+    }
+
+    .home-apps-card img {
+        width: 100%;
+        /*height: 180px;*/
+        object-fit: cover;
+        border-bottom: 1px solid #eee;
+    }
+
+    .home-apps-card small {
+        color: #666;
+        font-size: 0.75rem;
+        background-color: #ecfefa;
+    }
+
+.home-apps-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+    .home-apps-content h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .home-apps-card {
+        flex-basis: calc(33.33% - 2rem); /* 3 cards */
+    }
+}
+
+@media (max-width: 768px) {
+    .home-apps-card {
+        flex-basis: calc(50% - 2rem); /* 2 cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-apps-card {
+        /* 2 cards */
+        /*flex-basis: calc(50% - 2rem);*/
+        flex-basis: 35%;
+
+        /* 1 card */
+        /*flex-basis: 100%; */
+    }
+}
+
+
+/* ================================
+     Homepage News/Blog Section 
+   ================================ */
+        .home-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+    
+}
+
+/* Left Panel (Featured Post) */
+.home-featured-card {
+    grid-column: 1;
+}
+
+    .home-featured-card h1{
+        text-align: center;
+    }
+
+    .home-featured-card .home-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-featured-card img {
+        width: 100%;
+        /*height: 450px;*/
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .home-featured-card .home-card-content {
+        padding: 1rem;
+    }
+
+/* Right Panel (Recent News List) */
+.home-recent-list {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.home-recent-card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+    .home-recent-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+    .home-recent-card small {
+        color: #666;
+        font-size: 0.75rem;
+        background-color: #ecfefa;
+    }
+
+    .home-recent-card .home-card-content {
+        flex: 1;
+    }
+
+    .home-recent-card .home-card-content .post-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: black;
+
+    }
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+
+    .home-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-recent-list {
+        grid-column: 1;
+        grid-template-columns: 1fr;
+       /* margin-top: 2rem;*/
+    }
+
+    .home-recent-card {
+        /* Removed flex-direction: column; */
+        gap: 0.75rem; /* Reduce gap for mobile */
+        padding: 0.5rem 0;
+    }
+
+        .home-recent-card img {
+            width: 100px !important; /* Slightly smaller than desktop */
+            border-radius: 4px;
+            min-width: 100px; /* Prevent image shrink */
+        }
+
+    .home-card-content h3 {
+        font-size: 1rem; /* Smaller font for mobile */
+        line-height: 1.2;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limit title to 2 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .home-card-content small {
+        font-size: 0.75rem;
+    }
+
+}
+
+/* Add this to prevent content overflow */
+.home-recent-card .home-card-content {
+    min-width: 0; /* Fix flex text overflow */
+}
+
+/* Shared Styles */
+.home-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.home-featured-card h3 {
+    font-size: 1.5rem;
+}
+
+.home-card small {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.home-card p {
+    margin: 0.5rem 0 0 0;
+    color: #444;
+    line-height: 1.5;
+}
+
+.home-card:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+

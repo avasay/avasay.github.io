@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Coder Schmoder</title>
+
+    <base href="/" />
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="google-adsense-account" content="ca-pub-2687304729911844">
+
+    <link rel="canonical" href="https://coderschmoder.com/blazor-custom-validation/" />
+    
+    <!-- Favicon -->
+    <link href="img/favicon2.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <link href="css/contact-form.css" rel="stylesheet">
+    <link href="css/card-styles.css" rel="stylesheet">
+
+    <!-- Required Prism Styling -->
+    <link href="css/prism.css" rel="stylesheet"> 
+
+    <!-- Specific Prism Themes -->
+     <!-- <link href="css/prism-xonokai.css" rel="stylesheet"> -->
+    <!-- <link href="css/prism-atom-dark.css" rel="stylesheet"> -->
+    <!-- <link href="css/prism-one-dark.css" rel="stylesheet"> -->
+    <!-- <link href="css/prism-one-light.css" rel="stylesheet"> -->
+    <!-- <link href="css/prism-hopscotch.css" rel="stylesheet"> -->
+    <!-- <link href="css/prism-duotone-dark.css" rel="stylesheet"> -->
+    <!-- <link href="css/prism-duotone-light.css" rel="stylesheet"> -->
+    <!-- <link href="css/prism-pojoaque.css" rel="stylesheet"> -->
+    <!-- <link href="css/prism-vs.css" rel="stylesheet"> -->
+    <!-- <link href="css/prism-vsc-dark-plus.css" rel="stylesheet"> -->
+    <link href="css/prism-holi-theme.css" rel="stylesheet"> 
+    <!-- <link href="css/prism-gruvbox-dark.css" rel="stylesheet"> -->
+
+    <!-- Required Prism Compaitbility Styling -->
+    <link href="css/prism-compatibility.css" rel="stylesheet">
+
+    <link href="css/codeblock-three.css" rel="stylesheet"> 
+    <link href="GitHubBlogSpa.styles.css" rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2687304729911844" crossorigin="anonymous"></script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHN9D1BVCX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FHN9D1BVCX');
+    </script>
+</head>
+
+<body>
+    <div id="app">
+
+        <div class="loading-progress-text">Loading...</div>
+    </div>
+
+
+    <script>
+        window.loadAdSenseAd = () => {
+            try {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+                console.error("Error loading AdSense ad:", e);
+            }
+        };
+    </script>
+    <script src="js/prism.js"></script>
+    
+    <!-- Highlight.js for CMS-generated content -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/csharp.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/javascript.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/css.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/java.min.js"></script> -->
+    
+    <script>
+        // Add JavaScript language support to Prism.js
+        if (typeof Prism !== 'undefined' && !Prism.languages.javascript) {
+            Prism.languages.javascript = {
+                'comment': [
+                    {pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/, lookbehind: true, greedy: true},
+                    {pattern: /(^|[^\\:])\/\/.*/, lookbehind: true, greedy: true}
+                ],
+                'string': {
+                    pattern: /(['"])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
+                    greedy: true
+                },
+                'keyword': /\b(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
+                'boolean': /\b(?:false|true)\b/,
+                'number': /\b(?:0[xX][\dA-Fa-f]+|0[bB][01]+|0[oO][0-7]+|\d+(?:\.\d*)?(?:[Ee][+-]?\d+)?|NaN|Infinity)\b/,
+                'function': /[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*\()/,
+                'operator': /--?|\+\+?|!=?=?|<=?|>=?|==?=?|&&?|\|\|?|\?|\*|\/|~|\^|%/,
+                'punctuation': /[{}[\];(),.:]/
+            };
+        }
+    </script>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Handle anchor clicks
+        document.addEventListener('click', function (event) {
+            const link = event.target.closest('a[href^="#"]');
+            if (link && !event.ctrlKey && !event.metaKey) {
+                event.preventDefault();
+                const id = link.getAttribute('href').substring(1);
+                navigateToAnchor(id, true);
+            }
+        });
+
+        // Handle browser back/forward navigation
+        window.addEventListener('popstate', function (event) {
+            if (window.location.hash) {
+                const id = window.location.hash.substring(1);
+                navigateToAnchor(id, false);
+            }
+        });
+
+        // Handle initial page load
+        window.addEventListener('load', function () {
+            if (window.location.hash) {
+                const id = window.location.hash.substring(1);
+                navigateToAnchor(id, false);
+            }
+        });
+
+        function navigateToAnchor(id, addToHistory) {
+            const element = document.getElementById(id);
+            if (element) {
+                // Scroll to element with offset
+                const yOffset = -80;
+                const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+
+                window.scrollTo({
+                    top: y,
+                    behavior: 'smooth'
+                });
+
+                // Update history correctly - preserve current path
+                const currentPath = window.location.pathname;
+                if (addToHistory) {
+                    history.pushState({}, '', currentPath + '#' + id);
+                } else {
+                    history.replaceState({}, '', currentPath + '#' + id);
+                }
+            }
+        }
+    </script>
+
+    <script>
+        // Function to highlight Prism code blocks for CodeBlockThree component
+        window.highlightPrismCodeThree = function() {
+            if (typeof Prism !== 'undefined') {
+                // Find all CodeBlockThree code elements
+                var codeElements = document.querySelectorAll('.prism-code-block-three code');
+                
+                codeElements.forEach(function(codeElement) {
+                    // Get the language class
+                    var languageClass = Array.from(codeElement.classList).find(function(cls) {
+                        return cls.startsWith('prism-language-') || cls.startsWith('language-');
+                    });
+                    
+                    if (languageClass) {
+                        // Extract language from class name
+                        var language = languageClass.replace('prism-language-', '').replace('language-', '');
+                        
+                        // Set the standard Prism language class
+                        codeElement.className = 'language-' + language;
+                        
+                        // Apply line numbers if needed
+                        var preElement = codeElement.parentElement;
+                        if (preElement && preElement.classList.contains('prism-line-numbers')) {
+                            preElement.classList.add('line-numbers');
+                        }
+                        
+                        // Highlight the code
+                        Prism.highlightElement(codeElement);
+                    }
+                });
+            }
+        };
+
+        // Function to highlight Prism code blocks (legacy)
+        window.highlightPrismCode = function(selector) {
+            if (typeof Prism !== 'undefined') {
+                if (selector) {
+                    // Highlight specific elements
+                    var elements = document.querySelectorAll(selector);
+                    elements.forEach(function(element) {
+                        Prism.highlightElement(element);
+                    });
+                } else {
+                    // Highlight all code blocks
+                    Prism.highlightAll();
+                }
+            }
+        };
+
+        // Initialize both Prism and Highlight.js when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Prism.js for old pages
+            if (typeof Prism !== 'undefined') {
+                Prism.highlightAll();
+                // Also initialize CodeBlockThree elements
+                setTimeout(window.highlightPrismCodeThree, 100);
+            }
+            
+            // Initialize Highlight.js for CMS pages
+            setTimeout(window.highlightAllCode, 150);
+        });
+
+        // Re-highlight after Blazor navigation
+        if (window.Blazor) {
+            window.Blazor.addEventListener('navigation', function() {
+                setTimeout(function() {
+                    // Handle Prism.js blocks (old pages)
+                    if (typeof Prism !== 'undefined') {
+                        Prism.highlightAll();
+                        // Also re-highlight CodeBlockThree elements
+                        window.highlightPrismCodeThree();
+                    }
+                    
+                    // Handle Highlight.js blocks (CMS pages)
+                    window.highlightAllCode();
+                }, 200);
+            });
+        }
+        
+        // Dual library highlighting function
+        window.highlightAllCode = function() {
+            // Handle Highlight.js blocks (CMS-generated content)
+            if (typeof hljs !== 'undefined') {
+                document.querySelectorAll('pre.ql-syntax, pre code.hljs, pre[class*="hljs-"]').forEach(block => {
+                    if (!block.dataset.highlighted) {
+                        hljs.highlightElement(block);
+                        block.dataset.highlighted = 'true';
+                    }
+                });
+            }
+            
+            // Handle Prism.js blocks (old content) - in case they were missed
+            if (typeof Prism !== 'undefined') {
+                document.querySelectorAll('pre[class*="language-"], code[class*="language-"]').forEach(block => {
+                    if (!block.dataset.highlighted) {
+                        Prism.highlightElement(block);
+                        block.dataset.highlighted = 'true';
+                    }
+                });
+            }
+        };
+    </script>
+    <script src="brotliloader.min.js" type="module"></script>
+</body>
+<amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-2687304729911844">
+</amp-auto-ads>
+</html>
+
