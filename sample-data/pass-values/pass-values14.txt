@@ -1,8 +1,0 @@
-﻿@page "/"
-<h2> Employee Management System</h2>
-<DisplayEmployee Id="@employeeId" 
-                 LName = "@lastName" />
-@code {
-    private int employeeId = 12345;
-    private string lastName = "Alejandrio Vasay";
-}

@@ -1,9 +1,0 @@
-﻿@page "/displayemployee"
-<h3>Display Employee - Department @Department has min salary of @MinSalary</h3>
-<p></p>
-@code {
-    [CascadingParameter(Name = "Department")]
-    public int Department { get; set; }
-    [CascadingParameter(Name = "MinSalary")]
-    public int MinSalary { get; set; }
-}
