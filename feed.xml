@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title><![CDATA[Coder Schmoder]]></title>
+    <link>https://coderschmoder.com</link>
+    <description><![CDATA[A tech blog covering .NET, Blazor, C++, AI, software development, and the future of programming. Written by Alejandrio Vasay.]]></description>
+    <language>en</language>
+    <atom:link href="https://coderschmoder.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Copilotification of Microsoft: How a Great Brand Lost Its Meaning]]></title>
+      <link>https://coderschmoder.com/blog/copilotification-microsoft-how-great-brand</link>
+      <guid>https://coderschmoder.com/blog/copilotification-microsoft-how-great-brand</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Microsoft turned Copilot from a clever AI assistant into a confusing label slapped across nearly every product in its ecosystem.]]></description>
+      <category>microsoft</category>
+      <category>ai</category>
+      <category>copilot</category>
+      <category>branding</category>
+    </item>
+    <item>
+      <title><![CDATA[Quick Blazor Tip: Pass Data Between Components the Right Way]]></title>
+      <link>https://coderschmoder.com/blog/quick-blazor-tip-pass-data-between-components-right-way</link>
+      <guid>https://coderschmoder.com/blog/quick-blazor-tip-pass-data-between-components-right-way</guid>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Learn how to pass data between Blazor components using Parameters and EventCallback—simple patterns for clean, maintainable, and reusable UI code.]]></description>
+      <category>blazor</category>
+      <category>dotnet</category>
+      <category>components</category>
+      <category>tutorial</category>
+    </item>
+    <item>
+      <title><![CDATA[The 1979 Pitch: Convincing Bjarne Stroustrup of C++'s Future]]></title>
+      <link>https://coderschmoder.com/blog/i-time-traveled-1979-met-bjarne-stroustrup</link>
+      <guid>https://coderschmoder.com/blog/i-time-traveled-1979-met-bjarne-stroustrup</guid>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[If you could time-travel to 1979 and met with Bjarne Stroustrup, what would you tell him about the future of C++?]]></description>
+      <category>cpp</category>
+      <category>bjarne-stroustrup</category>
+      <category>programming</category>
+      <category>history</category>
+    </item>
+    <item>
+      <title><![CDATA[Implementing Image Caching in .NET: IMemoryCache Tutorial]]></title>
+      <link>https://coderschmoder.com/blog/implementing-image-caching-net-imemorycach</link>
+      <guid>https://coderschmoder.com/blog/implementing-image-caching-net-imemorycach</guid>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Learn how to implement efficient image caching using IMemoryCache in .NET. Complete tutorial with console app example that works in any .NET application.]]></description>
+      <category>dotnet</category>
+      <category>caching</category>
+      <category>performance</category>
+      <category>tutorial</category>
+    </item>
+    <item>
+      <title><![CDATA[Top 20 Jobs Most Likely to Be Replaced by AI (Ranked, 2025–2035)]]></title>
+      <link>https://coderschmoder.com/blog/top-20-jobs-most-likely-replaced-ai-ranked</link>
+      <guid>https://coderschmoder.com/blog/top-20-jobs-most-likely-replaced-ai-ranked</guid>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Ranked analysis of the top 20 jobs most vulnerable to AI (highest → lowest risk). Evidence-based methodology, 2025–2035 projections, and deep case studies.]]></description>
+      <category>ai</category>
+      <category>jobs</category>
+      <category>future-of-work</category>
+      <category>automation</category>
+    </item>
+    <item>
+      <title><![CDATA[5 Reasons Why You Should Learn Blazor]]></title>
+      <link>https://coderschmoder.com/blog/5-reasons-why-you-should-learn-blazor</link>
+      <guid>https://coderschmoder.com/blog/5-reasons-why-you-should-learn-blazor</guid>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Discover why Blazor is the top choice for .NET developers in 2025. Build full-stack web apps with C#, flexible rendering, and modern components.]]></description>
+      <category>blazor</category>
+      <category>dotnet</category>
+      <category>csharp</category>
+      <category>web</category>
+    </item>
+    <item>
+      <title><![CDATA[5 Reasons Why You Should Learn C#]]></title>
+      <link>https://coderschmoder.com/blog/5-reasons-why-you-should-learn-csharp</link>
+      <guid>https://coderschmoder.com/blog/5-reasons-why-you-should-learn-csharp</guid>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Learn why C# is a powerful, versatile language worth mastering. Discover five key reasons to start learning C# for web, mobile, gaming, and cloud development.]]></description>
+      <category>C#</category>
+    </item>
+    <item>
+      <title><![CDATA[How to Implement Image Randomizer Web API]]></title>
+      <link>https://coderschmoder.com/blog/how-to-implement-an-image-randomizer</link>
+      <guid>https://coderschmoder.com/blog/how-to-implement-an-image-randomizer</guid>
+      <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Create a production-ready image randomizer Web API with ASP.NET Core. Learn caching optimization, dependency injection, and modern .NET best practices]]></description>
+      <category>tutorial</category>
+    </item>
+    <item>
+      <title><![CDATA[Blazor Form Validation Part 4: How to Validate Only on Submit]]></title>
+      <link>https://coderschmoder.com/blog/blazor-form-validate-on-submit</link>
+      <guid>https://coderschmoder.com/blog/blazor-form-validate-on-submit</guid>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Stop Blazor form validation on every field change! Learn how to validate only on submit for better UX. Step-by-step guide with code examples.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+    </item>
+    <item>
+      <title><![CDATA[Get Random Element from a List in C#(Updated)]]></title>
+      <link>https://coderschmoder.com/blog/get-random-element-from-list-in-c-net-6-0</link>
+      <guid>https://coderschmoder.com/blog/get-random-element-from-list-in-c-net-6-0</guid>
+      <pubDate>Fri, 10 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Quick C# tutorial: Get a random element from any List. Learn the modern, thread-safe method using Random.Shared and list index.]]></description>
+      <category>Tutorial</category>
+      <category>C#</category>
+      <category>List</category>
+    </item>
+    <item>
+      <title><![CDATA[Blazor Form Validation Part 3: Using the EditContext and FieldState]]></title>
+      <link>https://coderschmoder.com/blog/blazor-form-validation-editcontext</link>
+      <guid>https://coderschmoder.com/blog/blazor-form-validation-editcontext</guid>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Take full control of your Blazor forms by mastering the EditContext and FieldState. This guide shows you how to manually trigger validation, track field states, and build a completely custom validation experience beyond the automatic components.]]></description>
+      <category>Blazor</category>
+      <category>Validation</category>
+      <category>C#</category>
+      <category>Form Validation</category>
+      <category>EditContext</category>
+    </item>
+    <item>
+      <title><![CDATA[Debunking the Myth of C++ Cybersecurity Concerns(Updated)]]></title>
+      <link>https://coderschmoder.com/blog/debunking-the-myth-c-and-cybersecurity-concerns</link>
+      <guid>https://coderschmoder.com/blog/debunking-the-myth-c-and-cybersecurity-concerns</guid>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[C++ is unfairly blamed. Real-world breaches in Java/Python systems prove security flaws are caused by human error, misconfiguration, and process, not C++.]]></description>
+      <category>Opinion</category>
+    </item>
+    <item>
+      <title><![CDATA[Blazor Form Validation Part 2: Custom Validation Attributes in Blazor]]></title>
+      <link>https://coderschmoder.com/blog/blazor-custom-validation</link>
+      <guid>https://coderschmoder.com/blog/blazor-custom-validation</guid>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Extend Blazor validation with custom attributes. Learn to create [FutureDate] and [MustBeTrue] validators for complex business rules.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>Form Validation</category>
+      <category>C#</category>
+    </item>
+    <item>
+      <title><![CDATA[Blazor Form Validation Part 1: Using DataAnnotations for Simple Forms]]></title>
+      <link>https://coderschmoder.com/blog/blazor-form-validation-part-1-using-dataannotations-for-simple-forms</link>
+      <guid>https://coderschmoder.com/blog/blazor-form-validation-part-1-using-dataannotations-for-simple-forms</guid>
+      <pubDate>Mon, 06 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Learn how to use built-in .NET DataAnnotations like [Required] and [EmailAddress] to quickly add robust validation to your Blazor forms.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>Form Validation</category>
+      <category>C#</category>
+    </item>
+    <item>
+      <title><![CDATA[How to Send a Http Patch Request in C#]]></title>
+      <link>https://coderschmoder.com/blog/how-to-send-a-http-patch-request-in-csharp</link>
+      <guid>https://coderschmoder.com/blog/how-to-send-a-http-patch-request-in-csharp</guid>
+      <pubDate>Wed, 21 Sep 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[This is a quick tip on how to send an HTTP PATCH request in C# and Blazor using HttpClient. I also show how to send the request via 3rd-party client.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>C#</category>
+      <category>REST</category>
+      <category>Web API</category>
+      <category>Http Patch</category>
+    </item>
+    <item>
+      <title><![CDATA[How to Pass Values By Cascading Parameters in Blazor]]></title>
+      <link>https://coderschmoder.com/blog/cascading-parameters</link>
+      <guid>https://coderschmoder.com/blog/cascading-parameters</guid>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Learn how to pass data down a component hierarchy without explicitly defining parameters at each intermediate level.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>Components</category>
+      <category>Cascading Parameter</category>
+      <category>Passing Data</category>
+    </item>
+    <item>
+      <title><![CDATA[How to Pass Values By Component Parameters in Blazor]]></title>
+      <link>https://coderschmoder.com/blog/component-parameters</link>
+      <guid>https://coderschmoder.com/blog/component-parameters</guid>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Learn fundamental mechanism for passing data from a parent component to a child component, enabling customization and reusability.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>Components</category>
+      <category>Parameters</category>
+      <category>Passing Data</category>
+    </item>
+    <item>
+      <title><![CDATA[How to Pass Value By QueryString Parameters in Blazor]]></title>
+      <link>https://coderschmoder.com/blog/query-string-parameters</link>
+      <guid>https://coderschmoder.com/blog/query-string-parameters</guid>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Learn fundamental mechanism for passing data from a parent component to a child component, enabling customization and reusability.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>Components</category>
+      <category>QueryString</category>
+      <category>Parameters</category>
+      <category>Passing Data</category>
+    </item>
+    <item>
+      <title><![CDATA[How to Pass Values By Route Parameters in Blazor]]></title>
+      <link>https://coderschmoder.com/blog/route-parameters</link>
+      <guid>https://coderschmoder.com/blog/route-parameters</guid>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Pass data to components via route parameters by defining them within the @page directive]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>Components</category>
+      <category>Parameters</category>
+      <category>Passing Data</category>
+    </item>
+    <item>
+      <title><![CDATA[How to Pass Values By State Containers in Blazor]]></title>
+      <link>https://coderschmoder.com/blog/state-containers</link>
+      <guid>https://coderschmoder.com/blog/state-containers</guid>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Leran how to manage and pass data between components via state containers]]></description>
+      <category>Tutorial</category>
+      <category>C#</category>
+      <category>ASP.NET</category>
+      <category>Blazor</category>
+      <category>Components</category>
+      <category>Pass Data</category>
+    </item>
+    <item>
+      <title><![CDATA[Five ways to pass data between components in Blazor]]></title>
+      <link>https://coderschmoder.com/blog/five-ways-to-pass-data-from-one-blazor-component-to-another</link>
+      <guid>https://coderschmoder.com/blog/five-ways-to-pass-data-from-one-blazor-component-to-another</guid>
+      <pubDate>Sun, 07 Aug 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Today I will briefly discuss 5 different ways or methods of passing/sharing data from one Blazor component to another. At least, these are the 5 methods that I know of – route parameters, querystring, component parameters, cascading parameters, and state containers.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>Components</category>
+      <category>Pass Data</category>
+      <category>State Objects</category>
+    </item>
+    <item>
+      <title><![CDATA[How to implement HTTP PATCH method in ASP.NET REST API]]></title>
+      <link>https://coderschmoder.com/blog/implement-http-patch-in-asp-net-using-jsonpatch</link>
+      <guid>https://coderschmoder.com/blog/implement-http-patch-in-asp-net-using-jsonpatch</guid>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Learn how to implement HTTP PATCH method in C# and ASP.NET Web API using JsonPatch library. The Patch method allows client to send partial updates.]]></description>
+      <category>Tutorial</category>
+      <category>C#</category>
+      <category>ASP.NET</category>
+      <category>REST API</category>
+      <category>HTTP PATCH</category>
+    </item>
+    <item>
+      <title><![CDATA[Reload changes in appsetting.json without website restart]]></title>
+      <link>https://coderschmoder.com/blog/reload-changes-in-appsetting-json-without-website-restart</link>
+      <guid>https://coderschmoder.com/blog/reload-changes-in-appsetting-json-without-website-restart</guid>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Learn how to reload configuration changes made in appsettings.json without restarting website, using Options pattern, specifically, IOptionsSnapshot.]]></description>
+      <category>Tutorial</category>
+      <category>C#</category>
+      <category>ASP.NET</category>
+      <category>Configuration</category>
+      <category>Appsetting</category>
+      <category>IOptionsSnapshot</category>
+      <category>Options</category>
+    </item>
+    <item>
+      <title><![CDATA[How to access and read config settings into your Blazor app]]></title>
+      <link>https://coderschmoder.com/blog/how-to-access-and-read-config-settings-into-your-blazor-app</link>
+      <guid>https://coderschmoder.com/blog/how-to-access-and-read-config-settings-into-your-blazor-app</guid>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Access and read appsettings.json and custom config files into your Blazor applications. I also explain why we use HttpClient for accessing custom config.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>C#</category>
+      <category>Configuration</category>
+      <category>Appsettings</category>
+    </item>
+    <item>
+      <title><![CDATA[How to create a REST client single-page app in Blazor]]></title>
+      <link>https://coderschmoder.com/blog/create-a-rest-client-single-page-application-in-blazor</link>
+      <guid>https://coderschmoder.com/blog/create-a-rest-client-single-page-application-in-blazor</guid>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Learn how to create a REST client single-page app(SPA) in .NET Blazor WASM, which you can use to test a REST API service by allowing you to send HTTP requests.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>C#</category>
+      <category>SPA</category>
+      <category>REST</category>
+    </item>
+    <item>
+      <title><![CDATA[Create a simple employee database REST API in ASP.NET Core]]></title>
+      <link>https://coderschmoder.com/blog/create-a-simple-employee-database-rest-api</link>
+      <guid>https://coderschmoder.com/blog/create-a-simple-employee-database-rest-api</guid>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 GMT</pubDate>
+      <description><![CDATA[Implement a simple Employee database management REST API application in ASP.NET, utilizing design patterns like Repository and Dependency Injection.]]></description>
+      <category>Tutorial</category>
+      <category>Database</category>
+      <category>REST API</category>
+      <category>C#</category>
+    </item>
+    <item>
+      <title><![CDATA[Create REST API Using Repository Design Pattern in ASP.NET Core]]></title>
+      <link>https://coderschmoder.com/blog/repository-design-pattern</link>
+      <guid>https://coderschmoder.com/blog/repository-design-pattern</guid>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
+      <description><![CDATA[Today, I am showing a demo of how to use the Repository design pattern in your database application.]]></description>
+      <category>Tutorial</category>
+      <category>Blazor</category>
+      <category>Web API</category>
+      <category>C#</category>
+      <category>Controller</category>
+      <category>Repository Design</category>
+      <category>Dependency Injection</category>
+    </item>
+    <item>
+      <title><![CDATA[Create a Web API using InMemory Database in ASP.NET Core]]></title>
+      <link>https://coderschmoder.com/blog/in-memory-database</link>
+      <guid>https://coderschmoder.com/blog/in-memory-database</guid>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 GMT</pubDate>
+      <description><![CDATA[In this post, I show you how to build a simple REST API in ASP.NET Core 2.0 plus how to use an InMemory Database to store your data.]]></description>
+      <category>Tutorial</category>
+      <category>ASP.NET Core</category>
+      <category>C#</category>
+      <category>Database</category>
+    </item>
+  </channel>
+</rss>
